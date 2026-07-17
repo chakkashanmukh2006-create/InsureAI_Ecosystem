@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insure AI | Enterprise Ecosystem Dashboard</title>
+    
+    <!-- Google Fonts (Outfit & Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Main Content Area -->
+        <main class="content-area">
+            
+            <!-- VIEW 1: OVERVIEW LANDING HUB (No sidebar, Big 4 Cards Centered) -->
+            <div id="overview-tab" class="tab-pane active" style="align-items: center; justify-content: center; width: 100%;">
+                <header class="hub-header">
+                    <i class="ph-fill ph-shield-check hub-logo"></i>
+                    <h1>INSURE AI</h1>
+                    <p class="subtitle">Enterprise Ecosystem Master Hub</p>
+                </header>
+                
+                <!-- System Health & Status Strip -->
+                <div class="system-status-strip">
+                    <div id="status-retention" class="status-badge offline">
+                        <span class="status-dot" style="color:var(--accent-retention)"></span>
+                        <span>Retention [8000]</span>
+                    </div>
+                    <div id="status-anomaly" class="status-badge offline">
+                        <span class="status-dot" style="color:var(--accent-anomaly)"></span>
+                        <span>Anomaly [8001]</span>
+                    </div>
+                    <div id="status-predictive" class="status-badge offline">
+                        <span class="status-dot" style="color:var(--accent-predictive)"></span>
+                        <span>Predictive [8002]</span>
+                    </div>
+                    <div id="status-decision" class="status-badge offline">
+                        <span class="status-dot" style="color:var(--accent-decision)"></span>
+                        <span>Decision [8003]</span>
+                    </div>
+                </div>
+
+                <!-- Big 4 Core Options Grid -->
+                <div class="hub-grid">
+                    <!-- Option 1: Customer Retention -->
+                    <div class="hub-card retention clickable-hub-card" data-target="retention-tab">
+                        <span class="hub-card-port">Port 8000</span>
+                        <div class="hub-card-icon"><i class="ph-fill ph-users-three"></i></div>
+                        <h2>Customer Retention</h2>
+                        <p>XGBoost ML classification predicting conversions and churn risks with SHAP values.</p>
+                        <div class="hub-card-counts">
+                            <div>Leads: <strong id="metric-retention-leads">--</strong></div>
+                            <div>Customers: <strong id="metric-retention-cust">--</strong></div>
+                        </div>
+                    </div>
+
+                    <!-- Option 2: Anomaly Detection -->
+                    <div class="hub-card anomaly clickable-hub-card" data-target="anomaly-tab">
+                        <span class="hub-card-port">Port 8001</span>
+                        <div class="hub-card-icon"><i class="ph-fill ph-shield-warning"></i></div>
+                        <h2>Anomaly Detection</h2>
+                        <p>Isolation Forest engine scanning records to identify fraud and outliers.</p>
+                        <div class="hub-card-counts">
+                            <div>Leads Analyzed: <strong id="metric-anomaly-leads">--</strong></div>
+                            <div>Anomalies: <strong id="metric-anomaly-fraud">--</strong></div>
+                        </div>
+                    </div>
+
+                    <!-- Option 3: Predictive AI -->
+                    <div class="hub-card predictive clickable-hub-card" data-target="predictive-tab">
+                        <span class="hub-card-port">Port 8002</span>
+                        <div class="hub-card-icon"><i class="ph-fill ph-chart-line-up"></i></div>
+                        <h2>Predictive Intelligence</h2>
+                        <p>Facebook Prophet time-series algorithm forecasting overall conversion trends.</p>
+                        <div class="hub-card-counts" style="flex-wrap: wrap; gap: 8px;">
+                            <div>Call Logs: <strong id="metric-predictive-calls">--</strong></div>
+                            <div>Leads: <strong id="metric-predictive-leads">--</strong></div>
+                            <div>Customers: <strong id="metric-predictive-cust">--</strong></div>
+                        </div>
+                    </div>
+
+                    <!-- Option 4: Decision Engine -->
+                    <div class="hub-card decision clickable-hub-card" data-target="decision-tab">
+                        <span class="hub-card-port">Port 8003</span>
+                        <div class="hub-card-icon"><i class="ph-fill ph-brain"></i></div>
+                        <h2>Decision Engine</h2>
+                        <p>Rule-based translation system compiling agent dialogue scripts based on risk.</p>
+                        <div class="hub-card-counts">
+                            <div>Decisions: <strong id="metric-decision-actions">--</strong></div>
+                            <div>Recommended: <strong id="metric-decision-rec">--</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Admin & Management Center Links -->
+                <div class="admin-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; width:100%; max-width:1000px; margin-top:2rem;">
+                    <div class="hub-card retrain clickable-hub-card" data-target="retrain-tab" style="padding:1.5rem; flex-direction:row; gap:1.2rem; align-items:center;">
+                        <div class="hub-card-icon" style="font-size:1.8rem; width:48px; height:48px;"><i class="ph-fill ph-arrows-clockwise" style="color:var(--accent-warning)"></i></div>
+                        <div>
+                            <h3 style="color:var(--text-primary); font-size:1.05rem;">Ecosystem Retrain Console</h3>
+                            <p style="font-size:0.85rem; margin-top:3px; color:var(--text-secondary);">Train models and view execution log streams.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hub-card data clickable-hub-card" data-target="data-tab" style="padding:1.5rem; flex-direction:row; gap:1.2rem; align-items:center;">
+                        <div class="hub-card-icon" style="font-size:1.8rem; width:48px; height:48px;"><i class="ph-fill ph-database" style="color:#fff"></i></div>
+                        <div>
+                            <h3 style="color:var(--text-primary); font-size:1.05rem;">Ecosystem Data Center</h3>
+                            <p style="font-size:0.85rem; margin-top:3px; color:var(--text-secondary);">Upload leads/customers CSV files and view database records.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PANEL 2: CUSTOMER RETENTION PANEL (Mirrors the original Insure AI project) -->
+            <div id="retention-tab" class="tab-pane">
+                <header class="panel-header">
+                    <button class="btn btn-secondary back-home-btn"><i class="ph ph-arrow-left"></i> Back to Hub</button>
+                    <h2>Customer Retention Dashboard</h2>
+                    <span class="card-badge retention">Port 8000</span>
+                </header>
+
+                <!-- Retention Stats Grid (Original Insure AI metrics style, clickable for directories) -->
+                <div class="stats-grid" style="grid-template-columns: repeat(3, 1fr); width: 100%; max-width: 100%;">
+                    <div class="stat-card glass-panel clickable" id="retention-card-leads" title="Open All Leads Directory" style="cursor: pointer;">
+                        <div class="stat-icon blue"><i class="ph-fill ph-users"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-label">Total Leads</span>
+                            <h3 class="stat-value" id="retention-stat-leads">--</h3>
+                        </div>
+                    </div>
+                    <div class="stat-card glass-panel clickable" id="retention-card-cust" title="Open All Customers Directory" style="cursor: pointer;">
+                        <div class="stat-icon green"><i class="ph-fill ph-check-circle"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-label">Total Customers</span>
+                            <h3 class="stat-value" id="retention-stat-cust">--</h3>
+                        </div>
+                    </div>
+                    <div class="stat-card glass-panel clickable" id="retention-card-last-trained" title="View Training History" style="cursor: pointer;">
+                        <div class="stat-icon yellow"><i class="ph-fill ph-clock-counter-clockwise"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-label">Last Trained</span>
+                            <h3 class="stat-value" id="retention-stat-last-trained">--</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info & Management Grid (Original Insure AI Actions) -->
+                <div class="upload-grid" style="margin-top: 1rem;">
+                    <!-- System Info -->
+                    <div class="glass-panel" style="display:flex; flex-direction:column; gap:12px">
+                        <div class="dashboard-card-header">
+                            <h3>System Info</h3>
+                        </div>
+                        <p style="font-size:0.95rem"><strong>Lead Model Accuracy:</strong> <span id="retention-lead-acc" style="color: var(--accent-retention)">--</span></p>
+                        <p style="font-size:0.95rem"><strong>Customer Model Accuracy:</strong> <span id="retention-cust-acc" style="color: var(--accent-decision)">--</span></p>
+                        <button id="retention-train-btn" class="btn btn-primary" style="margin-top:auto; background:var(--accent-warning); color:var(--bg-dark); width: 100%">
+                            <i class="ph ph-arrows-clockwise"></i>
+                            <span>Retrain Models</span>
+                        </button>
+                    </div>
+
+                    <!-- Data Management -->
+                    <div class="glass-panel" style="display:flex; flex-direction:column; gap:12px">
+                        <div class="dashboard-card-header">
+                            <h3>Data Management</h3>
+                        </div>
+                        <p style="font-size:0.9rem; color:var(--text-secondary)">Upload new CSV datasets or export existing data.</p>
+                        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:auto">
+                            <label for="retention-upload-leads-input" class="btn btn-secondary" style="cursor:pointer; display:flex; gap:8px; justify-content:center; align-items:center;">
+                                <i class="ph ph-upload-simple"></i>
+                                <span>Upload Leads</span>
+                            </label>
+                            <input type="file" id="retention-upload-leads-input" accept=".csv" style="display:none">
+                            
+                            <button id="retention-export-leads-btn" class="btn btn-secondary">
+                                <i class="ph ph-download-simple"></i>
+                                <span>Export Leads</span>
+                            </button>
+                            
+                            <label for="retention-upload-cust-input" class="btn btn-secondary" style="cursor:pointer; display:flex; gap:8px; justify-content:center; align-items:center;">
+                                <i class="ph ph-upload-simple"></i>
+                                <span>Upload Cust</span>
+                            </label>
+                            <input type="file" id="retention-upload-cust-input" accept=".csv" style="display:none">
+                            
+                            <button id="retention-export-cust-btn" class="btn btn-secondary">
+                                <i class="ph ph-download-simple"></i>
+                                <span>Export Cust</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- High Propensity Leads Table (Top 20) -->
+                <div class="table-card glass-panel" style="margin-top: 1rem;">
+                    <div class="dashboard-card-header">
+                        <h3>High Propensity Leads</h3>
+                        <p style="font-size:0.85rem; color:var(--text-secondary)">Top 20 prospects ranked by AI conversion probability.</p>
+                    </div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Lead ID</th>
+                                    <th>Target Score</th>
+                                    <th>AI Recommendation Reason</th>
+                                    <th>Source</th>
+                                </tr>
+                            </thead>
+                            <tbody id="retention-top20-leads-tbody">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- High Churn Risk Customers Table (Top 20) -->
+                <div class="table-card glass-panel" style="margin-top: 1rem;">
+                    <div class="dashboard-card-header">
+                        <h3>High-Risk Customers</h3>
+                        <p style="font-size:0.85rem; color:var(--text-secondary)">Current policyholders at highest risk of churning.</p>
+                    </div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Customer ID</th>
+                                    <th>Risk Level</th>
+                                    <th>Primary Risk Factor</th>
+                                    <th>Policy Type</th>
+                                    <th>Contact</th>
+                                </tr>
+                            </thead>
+                            <tbody id="retention-top20-cust-tbody">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PANEL 3: ANOMALY DETECTION PANEL -->
+            <div id="anomaly-tab" class="tab-pane">
+                <header class="panel-header">
+                    <button class="btn btn-secondary back-home-btn"><i class="ph ph-arrow-left"></i> Back to Hub</button>
+                    <h2>Anomaly & Fraud Detection Dashboard</h2>
+                    <span class="card-badge anomaly">Port 8001</span>
+                </header>
+
+                <div class="table-card glass-panel">
+                    <div class="dashboard-card-header">
+                        <h3>Lead Fraud Anomaly Scans</h3>
+                    </div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Lead Name</th>
+                                    <th>Risk Status</th>
+                                    <th>Anomaly Score</th>
+                                    <th>Reason Flag</th>
+                                    <th>Contact Info</th>
+                                </tr>
+                            </thead>
+                            <tbody id="anomaly-leads-tbody">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination">
+                        <button id="prev-anomaly-leads" class="btn btn-outline" disabled>Previous</button>
+                        <span id="anomaly-leads-page">Page 1</span>
+                        <button id="next-anomaly-leads" class="btn btn-outline">Next</button>
+                    </div>
+                </div>
+
+                <div class="table-card glass-panel">
+                    <div class="dashboard-card-header">
+                        <h3>Customer Account Scans</h3>
+                    </div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Customer ID / Name</th>
+                                    <th>Risk Status</th>
+                                    <th>Anomaly Score</th>
+                                    <th>NLP Sentiment</th>
+                                    <th>Contact Info</th>
+                                </tr>
+                            </thead>
+                            <tbody id="anomaly-cust-tbody">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination">
+                        <button id="prev-anomaly-cust" class="btn btn-outline" disabled>Previous</button>
+                        <span id="anomaly-cust-page">Page 1</span>
+                        <button id="next-anomaly-cust" class="btn btn-outline">Next</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PANEL 4: PREDICTIVE AI PANEL -->
+            <div id="predictive-tab" class="tab-pane">
+                <header class="panel-header">
+                    <button class="btn btn-secondary back-home-btn"><i class="ph ph-arrow-left"></i> Back to Hub</button>
+                    <h2>Predictive Intelligence Dashboard</h2>
+                    <span class="card-badge predictive">Port 8002</span>
+                    <div style="margin-left: auto; font-size: 0.9rem; color: var(--text-secondary); display: flex; gap: 15px;">
+                        <span>Leads: <strong id="predictive-stat-leads" style="color: var(--accent-predictive)">--</strong></span>
+                        <span>Customers: <strong id="predictive-stat-cust" style="color: #fff">--</strong></span>
+                    </div>
+                </header>
+
+                <div class="glass-panel" style="display:flex; flex-direction:column; gap:1.2rem">
+                    <div class="dashboard-card-header">
+                        <h3>Forecasted Conversion Trends (Prophet Engine)</h3>
+                    </div>
+                    <div style="height: 350px; position: relative;">
+                        <canvas id="forecastChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="table-card glass-panel">
+                    <div class="dashboard-card-header">
+                        <h3>Agent Customer Interaction Logs</h3>
+                    </div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Agent ID</th>
+                                    <th>Call Timestamp</th>
+                                    <th>Duration</th>
+                                    <th>Outcome</th>
+                                </tr>
+                            </thead>
+                            <tbody id="predictive-logs-tbody">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination">
+                        <button id="prev-predictive-calls" class="btn btn-outline" disabled>Previous</button>
+                        <span id="predictive-calls-page">Page 1</span>
+                        <button id="next-predictive-calls" class="btn btn-outline">Next</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PANEL 5: DECISION ENGINE PANEL -->
+            <div id="decision-tab" class="tab-pane">
+                <header class="panel-header">
+                    <button class="btn btn-secondary back-home-btn"><i class="ph ph-arrow-left"></i> Back to Hub</button>
+                    <h2>Decision Engine Dashboard</h2>
+                    <span class="card-badge decision">Port 8003</span>
+                </header>
+
+                <div class="table-card glass-panel">
+                    <div class="dashboard-card-header">
+                        <h3>Leads Translation Decisions</h3>
+                    </div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Lead Name</th>
+                                    <th>Score Ratio</th>
+                                    <th>Dialogue Script Advice</th>
+                                    <th>Contact Info</th>
+                                </tr>
+                            </thead>
+                            <tbody id="decision-leads-tbody">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination">
+                        <button id="prev-decision-leads" class="btn btn-outline" disabled>Previous</button>
+                        <span id="decision-leads-page">Page 1</span>
+                        <button id="next-decision-leads" class="btn btn-outline">Next</button>
+                    </div>
+                </div>
+
+                <div class="table-card glass-panel">
+                    <div class="dashboard-card-header">
+                        <h3>Customer Retainment Actions</h3>
+                    </div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Customer ID / Name</th>
+                                    <th>Score Ratio</th>
+                                    <th>Retention Dialogue Action Advice</th>
+                                    <th>Contact Info</th>
+                                </tr>
+                            </thead>
+                            <tbody id="decision-cust-tbody">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination">
+                        <button id="prev-decision-cust" class="btn btn-outline" disabled>Previous</button>
+                        <span id="decision-cust-page">Page 1</span>
+                        <button id="next-decision-cust" class="btn btn-outline">Next</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PANEL 6: RETRAIN CONSOLE VIEW -->
+            <div id="retrain-tab" class="tab-pane">
+                <header class="panel-header">
+                    <button class="btn btn-secondary back-home-btn"><i class="ph ph-arrow-left"></i> Back to Hub</button>
+                    <h2>Ecosystem Retrain Console</h2>
+                    <span class="card-badge" style="color:var(--accent-warning)">Console</span>
+                </header>
+
+                <div class="glass-panel" style="display:flex; flex-direction:column; gap:1.5rem">
+                    <p style="font-size:0.95rem">Select which subsystem model you wish to retrain. The server will execute the training scripts and compile metrics in real time.</p>
+                    
+                    <div class="retrain-selector-grid">
+                        <button class="retrain-btn-selector active" data-port="8000">Retention [Port 8000]</button>
+                        <button class="retrain-btn-selector" data-port="8001">Anomaly [Port 8001]</button>
+                        <button class="retrain-btn-selector" data-port="8002">Predictive [Port 8002]</button>
+                        <button class="retrain-btn-selector" data-port="8003">Decision [Port 8003]</button>
+                    </div>
+
+                    <div class="console-card">
+                        <div class="console-terminal" id="console-output">
+                            <!-- Retraining outputs here -->
+                        </div>
+                    </div>
+
+                    <div>
+                        <button id="exec-train-btn" class="btn btn-primary" style="background-color: var(--accent-warning); color: var(--bg-dark);">
+                            <i class="ph ph-arrows-clockwise"></i>
+                            <span>Retrain Model</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PANEL 7: DATA CENTER VIEW -->
+            <div id="data-tab" class="tab-pane">
+                <header class="panel-header">
+                    <button class="btn btn-secondary back-home-btn"><i class="ph ph-arrow-left"></i> Back to Hub</button>
+                    <h2>Ecosystem Data Center</h2>
+                    <span class="card-badge" style="color:#fff">Database</span>
+                </header>
+
+                <div class="upload-grid">
+                    <div class="glass-panel" style="display:flex; flex-direction:column; gap:1.5rem">
+                        <div class="dashboard-card-header">
+                            <h3>Upload Datasets</h3>
+                            <span class="card-badge" style="color:var(--text-primary)">Ingest CSV</span>
+                        </div>
+                        
+                        <p style="font-size:0.9rem">Select a target subsystem and upload a customer or lead dataset to clean, normalize, and save to the database.</p>
+                        
+                        <div style="display:flex; flex-direction:column; gap:12px">
+                            <label style="font-size:0.8rem; font-weight:600; color:var(--text-primary)">Target Subsystem</label>
+                            <select id="upload-service-select" style="background:#131520; border:1px solid var(--border-color); color:#fff; padding:10px; border-radius:8px">
+                                <option value="retention">Customer Retention [Port 8000]</option>
+                                <option value="anomaly">Anomaly Detection [Port 8001]</option>
+                                <option value="predictive">Predictive Intelligence [Port 8002]</option>
+                                <option value="decision">Decision Making [Port 8003]</option>
+                            </select>
+
+                            <label style="font-size:0.8rem; font-weight:600; color:var(--text-primary)">Dataset Type</label>
+                            <select id="upload-dataset-select" style="background:#131520; border:1px solid var(--border-color); color:#fff; padding:10px; border-radius:8px">
+                                <option value="leads">Leads CSV</option>
+                                <option value="customers">Customers CSV</option>
+                            </select>
+
+                            <label style="font-size:0.8rem; font-weight:600; color:var(--text-primary); margin-top:8px">Select File</label>
+                            <input type="file" id="dataset-file-input" accept=".csv" style="background:#131520; border:1px solid var(--border-color); color:#fff; padding:10px; border-radius:8px">
+                        </div>
+
+                        <button id="upload-submit-btn" class="btn btn-primary" style="margin-top:8px">
+                            <i class="ph ph-upload-simple"></i>
+                            <span>Upload Dataset</span>
+                        </button>
+                    </div>
+
+                    <div class="glass-panel" style="display:flex; flex-direction:column; gap:1.5rem">
+                        <div class="dashboard-card-header">
+                            <h3>Export Subsystem Data</h3>
+                            <span class="card-badge" style="color:var(--text-primary)">Download CSV</span>
+                        </div>
+                        
+                        <p style="font-size:0.9rem">Fetch and download the processed datasets directly from the SQL database records of the selected subsystem.</p>
+                        
+                        <div style="display:flex; flex-direction:column; gap:12px">
+                            <label style="font-size:0.8rem; font-weight:600; color:var(--text-primary)">Target Subsystem</label>
+                            <select id="export-service-select" style="background:#131520; border:1px solid var(--border-color); color:#fff; padding:10px; border-radius:8px">
+                                <option value="retention">Customer Retention [Port 8000]</option>
+                                <option value="anomaly">Anomaly Detection [Port 8001]</option>
+                                <option value="predictive">Predictive Intelligence [Port 8002]</option>
+                                <option value="decision">Decision Making [Port 8003]</option>
+                            </select>
+
+                            <label style="font-size:0.8rem; font-weight:600; color:var(--text-primary)">Dataset Type</label>
+                            <select id="export-dataset-select" style="background:#131520; border:1px solid var(--border-color); color:#fff; padding:10px; border-radius:8px">
+                                <option value="leads">Leads Export</option>
+                                <option value="customers">Customers Export</option>
+                            </select>
+                        </div>
+
+                        <button id="export-submit-btn" class="btn btn-secondary" style="margin-top:auto">
+                            <i class="ph ph-download-simple"></i>
+                            <span>Export Dataset</span>
+                        </button>
+                    </div>
+
+                    <!-- RECENTLY INGESTED DATA TABLE -->
+                    <div class="glass-panel" style="grid-column: span 2; margin-top: 1rem;">
+                        <div class="dashboard-card-header">
+                            <h3>Recently Ingested Database Entries (Double-Check Uploads)</h3>
+                            <span class="card-badge" style="color:var(--accent-retention)">Database Log</span>
+                        </div>
+                        <p style="font-size:0.85rem; margin-bottom:1rem">Review the actual rows loaded into the database from the last CSV upload. Updates instantly.</p>
+                        
+                        <div class="retrain-selector-grid" style="grid-template-columns: repeat(4, 1fr); margin-bottom: 1.5rem;">
+                            <button class="recent-selector-btn active" data-service="retention">Retention [8000]</button>
+                            <button class="recent-selector-btn" data-service="anomaly">Anomaly [8001]</button>
+                            <button class="recent-selector-btn" data-service="predictive">Predictive [8002]</button>
+                            <button class="recent-selector-btn" data-service="decision">Decision [8003]</button>
+                        </div>
+
+                        <div class="table-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Entry ID</th>
+                                        <th>Primary Reference</th>
+                                        <th>Secondary Details</th>
+                                        <th>Database Schema Mapping Info</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="recently-ingested-tbody">
+                                    <!-- Populated dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- OVERLAY MODALS FROM PREVIOUS RETENTION PROJECT -->
+    
+    <!-- All Leads Directory Modal -->
+    <div id="modal-all-leads" class="modal-overlay">
+        <div class="modal-content glass-panel" style="max-width: 850px; width: 90%;">
+            <div class="modal-header" style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color); padding-bottom:12px; margin-bottom:16px;">
+                <h2 style="color:#fff; font-size:1.4rem"><i class="ph ph-users" style="margin-right:8px; color:var(--accent-retention)"></i>All Leads Directory</h2>
+                <button class="back-home-btn" id="close-modal-leads" style="padding:6px 12px; font-size:0.85rem;"><i class="ph ph-x"></i> Close</button>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Lead ID</th>
+                            <th>Name</th>
+                            <th>AI Score</th>
+                            <th>Primary Reason</th>
+                            <th>Source</th>
+                        </tr>
+                    </thead>
+                    <tbody id="all-leads-tbody">
+                        <!-- Populated via JS -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination" style="margin-top: 15px;">
+                <button id="prev-modal-leads" class="btn btn-outline" disabled>Previous</button>
+                <span id="modal-leads-page-indicator">Page 1</span>
+                <button id="next-modal-leads" class="btn btn-outline">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- All Customers Directory Modal -->
+    <div id="modal-all-customers" class="modal-overlay">
+        <div class="modal-content glass-panel" style="max-width: 950px; width: 90%;">
+            <div class="modal-header" style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color); padding-bottom:12px; margin-bottom:16px;">
+                <h2 style="color:#fff; font-size:1.4rem"><i class="ph ph-check-circle" style="margin-right:8px; color:var(--accent-decision)"></i>All Customers Directory</h2>
+                <button class="back-home-btn" id="close-modal-customers" style="padding:6px 12px; font-size:0.85rem;"><i class="ph ph-x"></i> Close</button>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Customer ID</th>
+                            <th>Name</th>
+                            <th>Risk Level</th>
+                            <th>Primary Risk Factor</th>
+                            <th>Sentiment</th>
+                            <th>Contact</th>
+                        </tr>
+                    </thead>
+                    <tbody id="all-customers-tbody">
+                        <!-- Populated via JS -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination" style="margin-top: 15px;">
+                <button id="prev-modal-customers" class="btn btn-outline" disabled>Previous</button>
+                <span id="modal-customers-page-indicator">Page 1</span>
+                <button id="next-modal-customers" class="btn btn-outline">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Training History Modal -->
+    <div id="modal-training-history" class="modal-overlay">
+        <div class="modal-content glass-panel" style="max-width: 850px; width: 90%;">
+            <div class="modal-header" style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color); padding-bottom:12px; margin-bottom:16px;">
+                <h2 style="color:#fff; font-size:1.4rem"><i class="ph ph-clock-counter-clockwise" style="margin-right:8px; color:var(--accent-warning)"></i>AI Training & Model History</h2>
+                <button class="back-home-btn" id="close-modal-training" style="padding:6px 12px; font-size:0.85rem;"><i class="ph ph-x"></i> Close</button>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date / Time</th>
+                            <th>Model Type</th>
+                            <th>Version ID</th>
+                            <th>Accuracy</th>
+                            <th>Algorithm Used</th>
+                        </tr>
+                    </thead>
+                    <tbody id="training-history-tbody">
+                        <!-- Populated via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Retrain Progress Log Modal Overlay -->
+    <div id="modal-training-progress" class="modal-overlay">
+        <div class="modal-content glass-panel" style="max-width: 600px; width: 90%;">
+            <div class="modal-header" style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color); padding-bottom:12px; margin-bottom:16px;">
+                <h2 style="color:#fff; font-size:1.3rem"><i class="ph ph-spinner ph-spin" style="margin-right:8px; color:var(--accent-warning)"></i>AI Training in Progress</h2>
+            </div>
+            <div style="background:#040508; color:#00ff66; font-family:monospace; padding:15px; border-radius:8px; height:320px; overflow-y:auto; font-size:13px; line-height:1.5; box-shadow:inset 0 0 10px rgba(0,0,0,0.5);" id="modal-training-logs">
+                Initializing training pipelines...
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Alerts Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Controller Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

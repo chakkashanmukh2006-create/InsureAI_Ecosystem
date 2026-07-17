@@ -1,0 +1,501 @@
+customer_id,name,age,policy_type,premium_amount,renewal_history,claim_history,complaint_count,support_tickets,feedback,email,contact_number,churn_target,income_to_premium_ratio,claim_frequency,is_fraud
+CUS-2001,Client Name 1,82,Life,2236.95,5,2,3,9,Poor support,client1@example.com,555-02001,1,19.79,0.4,0
+CUS-2002,Client Name 2,35,Home,1635.76,3,5,0,7,Too expensive,client2@example.com,555-02002,0,26.63,1.67,1
+CUS-2003,Client Name 3,64,Auto,2518.18,6,2,3,3,Great service,client3@example.com,555-02003,0,21.1,0.33,0
+CUS-2004,Client Name 4,36,Auto,856.0,10,0,3,3,Too expensive,client4@example.com,555-02004,0,13.9,0.0,0
+CUS-2005,Client Name 5,44,Auto,1047.36,5,1,2,2,Too expensive,client5@example.com,555-02005,0,42.93,0.2,0
+CUS-2006,Client Name 6,34,Home,552.48,6,2,5,2,Average,client6@example.com,555-02006,0,25.53,0.33,0
+CUS-2007,Client Name 7,69,Auto,2523.72,8,3,5,2,Great service,client7@example.com,555-02007,0,11.5,0.38,0
+CUS-2008,Client Name 8,38,Home,2487.25,6,3,1,8,Great service,client8@example.com,555-02008,0,39.34,0.5,0
+CUS-2009,Client Name 9,46,Home,2636.09,5,2,2,2,Will renew,client9@example.com,555-02009,0,48.58,0.4,0
+CUS-2010,Client Name 10,84,Life,1023.09,10,3,0,7,Poor support,client10@example.com,555-02010,0,28.35,0.3,0
+CUS-2011,Client Name 11,44,Health,1304.56,7,2,2,8,Will renew,client11@example.com,555-02011,0,34.24,0.29,0
+CUS-2012,Client Name 12,48,Home,1048.82,3,3,1,7,Average,client12@example.com,555-02012,1,16.45,1.0,0
+CUS-2013,Client Name 13,32,Health,835.83,7,0,0,4,Will renew,client13@example.com,555-02013,0,32.95,0.0,0
+CUS-2014,Client Name 14,76,Auto,1627.88,5,3,3,6,Too expensive,client14@example.com,555-02014,1,24.88,0.6,0
+CUS-2015,Client Name 15,55,Auto,2113.39,4,5,2,1,Average,client15@example.com,555-02015,0,46.7,1.25,0
+CUS-2016,Client Name 16,34,Life,796.47,8,2,2,0,Average,client16@example.com,555-02016,0,38.53,0.25,0
+CUS-2017,Client Name 17,57,Life,976.61,8,2,4,2,Average,client17@example.com,555-02017,1,40.24,0.25,0
+CUS-2018,Client Name 18,73,Health,2864.54,0,1,4,10,Too expensive,client18@example.com,555-02018,1,15.21,1.0,0
+CUS-2019,Client Name 19,48,Life,1686.1,8,3,4,9,Great service,client19@example.com,555-02019,0,19.09,0.38,0
+CUS-2020,Client Name 20,46,Life,1571.98,3,0,5,6,Too expensive,client20@example.com,555-02020,1,30.99,0.0,0
+CUS-2021,Client Name 21,38,Home,1263.93,7,2,5,0,Poor support,client21@example.com,555-02021,0,24.16,0.29,0
+CUS-2022,Client Name 22,73,Home,2407.1,4,0,5,8,Too expensive,client22@example.com,555-02022,1,48.98,0.0,0
+CUS-2023,Client Name 23,64,Health,1920.48,9,1,4,9,Great service,client23@example.com,555-02023,0,29.05,0.11,0
+CUS-2024,Client Name 24,46,Auto,1686.94,7,1,2,9,Will renew,client24@example.com,555-02024,1,12.99,0.14,0
+CUS-2025,Client Name 25,84,Auto,567.1,6,5,1,1,Poor support,client25@example.com,555-02025,0,7.59,0.83,0
+CUS-2026,Client Name 26,23,Health,929.56,2,3,3,6,Great service,client26@example.com,555-02026,1,22.5,1.5,0
+CUS-2027,Client Name 27,48,Life,824.83,6,1,1,4,Will renew,client27@example.com,555-02027,0,14.13,0.17,0
+CUS-2028,Client Name 28,80,Life,1188.6,7,1,0,2,Will renew,client28@example.com,555-02028,0,44.57,0.14,0
+CUS-2029,Client Name 29,80,Life,1656.74,4,2,0,1,Poor support,client29@example.com,555-02029,0,32.59,0.5,0
+CUS-2030,Client Name 30,44,Auto,1537.63,6,1,1,9,Poor support,client30@example.com,555-02030,0,36.44,0.17,0
+CUS-2031,Client Name 31,27,Home,1099.24,10,0,1,4,Poor support,client31@example.com,555-02031,0,23.51,0.0,0
+CUS-2032,Client Name 32,37,Home,2988.29,8,3,0,1,Average,client32@example.com,555-02032,0,14.33,0.38,0
+CUS-2033,Client Name 33,27,Health,1655.42,10,5,0,10,Too expensive,client33@example.com,555-02033,0,22.85,0.5,0
+CUS-2034,Client Name 34,23,Auto,1126.51,5,3,5,2,Great service,client34@example.com,555-02034,1,29.68,0.6,0
+CUS-2035,Client Name 35,53,Auto,2283.95,7,1,3,2,Will renew,client35@example.com,555-02035,0,9.52,0.14,0
+CUS-2036,Client Name 36,59,Health,810.38,2,5,5,6,Average,client36@example.com,555-02036,1,13.01,2.5,1
+CUS-2037,Client Name 37,26,Auto,2731.72,7,4,4,3,Poor support,client37@example.com,555-02037,0,36.07,0.57,0
+CUS-2038,Client Name 38,78,Home,631.04,6,2,0,0,Too expensive,client38@example.com,555-02038,0,9.11,0.33,0
+CUS-2039,Client Name 39,75,Home,569.86,3,0,0,5,Too expensive,client39@example.com,555-02039,1,6.98,0.0,0
+CUS-2040,Client Name 40,35,Health,2539.06,10,4,2,8,Poor support,client40@example.com,555-02040,0,10.44,0.4,0
+CUS-2041,Client Name 41,49,Home,764.71,0,3,2,2,Great service,client41@example.com,555-02041,1,34.61,3.0,1
+CUS-2042,Client Name 42,57,Auto,2124.86,1,4,2,0,Will renew,client42@example.com,555-02042,0,40.61,4.0,1
+CUS-2043,Client Name 43,43,Home,1129.85,5,5,0,9,Average,client43@example.com,555-02043,0,12.89,1.0,0
+CUS-2044,Client Name 44,62,Home,2945.05,1,4,5,7,Will renew,client44@example.com,555-02044,1,31.44,4.0,1
+CUS-2045,Client Name 45,23,Auto,1081.51,4,1,4,1,Great service,client45@example.com,555-02045,0,11.19,0.25,0
+CUS-2046,Client Name 46,85,Health,1241.54,3,5,1,6,Average,client46@example.com,555-02046,1,11.04,1.67,1
+CUS-2047,Client Name 47,62,Home,2109.01,6,0,0,8,Average,client47@example.com,555-02047,0,20.42,0.0,0
+CUS-2048,Client Name 48,48,Life,1848.28,10,3,5,3,Too expensive,client48@example.com,555-02048,1,24.91,0.3,0
+CUS-2049,Client Name 49,22,Home,661.54,3,1,3,1,Great service,client49@example.com,555-02049,0,12.82,0.33,0
+CUS-2050,Client Name 50,48,Health,1090.78,7,1,0,6,Too expensive,client50@example.com,555-02050,0,32.26,0.14,0
+CUS-2051,Client Name 51,60,Life,1213.38,3,0,3,10,Poor support,client51@example.com,555-02051,0,22.0,0.0,0
+CUS-2052,Client Name 52,82,Auto,1603.44,6,3,4,9,Poor support,client52@example.com,555-02052,0,24.23,0.5,0
+CUS-2053,Client Name 53,32,Health,2397.15,8,2,2,9,Poor support,client53@example.com,555-02053,0,18.76,0.25,0
+CUS-2054,Client Name 54,58,Home,1437.87,1,1,4,7,Too expensive,client54@example.com,555-02054,1,5.19,1.0,0
+CUS-2055,Client Name 55,69,Auto,1728.63,5,4,3,6,Poor support,client55@example.com,555-02055,1,44.82,0.8,0
+CUS-2056,Client Name 56,37,Health,1462.07,3,5,4,2,Average,client56@example.com,555-02056,0,36.34,1.67,1
+CUS-2057,Client Name 57,71,Auto,2816.3,3,2,5,3,Too expensive,client57@example.com,555-02057,0,16.76,0.67,0
+CUS-2058,Client Name 58,80,Auto,2860.66,3,1,1,4,Great service,client58@example.com,555-02058,0,39.69,0.33,0
+CUS-2059,Client Name 59,71,Health,1494.17,8,1,4,1,Average,client59@example.com,555-02059,0,36.13,0.12,0
+CUS-2060,Client Name 60,70,Life,1965.2,1,2,5,6,Too expensive,client60@example.com,555-02060,1,46.85,2.0,0
+CUS-2061,Client Name 61,72,Health,2247.52,7,5,0,2,Will renew,client61@example.com,555-02061,0,23.76,0.71,0
+CUS-2062,Client Name 62,58,Home,2332.61,5,3,1,2,Will renew,client62@example.com,555-02062,0,47.68,0.6,0
+CUS-2063,Client Name 63,79,Life,1917.73,3,1,1,2,Poor support,client63@example.com,555-02063,0,24.83,0.33,0
+CUS-2064,Client Name 64,35,Life,2670.9,4,0,1,1,Great service,client64@example.com,555-02064,0,31.35,0.0,0
+CUS-2065,Client Name 65,83,Auto,1712.99,0,5,0,0,Great service,client65@example.com,555-02065,0,14.5,5.0,1
+CUS-2066,Client Name 66,22,Life,1439.16,7,3,4,4,Average,client66@example.com,555-02066,1,35.68,0.43,0
+CUS-2067,Client Name 67,65,Life,2998.61,10,2,1,5,Great service,client67@example.com,555-02067,0,5.14,0.2,0
+CUS-2068,Client Name 68,73,Home,2313.05,9,5,1,0,Average,client68@example.com,555-02068,0,25.34,0.56,0
+CUS-2069,Client Name 69,82,Life,1787.29,0,2,5,3,Great service,client69@example.com,555-02069,0,48.63,2.0,1
+CUS-2070,Client Name 70,63,Life,2194.82,7,0,1,9,Poor support,client70@example.com,555-02070,0,47.26,0.0,0
+CUS-2071,Client Name 71,82,Auto,2967.18,6,1,5,1,Too expensive,client71@example.com,555-02071,1,27.41,0.17,0
+CUS-2072,Client Name 72,33,Health,1253.37,7,0,5,8,Will renew,client72@example.com,555-02072,1,15.84,0.0,0
+CUS-2073,Client Name 73,49,Life,926.08,1,1,5,1,Poor support,client73@example.com,555-02073,1,39.48,1.0,0
+CUS-2074,Client Name 74,50,Health,2297.94,10,4,5,7,Great service,client74@example.com,555-02074,1,40.8,0.4,0
+CUS-2075,Client Name 75,64,Health,2679.85,1,5,4,9,Will renew,client75@example.com,555-02075,1,48.48,5.0,0
+CUS-2076,Client Name 76,77,Home,2521.12,1,2,1,4,Great service,client76@example.com,555-02076,1,30.78,2.0,0
+CUS-2077,Client Name 77,38,Health,2633.33,0,1,3,9,Poor support,client77@example.com,555-02077,1,19.38,1.0,0
+CUS-2078,Client Name 78,68,Auto,2493.8,10,3,1,8,Will renew,client78@example.com,555-02078,0,43.36,0.3,0
+CUS-2079,Client Name 79,62,Home,861.75,7,2,2,3,Great service,client79@example.com,555-02079,0,31.95,0.29,0
+CUS-2080,Client Name 80,61,Home,1755.94,4,3,5,1,Poor support,client80@example.com,555-02080,0,18.12,0.75,0
+CUS-2081,Client Name 81,70,Auto,647.03,3,1,2,2,Too expensive,client81@example.com,555-02081,0,43.56,0.33,0
+CUS-2082,Client Name 82,72,Life,1247.75,0,5,5,2,Poor support,client82@example.com,555-02082,1,22.6,5.0,1
+CUS-2083,Client Name 83,58,Auto,1205.91,6,4,1,8,Average,client83@example.com,555-02083,0,25.59,0.67,0
+CUS-2084,Client Name 84,42,Home,1942.89,4,5,3,7,Great service,client84@example.com,555-02084,1,21.3,1.25,0
+CUS-2085,Client Name 85,35,Auto,2195.79,6,0,1,6,Average,client85@example.com,555-02085,1,48.84,0.0,0
+CUS-2086,Client Name 86,44,Health,2862.66,10,1,0,8,Too expensive,client86@example.com,555-02086,0,6.53,0.1,0
+CUS-2087,Client Name 87,52,Auto,1491.61,2,5,2,9,Poor support,client87@example.com,555-02087,1,43.92,2.5,0
+CUS-2088,Client Name 88,70,Health,1188.04,5,0,5,7,Will renew,client88@example.com,555-02088,1,15.12,0.0,0
+CUS-2089,Client Name 89,83,Health,1184.31,9,5,5,1,Average,client89@example.com,555-02089,0,30.71,0.56,0
+CUS-2090,Client Name 90,34,Health,1313.07,2,3,5,8,Great service,client90@example.com,555-02090,1,28.35,1.5,0
+CUS-2091,Client Name 91,37,Auto,2383.77,1,1,1,10,Will renew,client91@example.com,555-02091,0,25.13,1.0,0
+CUS-2092,Client Name 92,62,Auto,807.61,3,2,1,9,Great service,client92@example.com,555-02092,1,49.1,0.67,0
+CUS-2093,Client Name 93,60,Life,1408.9,6,1,4,2,Great service,client93@example.com,555-02093,0,47.58,0.17,0
+CUS-2094,Client Name 94,59,Home,2147.89,9,2,3,2,Great service,client94@example.com,555-02094,0,34.82,0.22,0
+CUS-2095,Client Name 95,27,Home,1092.75,4,1,1,2,Will renew,client95@example.com,555-02095,0,21.16,0.25,0
+CUS-2096,Client Name 96,38,Health,2322.76,8,1,3,1,Poor support,client96@example.com,555-02096,0,8.75,0.12,0
+CUS-2097,Client Name 97,54,Home,2191.31,8,2,5,2,Average,client97@example.com,555-02097,0,30.36,0.25,0
+CUS-2098,Client Name 98,42,Auto,1549.22,6,1,1,5,Average,client98@example.com,555-02098,0,10.61,0.17,0
+CUS-2099,Client Name 99,36,Life,2209.95,5,2,3,1,Too expensive,client99@example.com,555-02099,0,44.1,0.4,0
+CUS-2100,Client Name 100,50,Home,1184.12,3,0,0,6,Will renew,client100@example.com,555-02100,1,37.77,0.0,0
+CUS-2101,Client Name 101,61,Life,1972.07,8,2,3,1,Will renew,client101@example.com,555-02101,0,9.46,0.25,0
+CUS-2102,Client Name 102,28,Health,926.87,5,4,3,2,Poor support,client102@example.com,555-02102,0,31.65,0.8,0
+CUS-2103,Client Name 103,55,Life,523.74,10,5,4,2,Great service,client103@example.com,555-02103,0,46.33,0.5,0
+CUS-2104,Client Name 104,69,Life,2268.76,9,3,1,10,Poor support,client104@example.com,555-02104,0,27.6,0.33,0
+CUS-2105,Client Name 105,57,Health,2881.54,4,2,4,3,Average,client105@example.com,555-02105,1,43.04,0.5,0
+CUS-2106,Client Name 106,32,Health,691.73,2,2,1,1,Great service,client106@example.com,555-02106,1,48.3,1.0,0
+CUS-2107,Client Name 107,76,Auto,2192.58,7,5,5,2,Poor support,client107@example.com,555-02107,0,5.63,0.71,0
+CUS-2108,Client Name 108,46,Auto,2777.22,6,1,5,0,Will renew,client108@example.com,555-02108,0,25.19,0.17,0
+CUS-2109,Client Name 109,43,Auto,2186.31,2,4,4,3,Poor support,client109@example.com,555-02109,0,27.3,2.0,1
+CUS-2110,Client Name 110,43,Life,1433.21,10,0,0,5,Average,client110@example.com,555-02110,0,26.74,0.0,0
+CUS-2111,Client Name 111,55,Auto,1032.66,9,5,5,10,Poor support,client111@example.com,555-02111,0,45.16,0.56,0
+CUS-2112,Client Name 112,84,Life,643.74,7,0,0,9,Too expensive,client112@example.com,555-02112,0,23.09,0.0,0
+CUS-2113,Client Name 113,23,Health,753.34,1,3,3,3,Great service,client113@example.com,555-02113,0,12.0,3.0,1
+CUS-2114,Client Name 114,54,Life,1065.24,4,4,3,5,Great service,client114@example.com,555-02114,0,49.52,1.0,0
+CUS-2115,Client Name 115,78,Auto,904.59,0,1,2,6,Too expensive,client115@example.com,555-02115,0,17.82,1.0,0
+CUS-2116,Client Name 116,39,Life,1486.37,0,3,5,5,Great service,client116@example.com,555-02116,1,23.95,3.0,0
+CUS-2117,Client Name 117,85,Health,2499.55,5,3,5,2,Too expensive,client117@example.com,555-02117,0,9.94,0.6,0
+CUS-2118,Client Name 118,35,Auto,2481.78,5,1,1,2,Average,client118@example.com,555-02118,0,24.33,0.2,0
+CUS-2119,Client Name 119,23,Home,1585.82,7,4,2,4,Will renew,client119@example.com,555-02119,0,13.41,0.57,0
+CUS-2120,Client Name 120,57,Auto,2416.82,10,5,2,3,Will renew,client120@example.com,555-02120,0,32.5,0.5,0
+CUS-2121,Client Name 121,46,Auto,2981.38,10,3,4,10,Average,client121@example.com,555-02121,1,49.57,0.3,0
+CUS-2122,Client Name 122,40,Home,1565.76,1,4,4,3,Too expensive,client122@example.com,555-02122,1,20.13,4.0,1
+CUS-2123,Client Name 123,83,Health,653.37,0,2,3,10,Too expensive,client123@example.com,555-02123,1,19.39,2.0,0
+CUS-2124,Client Name 124,28,Life,954.38,10,3,0,0,Will renew,client124@example.com,555-02124,0,9.53,0.3,0
+CUS-2125,Client Name 125,45,Home,1130.66,5,0,3,5,Average,client125@example.com,555-02125,1,21.23,0.0,0
+CUS-2126,Client Name 126,68,Health,2357.33,9,1,4,8,Great service,client126@example.com,555-02126,0,44.92,0.11,0
+CUS-2127,Client Name 127,38,Home,2073.9,0,5,4,1,Poor support,client127@example.com,555-02127,0,46.65,5.0,0
+CUS-2128,Client Name 128,31,Home,2854.55,4,1,4,5,Great service,client128@example.com,555-02128,0,10.75,0.25,0
+CUS-2129,Client Name 129,75,Auto,1876.24,5,5,2,8,Poor support,client129@example.com,555-02129,1,8.05,1.0,0
+CUS-2130,Client Name 130,75,Life,1809.41,2,1,4,0,Great service,client130@example.com,555-02130,0,48.01,0.5,0
+CUS-2131,Client Name 131,29,Auto,2485.98,6,4,5,3,Too expensive,client131@example.com,555-02131,1,24.7,0.67,0
+CUS-2132,Client Name 132,71,Home,1906.25,9,1,3,6,Will renew,client132@example.com,555-02132,1,36.35,0.11,0
+CUS-2133,Client Name 133,80,Life,1759.54,4,5,5,8,Will renew,client133@example.com,555-02133,1,10.36,1.25,0
+CUS-2134,Client Name 134,50,Life,614.03,0,2,1,4,Great service,client134@example.com,555-02134,0,33.91,2.0,0
+CUS-2135,Client Name 135,53,Life,2973.84,1,4,1,8,Great service,client135@example.com,555-02135,1,47.59,4.0,0
+CUS-2136,Client Name 136,55,Life,2305.2,4,0,3,9,Too expensive,client136@example.com,555-02136,1,37.87,0.0,0
+CUS-2137,Client Name 137,57,Auto,941.84,10,4,0,8,Poor support,client137@example.com,555-02137,0,47.55,0.4,0
+CUS-2138,Client Name 138,54,Life,2675.06,8,2,5,9,Too expensive,client138@example.com,555-02138,1,31.17,0.25,0
+CUS-2139,Client Name 139,72,Home,889.1,5,3,1,6,Poor support,client139@example.com,555-02139,0,13.33,0.6,0
+CUS-2140,Client Name 140,44,Health,972.15,10,1,3,2,Will renew,client140@example.com,555-02140,0,13.45,0.1,0
+CUS-2141,Client Name 141,40,Home,680.12,10,4,1,7,Great service,client141@example.com,555-02141,0,32.15,0.4,0
+CUS-2142,Client Name 142,70,Life,1459.98,10,0,0,0,Too expensive,client142@example.com,555-02142,0,47.24,0.0,0
+CUS-2143,Client Name 143,23,Auto,2481.0,8,5,0,1,Too expensive,client143@example.com,555-02143,0,11.27,0.62,0
+CUS-2144,Client Name 144,78,Life,2538.66,7,5,2,5,Will renew,client144@example.com,555-02144,1,10.54,0.71,0
+CUS-2145,Client Name 145,27,Home,757.04,8,0,2,1,Great service,client145@example.com,555-02145,0,15.2,0.0,0
+CUS-2146,Client Name 146,71,Auto,868.44,3,5,5,4,Poor support,client146@example.com,555-02146,1,12.63,1.67,0
+CUS-2147,Client Name 147,36,Auto,1061.31,1,0,2,5,Will renew,client147@example.com,555-02147,1,11.8,0.0,0
+CUS-2148,Client Name 148,76,Life,1826.2,10,5,4,2,Will renew,client148@example.com,555-02148,0,41.79,0.5,0
+CUS-2149,Client Name 149,66,Auto,2688.51,10,5,2,7,Great service,client149@example.com,555-02149,0,43.78,0.5,0
+CUS-2150,Client Name 150,41,Auto,2444.46,2,3,1,5,Great service,client150@example.com,555-02150,0,31.0,1.5,0
+CUS-2151,Client Name 151,57,Health,861.67,2,3,2,2,Poor support,client151@example.com,555-02151,1,36.2,1.5,0
+CUS-2152,Client Name 152,74,Health,2004.36,2,1,5,5,Poor support,client152@example.com,555-02152,1,29.72,0.5,0
+CUS-2153,Client Name 153,85,Home,1831.19,1,4,1,6,Great service,client153@example.com,555-02153,0,15.58,4.0,0
+CUS-2154,Client Name 154,22,Auto,1008.2,8,0,0,5,Average,client154@example.com,555-02154,0,21.24,0.0,0
+CUS-2155,Client Name 155,39,Home,1236.74,6,0,1,8,Great service,client155@example.com,555-02155,0,48.29,0.0,0
+CUS-2156,Client Name 156,40,Auto,1443.65,5,4,0,6,Poor support,client156@example.com,555-02156,0,42.68,0.8,0
+CUS-2157,Client Name 157,42,Home,575.46,1,3,2,2,Poor support,client157@example.com,555-02157,1,38.46,3.0,1
+CUS-2158,Client Name 158,60,Auto,1675.46,7,2,5,5,Too expensive,client158@example.com,555-02158,1,7.7,0.29,0
+CUS-2159,Client Name 159,26,Health,2010.43,2,5,1,8,Will renew,client159@example.com,555-02159,0,37.01,2.5,0
+CUS-2160,Client Name 160,55,Health,2797.88,3,0,4,4,Too expensive,client160@example.com,555-02160,1,38.44,0.0,0
+CUS-2161,Client Name 161,73,Health,2047.61,2,4,1,6,Poor support,client161@example.com,555-02161,0,19.09,2.0,0
+CUS-2162,Client Name 162,73,Auto,2568.13,5,0,1,0,Great service,client162@example.com,555-02162,0,21.32,0.0,0
+CUS-2163,Client Name 163,64,Life,570.12,8,0,2,2,Too expensive,client163@example.com,555-02163,0,29.83,0.0,0
+CUS-2164,Client Name 164,26,Auto,1100.84,9,3,0,9,Great service,client164@example.com,555-02164,0,19.16,0.33,0
+CUS-2165,Client Name 165,61,Life,521.2,6,3,2,4,Too expensive,client165@example.com,555-02165,0,36.62,0.5,0
+CUS-2166,Client Name 166,34,Health,1328.3,1,0,5,8,Poor support,client166@example.com,555-02166,1,31.39,0.0,0
+CUS-2167,Client Name 167,26,Home,1225.3,7,5,1,10,Too expensive,client167@example.com,555-02167,0,41.34,0.71,0
+CUS-2168,Client Name 168,40,Life,2422.06,8,4,1,8,Poor support,client168@example.com,555-02168,0,40.34,0.5,0
+CUS-2169,Client Name 169,65,Auto,1227.1,0,3,4,6,Too expensive,client169@example.com,555-02169,1,30.51,3.0,1
+CUS-2170,Client Name 170,85,Health,743.52,4,0,0,2,Great service,client170@example.com,555-02170,0,25.47,0.0,0
+CUS-2171,Client Name 171,43,Home,2835.14,4,0,1,1,Poor support,client171@example.com,555-02171,0,16.61,0.0,0
+CUS-2172,Client Name 172,82,Auto,2946.21,2,3,3,10,Average,client172@example.com,555-02172,0,43.66,1.5,0
+CUS-2173,Client Name 173,73,Life,1522.58,2,4,4,10,Great service,client173@example.com,555-02173,1,35.7,2.0,0
+CUS-2174,Client Name 174,79,Auto,1157.07,9,1,5,0,Too expensive,client174@example.com,555-02174,1,43.39,0.11,0
+CUS-2175,Client Name 175,59,Health,1439.55,1,5,4,6,Poor support,client175@example.com,555-02175,0,33.91,5.0,1
+CUS-2176,Client Name 176,81,Auto,772.8,6,2,1,1,Average,client176@example.com,555-02176,0,20.41,0.33,0
+CUS-2177,Client Name 177,84,Health,1031.59,1,1,5,7,Too expensive,client177@example.com,555-02177,1,33.81,1.0,0
+CUS-2178,Client Name 178,62,Home,1920.52,0,3,4,6,Great service,client178@example.com,555-02178,1,14.52,3.0,0
+CUS-2179,Client Name 179,24,Auto,2881.61,4,1,5,6,Average,client179@example.com,555-02179,1,23.23,0.25,0
+CUS-2180,Client Name 180,60,Auto,2684.44,8,1,3,6,Great service,client180@example.com,555-02180,0,45.27,0.12,0
+CUS-2181,Client Name 181,76,Home,1355.05,3,3,2,2,Poor support,client181@example.com,555-02181,0,20.96,1.0,0
+CUS-2182,Client Name 182,71,Home,2557.54,3,4,4,9,Average,client182@example.com,555-02182,1,34.88,1.33,0
+CUS-2183,Client Name 183,62,Health,535.47,7,5,3,2,Average,client183@example.com,555-02183,1,28.43,0.71,0
+CUS-2184,Client Name 184,22,Home,2970.6,7,0,1,10,Too expensive,client184@example.com,555-02184,0,23.91,0.0,0
+CUS-2185,Client Name 185,43,Auto,2002.36,3,4,1,5,Average,client185@example.com,555-02185,0,41.62,1.33,0
+CUS-2186,Client Name 186,24,Life,1254.86,1,3,2,8,Average,client186@example.com,555-02186,1,42.27,3.0,1
+CUS-2187,Client Name 187,76,Health,1807.92,2,4,2,1,Poor support,client187@example.com,555-02187,0,17.83,2.0,1
+CUS-2188,Client Name 188,77,Auto,2085.27,1,0,5,9,Great service,client188@example.com,555-02188,1,32.73,0.0,0
+CUS-2189,Client Name 189,74,Auto,759.19,8,4,5,9,Average,client189@example.com,555-02189,1,43.33,0.5,0
+CUS-2190,Client Name 190,49,Life,1057.2,6,0,3,8,Poor support,client190@example.com,555-02190,0,23.58,0.0,0
+CUS-2191,Client Name 191,72,Life,519.01,8,2,2,3,Poor support,client191@example.com,555-02191,0,35.3,0.25,0
+CUS-2192,Client Name 192,22,Life,2750.47,0,4,3,0,Average,client192@example.com,555-02192,0,12.67,4.0,0
+CUS-2193,Client Name 193,77,Health,1104.58,9,4,3,3,Too expensive,client193@example.com,555-02193,0,47.27,0.44,0
+CUS-2194,Client Name 194,71,Home,2943.39,5,0,1,6,Will renew,client194@example.com,555-02194,0,10.33,0.0,0
+CUS-2195,Client Name 195,72,Auto,2607.58,8,0,5,4,Great service,client195@example.com,555-02195,1,24.68,0.0,0
+CUS-2196,Client Name 196,41,Health,569.55,1,5,5,8,Average,client196@example.com,555-02196,1,13.39,5.0,1
+CUS-2197,Client Name 197,50,Auto,1242.31,6,2,4,3,Too expensive,client197@example.com,555-02197,0,33.23,0.33,0
+CUS-2198,Client Name 198,35,Auto,777.33,1,1,4,1,Great service,client198@example.com,555-02198,1,27.24,1.0,0
+CUS-2199,Client Name 199,68,Health,2781.8,1,0,1,6,Great service,client199@example.com,555-02199,1,14.46,0.0,0
+CUS-2200,Client Name 200,75,Home,1438.14,7,0,2,10,Will renew,client200@example.com,555-02200,1,33.4,0.0,0
+CUS-2201,Client Name 201,26,Home,793.02,7,0,2,5,Will renew,client201@example.com,555-02201,0,38.38,0.0,0
+CUS-2202,Client Name 202,37,Life,982.11,0,1,0,8,Great service,client202@example.com,555-02202,0,45.44,1.0,0
+CUS-2203,Client Name 203,25,Life,1318.85,2,0,1,1,Will renew,client203@example.com,555-02203,0,34.34,0.0,0
+CUS-2204,Client Name 204,81,Home,2362.99,8,2,3,6,Too expensive,client204@example.com,555-02204,0,35.92,0.25,0
+CUS-2205,Client Name 205,57,Health,2904.68,9,5,0,9,Poor support,client205@example.com,555-02205,0,44.73,0.56,0
+CUS-2206,Client Name 206,76,Life,1990.82,9,1,2,5,Average,client206@example.com,555-02206,0,45.41,0.11,0
+CUS-2207,Client Name 207,30,Life,1623.51,4,5,0,8,Poor support,client207@example.com,555-02207,0,6.35,1.25,0
+CUS-2208,Client Name 208,45,Life,2522.6,5,2,3,2,Too expensive,client208@example.com,555-02208,1,40.08,0.4,0
+CUS-2209,Client Name 209,37,Home,524.08,5,2,5,0,Will renew,client209@example.com,555-02209,0,7.98,0.4,0
+CUS-2210,Client Name 210,58,Health,2004.5,1,5,4,3,Poor support,client210@example.com,555-02210,0,19.3,5.0,1
+CUS-2211,Client Name 211,62,Auto,995.38,7,0,0,7,Poor support,client211@example.com,555-02211,0,12.7,0.0,0
+CUS-2212,Client Name 212,63,Health,1977.93,0,4,1,9,Average,client212@example.com,555-02212,0,10.9,4.0,0
+CUS-2213,Client Name 213,73,Health,592.52,0,3,4,8,Average,client213@example.com,555-02213,1,17.36,3.0,1
+CUS-2214,Client Name 214,66,Health,1500.86,7,5,4,5,Poor support,client214@example.com,555-02214,1,43.19,0.71,0
+CUS-2215,Client Name 215,37,Auto,2607.69,0,1,4,1,Average,client215@example.com,555-02215,0,43.76,1.0,0
+CUS-2216,Client Name 216,77,Auto,1065.85,5,0,0,3,Average,client216@example.com,555-02216,0,44.75,0.0,0
+CUS-2217,Client Name 217,27,Life,777.01,4,3,2,1,Too expensive,client217@example.com,555-02217,0,46.62,0.75,0
+CUS-2218,Client Name 218,80,Health,799.75,9,3,2,2,Great service,client218@example.com,555-02218,0,28.48,0.33,0
+CUS-2219,Client Name 219,52,Auto,1944.71,4,1,5,7,Average,client219@example.com,555-02219,1,39.48,0.25,0
+CUS-2220,Client Name 220,32,Auto,1382.52,10,0,1,10,Poor support,client220@example.com,555-02220,0,7.71,0.0,0
+CUS-2221,Client Name 221,23,Life,2176.25,3,4,3,6,Average,client221@example.com,555-02221,1,36.88,1.33,0
+CUS-2222,Client Name 222,41,Home,2619.52,3,3,0,2,Poor support,client222@example.com,555-02222,0,13.46,1.0,0
+CUS-2223,Client Name 223,57,Auto,1557.73,9,0,5,4,Too expensive,client223@example.com,555-02223,1,5.75,0.0,0
+CUS-2224,Client Name 224,80,Auto,967.57,10,0,0,7,Average,client224@example.com,555-02224,0,24.42,0.0,0
+CUS-2225,Client Name 225,41,Auto,1492.32,5,0,3,8,Poor support,client225@example.com,555-02225,1,37.94,0.0,0
+CUS-2226,Client Name 226,76,Health,984.83,2,3,1,6,Great service,client226@example.com,555-02226,0,35.65,1.5,0
+CUS-2227,Client Name 227,53,Auto,2897.43,0,1,1,1,Will renew,client227@example.com,555-02227,0,9.55,1.0,0
+CUS-2228,Client Name 228,50,Life,2706.5,6,5,5,6,Poor support,client228@example.com,555-02228,1,14.26,0.83,0
+CUS-2229,Client Name 229,48,Health,1369.08,4,4,2,9,Average,client229@example.com,555-02229,1,43.37,1.0,0
+CUS-2230,Client Name 230,52,Auto,925.58,2,1,5,1,Poor support,client230@example.com,555-02230,0,24.26,0.5,0
+CUS-2231,Client Name 231,24,Health,943.79,2,4,2,1,Will renew,client231@example.com,555-02231,0,5.05,2.0,1
+CUS-2232,Client Name 232,53,Home,1681.42,9,1,0,0,Too expensive,client232@example.com,555-02232,0,39.89,0.11,0
+CUS-2233,Client Name 233,34,Life,1261.51,7,4,5,5,Poor support,client233@example.com,555-02233,1,16.41,0.57,0
+CUS-2234,Client Name 234,80,Health,533.9,5,4,2,4,Great service,client234@example.com,555-02234,0,17.15,0.8,0
+CUS-2235,Client Name 235,24,Home,869.75,10,0,3,3,Will renew,client235@example.com,555-02235,0,38.35,0.0,0
+CUS-2236,Client Name 236,77,Life,1398.55,3,0,5,1,Will renew,client236@example.com,555-02236,1,45.46,0.0,0
+CUS-2237,Client Name 237,79,Health,2968.33,4,2,4,2,Will renew,client237@example.com,555-02237,1,23.78,0.5,0
+CUS-2238,Client Name 238,57,Health,1273.31,8,0,0,9,Poor support,client238@example.com,555-02238,0,30.5,0.0,0
+CUS-2239,Client Name 239,66,Life,1221.02,10,4,0,7,Will renew,client239@example.com,555-02239,0,30.12,0.4,0
+CUS-2240,Client Name 240,42,Auto,1259.11,4,2,2,1,Great service,client240@example.com,555-02240,1,26.98,0.5,0
+CUS-2241,Client Name 241,22,Home,1575.81,0,2,5,0,Great service,client241@example.com,555-02241,1,37.09,2.0,0
+CUS-2242,Client Name 242,40,Health,2989.79,9,0,1,6,Average,client242@example.com,555-02242,0,16.19,0.0,0
+CUS-2243,Client Name 243,71,Life,1556.41,4,3,0,4,Will renew,client243@example.com,555-02243,0,11.26,0.75,0
+CUS-2244,Client Name 244,47,Health,1125.05,3,4,3,8,Will renew,client244@example.com,555-02244,1,13.25,1.33,0
+CUS-2245,Client Name 245,77,Health,740.11,5,2,4,7,Average,client245@example.com,555-02245,1,24.25,0.4,0
+CUS-2246,Client Name 246,75,Home,2903.62,8,0,3,0,Will renew,client246@example.com,555-02246,0,45.81,0.0,0
+CUS-2247,Client Name 247,53,Auto,1950.81,9,2,2,2,Poor support,client247@example.com,555-02247,0,10.67,0.22,0
+CUS-2248,Client Name 248,22,Auto,1657.02,0,5,4,7,Average,client248@example.com,555-02248,1,30.44,5.0,1
+CUS-2249,Client Name 249,64,Home,2660.79,10,5,0,9,Will renew,client249@example.com,555-02249,0,11.49,0.5,0
+CUS-2250,Client Name 250,85,Health,841.01,2,0,5,10,Will renew,client250@example.com,555-02250,1,35.95,0.0,0
+CUS-2251,Client Name 251,36,Health,667.86,1,0,1,9,Great service,client251@example.com,555-02251,1,42.47,0.0,0
+CUS-2252,Client Name 252,78,Life,1476.78,6,1,0,4,Will renew,client252@example.com,555-02252,0,35.66,0.17,0
+CUS-2253,Client Name 253,37,Home,1580.88,2,1,5,0,Will renew,client253@example.com,555-02253,0,38.37,0.5,0
+CUS-2254,Client Name 254,47,Life,1690.4,10,2,2,4,Poor support,client254@example.com,555-02254,0,22.36,0.2,0
+CUS-2255,Client Name 255,35,Life,1659.91,0,3,3,2,Great service,client255@example.com,555-02255,1,34.03,3.0,1
+CUS-2256,Client Name 256,78,Home,606.58,7,0,2,2,Average,client256@example.com,555-02256,0,27.53,0.0,0
+CUS-2257,Client Name 257,48,Life,1372.09,6,1,5,8,Will renew,client257@example.com,555-02257,1,20.27,0.17,0
+CUS-2258,Client Name 258,39,Health,1195.85,6,3,5,4,Poor support,client258@example.com,555-02258,0,32.26,0.5,0
+CUS-2259,Client Name 259,45,Life,1940.1,8,4,4,10,Will renew,client259@example.com,555-02259,0,32.79,0.5,0
+CUS-2260,Client Name 260,73,Home,668.92,3,5,0,2,Too expensive,client260@example.com,555-02260,0,9.74,1.67,1
+CUS-2261,Client Name 261,44,Auto,2320.41,1,0,3,6,Poor support,client261@example.com,555-02261,1,39.35,0.0,0
+CUS-2262,Client Name 262,25,Home,2808.88,7,4,2,1,Too expensive,client262@example.com,555-02262,0,16.36,0.57,0
+CUS-2263,Client Name 263,78,Auto,2197.12,2,1,1,3,Will renew,client263@example.com,555-02263,0,6.09,0.5,0
+CUS-2264,Client Name 264,34,Life,1008.85,5,0,1,0,Too expensive,client264@example.com,555-02264,0,35.71,0.0,0
+CUS-2265,Client Name 265,85,Home,975.34,7,4,1,9,Great service,client265@example.com,555-02265,0,24.75,0.57,0
+CUS-2266,Client Name 266,70,Health,2684.94,2,0,4,1,Too expensive,client266@example.com,555-02266,1,7.32,0.0,0
+CUS-2267,Client Name 267,64,Life,556.36,6,1,2,4,Great service,client267@example.com,555-02267,1,29.05,0.17,0
+CUS-2268,Client Name 268,52,Auto,2632.99,4,5,4,8,Will renew,client268@example.com,555-02268,1,26.19,1.25,0
+CUS-2269,Client Name 269,55,Home,2133.08,6,0,0,5,Too expensive,client269@example.com,555-02269,0,29.62,0.0,0
+CUS-2270,Client Name 270,64,Auto,2810.44,3,4,5,0,Average,client270@example.com,555-02270,0,49.15,1.33,0
+CUS-2271,Client Name 271,75,Auto,1995.37,8,5,4,1,Great service,client271@example.com,555-02271,1,6.6,0.62,0
+CUS-2272,Client Name 272,50,Auto,2125.84,4,1,3,7,Great service,client272@example.com,555-02272,0,6.19,0.25,0
+CUS-2273,Client Name 273,47,Health,1835.46,10,0,3,10,Poor support,client273@example.com,555-02273,0,36.29,0.0,0
+CUS-2274,Client Name 274,77,Life,2253.34,1,2,4,2,Poor support,client274@example.com,555-02274,0,46.31,2.0,1
+CUS-2275,Client Name 275,52,Auto,1080.08,3,4,4,0,Great service,client275@example.com,555-02275,0,44.3,1.33,0
+CUS-2276,Client Name 276,53,Life,2531.55,2,2,0,0,Will renew,client276@example.com,555-02276,0,34.48,1.0,0
+CUS-2277,Client Name 277,53,Auto,2995.22,6,0,1,9,Average,client277@example.com,555-02277,1,47.23,0.0,0
+CUS-2278,Client Name 278,48,Life,1737.32,3,2,5,5,Too expensive,client278@example.com,555-02278,1,28.71,0.67,0
+CUS-2279,Client Name 279,56,Health,1297.15,1,5,4,8,Average,client279@example.com,555-02279,0,8.53,5.0,0
+CUS-2280,Client Name 280,39,Home,2603.56,4,2,4,3,Great service,client280@example.com,555-02280,1,49.01,0.5,0
+CUS-2281,Client Name 281,78,Life,2124.77,0,2,3,1,Great service,client281@example.com,555-02281,1,7.69,2.0,1
+CUS-2282,Client Name 282,71,Health,1738.39,7,1,3,6,Will renew,client282@example.com,555-02282,1,7.35,0.14,0
+CUS-2283,Client Name 283,61,Home,578.27,9,2,2,0,Great service,client283@example.com,555-02283,0,20.34,0.22,0
+CUS-2284,Client Name 284,77,Health,2664.36,1,5,5,0,Poor support,client284@example.com,555-02284,0,30.77,5.0,1
+CUS-2285,Client Name 285,55,Auto,906.37,3,5,3,7,Too expensive,client285@example.com,555-02285,1,39.71,1.67,0
+CUS-2286,Client Name 286,59,Auto,1343.83,9,2,3,0,Great service,client286@example.com,555-02286,0,18.81,0.22,0
+CUS-2287,Client Name 287,63,Life,2590.0,7,0,1,7,Poor support,client287@example.com,555-02287,1,33.7,0.0,0
+CUS-2288,Client Name 288,49,Health,1521.53,4,0,4,1,Too expensive,client288@example.com,555-02288,0,16.61,0.0,0
+CUS-2289,Client Name 289,57,Auto,1148.85,3,4,3,2,Too expensive,client289@example.com,555-02289,1,10.15,1.33,0
+CUS-2290,Client Name 290,26,Auto,960.64,9,1,4,7,Average,client290@example.com,555-02290,0,48.89,0.11,0
+CUS-2291,Client Name 291,24,Health,2195.97,0,0,2,8,Great service,client291@example.com,555-02291,1,28.0,0.0,0
+CUS-2292,Client Name 292,52,Home,1010.1,10,2,4,5,Great service,client292@example.com,555-02292,0,19.69,0.2,0
+CUS-2293,Client Name 293,68,Auto,1337.46,5,4,3,10,Too expensive,client293@example.com,555-02293,0,21.57,0.8,0
+CUS-2294,Client Name 294,59,Life,2825.77,1,4,4,0,Too expensive,client294@example.com,555-02294,0,22.05,4.0,0
+CUS-2295,Client Name 295,26,Health,2142.65,10,1,1,6,Will renew,client295@example.com,555-02295,0,37.99,0.1,0
+CUS-2296,Client Name 296,28,Life,2017.76,8,4,5,8,Too expensive,client296@example.com,555-02296,1,19.79,0.5,0
+CUS-2297,Client Name 297,68,Life,1077.23,3,3,2,1,Great service,client297@example.com,555-02297,0,20.84,1.0,0
+CUS-2298,Client Name 298,31,Home,2786.59,9,1,5,7,Will renew,client298@example.com,555-02298,0,16.02,0.11,0
+CUS-2299,Client Name 299,74,Auto,2185.26,9,2,5,2,Great service,client299@example.com,555-02299,1,23.38,0.22,0
+CUS-2300,Client Name 300,40,Health,1940.03,2,0,5,3,Average,client300@example.com,555-02300,1,39.45,0.0,0
+CUS-2301,Client Name 301,82,Home,2357.13,6,0,1,0,Will renew,client301@example.com,555-02301,0,44.01,0.0,0
+CUS-2302,Client Name 302,71,Auto,2760.65,6,2,2,2,Average,client302@example.com,555-02302,0,45.38,0.33,0
+CUS-2303,Client Name 303,65,Health,1978.7,0,3,4,1,Poor support,client303@example.com,555-02303,0,18.02,3.0,0
+CUS-2304,Client Name 304,83,Home,2250.28,9,0,5,2,Great service,client304@example.com,555-02304,0,31.71,0.0,0
+CUS-2305,Client Name 305,69,Life,2184.77,5,4,3,6,Great service,client305@example.com,555-02305,0,15.45,0.8,0
+CUS-2306,Client Name 306,85,Life,1352.79,8,3,4,8,Average,client306@example.com,555-02306,0,22.28,0.38,0
+CUS-2307,Client Name 307,44,Life,2883.78,6,4,0,3,Great service,client307@example.com,555-02307,0,20.63,0.67,0
+CUS-2308,Client Name 308,43,Auto,796.38,7,2,2,7,Too expensive,client308@example.com,555-02308,1,34.99,0.29,0
+CUS-2309,Client Name 309,40,Home,739.94,2,4,4,8,Great service,client309@example.com,555-02309,0,26.98,2.0,1
+CUS-2310,Client Name 310,25,Life,1423.85,6,3,2,9,Great service,client310@example.com,555-02310,0,37.23,0.5,0
+CUS-2311,Client Name 311,37,Auto,1611.01,4,2,3,7,Average,client311@example.com,555-02311,1,41.16,0.5,0
+CUS-2312,Client Name 312,50,Auto,2318.4,8,5,2,2,Average,client312@example.com,555-02312,0,45.15,0.62,0
+CUS-2313,Client Name 313,26,Auto,1583.44,5,5,5,8,Great service,client313@example.com,555-02313,1,16.07,1.0,0
+CUS-2314,Client Name 314,70,Health,2680.29,3,1,1,10,Average,client314@example.com,555-02314,1,10.93,0.33,0
+CUS-2315,Client Name 315,33,Home,2877.08,0,4,5,3,Great service,client315@example.com,555-02315,1,23.82,4.0,1
+CUS-2316,Client Name 316,55,Life,2033.45,3,5,5,9,Too expensive,client316@example.com,555-02316,1,44.38,1.67,0
+CUS-2317,Client Name 317,84,Home,1725.55,9,0,5,6,Great service,client317@example.com,555-02317,1,48.33,0.0,0
+CUS-2318,Client Name 318,58,Life,1548.99,3,3,3,5,Great service,client318@example.com,555-02318,1,20.64,1.0,0
+CUS-2319,Client Name 319,72,Life,2262.05,9,2,3,7,Will renew,client319@example.com,555-02319,1,14.68,0.22,0
+CUS-2320,Client Name 320,74,Health,652.01,10,3,2,4,Poor support,client320@example.com,555-02320,0,16.73,0.3,0
+CUS-2321,Client Name 321,28,Health,1170.79,5,3,5,3,Too expensive,client321@example.com,555-02321,1,30.76,0.6,0
+CUS-2322,Client Name 322,43,Auto,1840.03,9,4,5,1,Great service,client322@example.com,555-02322,1,41.11,0.44,0
+CUS-2323,Client Name 323,33,Life,2451.08,8,1,2,5,Will renew,client323@example.com,555-02323,1,13.93,0.12,0
+CUS-2324,Client Name 324,42,Health,2595.37,4,2,3,3,Too expensive,client324@example.com,555-02324,0,29.88,0.5,0
+CUS-2325,Client Name 325,53,Auto,2850.03,8,3,0,0,Too expensive,client325@example.com,555-02325,0,17.74,0.38,0
+CUS-2326,Client Name 326,25,Home,1075.01,0,3,5,3,Average,client326@example.com,555-02326,1,43.79,3.0,1
+CUS-2327,Client Name 327,31,Auto,684.73,0,4,5,6,Will renew,client327@example.com,555-02327,1,40.67,4.0,0
+CUS-2328,Client Name 328,46,Health,2578.68,6,2,2,5,Too expensive,client328@example.com,555-02328,1,9.49,0.33,0
+CUS-2329,Client Name 329,82,Life,1441.45,3,3,3,1,Will renew,client329@example.com,555-02329,0,27.8,1.0,0
+CUS-2330,Client Name 330,70,Home,543.03,5,3,3,6,Will renew,client330@example.com,555-02330,0,48.88,0.6,0
+CUS-2331,Client Name 331,72,Home,2428.01,7,2,3,5,Great service,client331@example.com,555-02331,0,9.29,0.29,0
+CUS-2332,Client Name 332,43,Home,1019.2,3,3,3,9,Great service,client332@example.com,555-02332,1,39.53,1.0,0
+CUS-2333,Client Name 333,54,Auto,1529.65,2,4,5,5,Average,client333@example.com,555-02333,1,36.07,2.0,1
+CUS-2334,Client Name 334,84,Auto,1863.97,3,4,2,10,Great service,client334@example.com,555-02334,0,24.16,1.33,0
+CUS-2335,Client Name 335,31,Auto,1439.22,8,3,0,2,Great service,client335@example.com,555-02335,0,44.85,0.38,0
+CUS-2336,Client Name 336,85,Auto,926.81,2,3,4,7,Average,client336@example.com,555-02336,1,10.29,1.5,0
+CUS-2337,Client Name 337,59,Home,2299.86,8,4,5,4,Too expensive,client337@example.com,555-02337,0,18.06,0.5,0
+CUS-2338,Client Name 338,48,Life,2507.03,8,1,5,5,Too expensive,client338@example.com,555-02338,1,12.39,0.12,0
+CUS-2339,Client Name 339,82,Life,524.55,2,0,3,2,Too expensive,client339@example.com,555-02339,0,13.97,0.0,0
+CUS-2340,Client Name 340,34,Life,1844.33,0,0,2,1,Will renew,client340@example.com,555-02340,0,44.75,0.0,0
+CUS-2341,Client Name 341,66,Life,2072.05,4,4,1,4,Average,client341@example.com,555-02341,0,33.1,1.0,0
+CUS-2342,Client Name 342,73,Auto,2835.77,10,1,4,8,Too expensive,client342@example.com,555-02342,1,17.6,0.1,0
+CUS-2343,Client Name 343,55,Life,1909.15,9,4,1,8,Will renew,client343@example.com,555-02343,0,35.08,0.44,0
+CUS-2344,Client Name 344,82,Home,1023.27,3,1,0,3,Too expensive,client344@example.com,555-02344,0,26.4,0.33,0
+CUS-2345,Client Name 345,22,Life,1308.34,8,3,0,2,Average,client345@example.com,555-02345,0,27.52,0.38,0
+CUS-2346,Client Name 346,37,Life,1101.93,6,4,3,6,Will renew,client346@example.com,555-02346,1,8.52,0.67,0
+CUS-2347,Client Name 347,49,Life,2888.4,2,3,5,4,Great service,client347@example.com,555-02347,1,30.11,1.5,0
+CUS-2348,Client Name 348,77,Health,2130.23,5,2,1,0,Too expensive,client348@example.com,555-02348,0,32.76,0.4,0
+CUS-2349,Client Name 349,46,Life,1456.14,3,0,1,0,Average,client349@example.com,555-02349,0,9.23,0.0,0
+CUS-2350,Client Name 350,69,Health,2789.52,9,5,4,0,Poor support,client350@example.com,555-02350,0,6.98,0.56,0
+CUS-2351,Client Name 351,54,Health,1185.43,0,4,0,9,Too expensive,client351@example.com,555-02351,0,26.31,4.0,1
+CUS-2352,Client Name 352,35,Auto,595.48,2,1,0,9,Poor support,client352@example.com,555-02352,1,42.53,0.5,0
+CUS-2353,Client Name 353,37,Auto,640.12,5,1,5,0,Average,client353@example.com,555-02353,0,42.68,0.2,0
+CUS-2354,Client Name 354,62,Health,2744.34,5,3,1,9,Great service,client354@example.com,555-02354,0,7.92,0.6,0
+CUS-2355,Client Name 355,40,Health,2322.39,7,5,0,2,Too expensive,client355@example.com,555-02355,0,33.59,0.71,0
+CUS-2356,Client Name 356,22,Health,1277.91,1,5,4,5,Great service,client356@example.com,555-02356,1,10.23,5.0,1
+CUS-2357,Client Name 357,33,Auto,956.25,5,1,0,2,Too expensive,client357@example.com,555-02357,0,33.71,0.2,0
+CUS-2358,Client Name 358,80,Home,703.19,4,1,5,3,Average,client358@example.com,555-02358,1,7.4,0.25,0
+CUS-2359,Client Name 359,58,Home,945.01,5,2,1,9,Too expensive,client359@example.com,555-02359,0,49.07,0.4,0
+CUS-2360,Client Name 360,55,Health,2243.9,7,5,2,1,Too expensive,client360@example.com,555-02360,0,6.65,0.71,0
+CUS-2361,Client Name 361,71,Home,889.26,6,2,4,3,Average,client361@example.com,555-02361,0,36.48,0.33,0
+CUS-2362,Client Name 362,56,Home,726.89,3,0,1,4,Poor support,client362@example.com,555-02362,1,11.29,0.0,0
+CUS-2363,Client Name 363,63,Life,1430.71,9,0,3,10,Great service,client363@example.com,555-02363,1,12.14,0.0,0
+CUS-2364,Client Name 364,82,Home,1336.78,2,3,5,1,Great service,client364@example.com,555-02364,1,24.76,1.5,0
+CUS-2365,Client Name 365,80,Life,1983.94,6,5,5,6,Will renew,client365@example.com,555-02365,1,20.2,0.83,0
+CUS-2366,Client Name 366,73,Auto,1250.43,1,4,1,8,Too expensive,client366@example.com,555-02366,0,28.05,4.0,1
+CUS-2367,Client Name 367,60,Home,2716.49,3,1,5,8,Average,client367@example.com,555-02367,1,40.49,0.33,0
+CUS-2368,Client Name 368,28,Home,2925.81,5,0,2,2,Too expensive,client368@example.com,555-02368,0,44.73,0.0,0
+CUS-2369,Client Name 369,60,Life,1268.82,3,1,1,3,Great service,client369@example.com,555-02369,0,26.48,0.33,0
+CUS-2370,Client Name 370,66,Health,749.78,6,5,4,10,Poor support,client370@example.com,555-02370,0,36.78,0.83,0
+CUS-2371,Client Name 371,34,Health,1468.93,6,5,2,2,Will renew,client371@example.com,555-02371,0,22.72,0.83,0
+CUS-2372,Client Name 372,31,Life,1367.17,0,1,5,9,Average,client372@example.com,555-02372,1,20.29,1.0,0
+CUS-2373,Client Name 373,22,Home,2026.42,10,0,3,1,Average,client373@example.com,555-02373,0,24.59,0.0,0
+CUS-2374,Client Name 374,65,Auto,1460.17,2,3,1,6,Average,client374@example.com,555-02374,0,48.13,1.5,0
+CUS-2375,Client Name 375,75,Life,948.79,8,0,3,10,Great service,client375@example.com,555-02375,1,34.51,0.0,0
+CUS-2376,Client Name 376,73,Health,2508.88,5,5,0,2,Great service,client376@example.com,555-02376,0,26.88,1.0,0
+CUS-2377,Client Name 377,73,Health,1556.14,6,4,0,4,Will renew,client377@example.com,555-02377,0,21.78,0.67,0
+CUS-2378,Client Name 378,82,Auto,2280.06,1,4,4,5,Too expensive,client378@example.com,555-02378,0,5.31,4.0,0
+CUS-2379,Client Name 379,55,Health,994.03,6,0,4,7,Poor support,client379@example.com,555-02379,1,21.52,0.0,0
+CUS-2380,Client Name 380,69,Home,1130.82,4,2,2,10,Average,client380@example.com,555-02380,1,21.06,0.5,0
+CUS-2381,Client Name 381,24,Health,1616.93,0,0,2,10,Too expensive,client381@example.com,555-02381,1,12.89,0.0,0
+CUS-2382,Client Name 382,34,Home,815.14,7,3,1,10,Will renew,client382@example.com,555-02382,1,30.61,0.43,0
+CUS-2383,Client Name 383,27,Health,691.34,2,0,2,0,Will renew,client383@example.com,555-02383,0,49.11,0.0,0
+CUS-2384,Client Name 384,32,Life,1344.43,6,5,5,4,Great service,client384@example.com,555-02384,1,42.66,0.83,0
+CUS-2385,Client Name 385,77,Home,2912.9,4,4,1,9,Great service,client385@example.com,555-02385,0,21.84,1.0,0
+CUS-2386,Client Name 386,82,Home,1038.02,2,4,3,4,Average,client386@example.com,555-02386,0,17.27,2.0,1
+CUS-2387,Client Name 387,74,Home,1017.84,2,5,3,10,Too expensive,client387@example.com,555-02387,1,5.81,2.5,1
+CUS-2388,Client Name 388,63,Life,1052.64,9,5,4,4,Will renew,client388@example.com,555-02388,0,22.51,0.56,0
+CUS-2389,Client Name 389,23,Home,1357.38,7,3,2,5,Will renew,client389@example.com,555-02389,0,36.4,0.43,0
+CUS-2390,Client Name 390,71,Life,1139.23,9,4,0,10,Great service,client390@example.com,555-02390,0,14.34,0.44,0
+CUS-2391,Client Name 391,69,Home,1260.08,10,4,2,7,Will renew,client391@example.com,555-02391,0,20.82,0.4,0
+CUS-2392,Client Name 392,77,Home,1538.48,8,3,0,4,Poor support,client392@example.com,555-02392,0,32.32,0.38,0
+CUS-2393,Client Name 393,37,Health,742.45,1,1,1,3,Will renew,client393@example.com,555-02393,1,23.38,1.0,0
+CUS-2394,Client Name 394,49,Life,1545.45,5,5,4,4,Will renew,client394@example.com,555-02394,0,29.1,1.0,0
+CUS-2395,Client Name 395,72,Home,1062.75,7,1,3,7,Poor support,client395@example.com,555-02395,0,17.98,0.14,0
+CUS-2396,Client Name 396,64,Health,2407.34,10,5,5,2,Poor support,client396@example.com,555-02396,1,23.46,0.5,0
+CUS-2397,Client Name 397,25,Health,2047.19,9,4,1,9,Great service,client397@example.com,555-02397,1,19.63,0.44,0
+CUS-2398,Client Name 398,53,Health,916.15,10,5,5,7,Will renew,client398@example.com,555-02398,1,28.01,0.5,0
+CUS-2399,Client Name 399,46,Home,2625.77,5,3,1,7,Average,client399@example.com,555-02399,1,10.97,0.6,0
+CUS-2400,Client Name 400,30,Home,2736.11,7,3,1,9,Too expensive,client400@example.com,555-02400,0,48.78,0.43,0
+CUS-2401,Client Name 401,36,Auto,2509.22,3,0,2,2,Poor support,client401@example.com,555-02401,0,44.02,0.0,0
+CUS-2402,Client Name 402,82,Auto,2655.42,4,5,0,6,Poor support,client402@example.com,555-02402,0,26.64,1.25,0
+CUS-2403,Client Name 403,29,Health,1232.41,5,5,3,0,Poor support,client403@example.com,555-02403,0,40.43,1.0,0
+CUS-2404,Client Name 404,35,Home,864.96,1,5,2,9,Poor support,client404@example.com,555-02404,1,14.45,5.0,1
+CUS-2405,Client Name 405,34,Life,1325.06,7,1,5,1,Average,client405@example.com,555-02405,1,18.29,0.14,0
+CUS-2406,Client Name 406,78,Home,1326.65,9,1,3,4,Will renew,client406@example.com,555-02406,1,17.98,0.11,0
+CUS-2407,Client Name 407,50,Life,2700.43,4,4,4,5,Poor support,client407@example.com,555-02407,0,37.09,1.0,0
+CUS-2408,Client Name 408,59,Home,886.1,2,2,5,2,Great service,client408@example.com,555-02408,0,43.29,1.0,0
+CUS-2409,Client Name 409,60,Health,870.91,5,4,0,4,Poor support,client409@example.com,555-02409,0,32.83,0.8,0
+CUS-2410,Client Name 410,43,Health,2931.01,9,2,5,2,Poor support,client410@example.com,555-02410,1,34.18,0.22,0
+CUS-2411,Client Name 411,83,Home,938.47,10,2,3,0,Too expensive,client411@example.com,555-02411,0,11.75,0.2,0
+CUS-2412,Client Name 412,37,Home,2124.99,7,0,2,7,Too expensive,client412@example.com,555-02412,0,21.36,0.0,0
+CUS-2413,Client Name 413,26,Auto,1496.23,8,4,0,5,Great service,client413@example.com,555-02413,0,25.1,0.5,0
+CUS-2414,Client Name 414,53,Health,1111.73,10,5,5,2,Too expensive,client414@example.com,555-02414,1,6.81,0.5,0
+CUS-2415,Client Name 415,56,Home,1879.94,1,2,0,3,Too expensive,client415@example.com,555-02415,1,31.36,2.0,1
+CUS-2416,Client Name 416,83,Auto,1660.68,5,3,4,0,Poor support,client416@example.com,555-02416,1,8.75,0.6,0
+CUS-2417,Client Name 417,47,Health,749.69,9,4,4,3,Great service,client417@example.com,555-02417,0,37.4,0.44,0
+CUS-2418,Client Name 418,78,Life,2443.49,10,0,1,9,Poor support,client418@example.com,555-02418,0,32.06,0.0,0
+CUS-2419,Client Name 419,85,Life,2077.82,7,2,2,8,Will renew,client419@example.com,555-02419,0,16.21,0.29,0
+CUS-2420,Client Name 420,57,Health,2194.61,10,1,4,4,Great service,client420@example.com,555-02420,0,19.36,0.1,0
+CUS-2421,Client Name 421,82,Life,1739.47,6,3,1,1,Will renew,client421@example.com,555-02421,0,42.02,0.5,0
+CUS-2422,Client Name 422,46,Health,2446.98,4,4,1,3,Great service,client422@example.com,555-02422,0,35.81,1.0,0
+CUS-2423,Client Name 423,48,Home,1927.52,2,1,1,5,Will renew,client423@example.com,555-02423,0,34.82,0.5,0
+CUS-2424,Client Name 424,63,Home,2891.77,9,2,3,10,Average,client424@example.com,555-02424,0,26.24,0.22,0
+CUS-2425,Client Name 425,60,Health,1426.98,5,2,2,5,Will renew,client425@example.com,555-02425,1,22.71,0.4,0
+CUS-2426,Client Name 426,75,Life,514.18,6,3,3,0,Great service,client426@example.com,555-02426,0,41.83,0.5,0
+CUS-2427,Client Name 427,47,Health,1021.52,4,3,5,4,Average,client427@example.com,555-02427,1,30.11,0.75,0
+CUS-2428,Client Name 428,47,Home,2493.69,7,1,4,8,Average,client428@example.com,555-02428,1,37.53,0.14,0
+CUS-2429,Client Name 429,82,Home,2880.11,6,3,0,10,Average,client429@example.com,555-02429,0,49.41,0.5,0
+CUS-2430,Client Name 430,70,Auto,648.29,5,2,0,10,Poor support,client430@example.com,555-02430,0,11.04,0.4,0
+CUS-2431,Client Name 431,31,Auto,1311.36,2,4,5,6,Poor support,client431@example.com,555-02431,1,16.04,2.0,1
+CUS-2432,Client Name 432,55,Life,1891.69,2,5,2,0,Average,client432@example.com,555-02432,1,45.73,2.5,0
+CUS-2433,Client Name 433,79,Home,2368.18,5,2,1,2,Average,client433@example.com,555-02433,0,16.49,0.4,0
+CUS-2434,Client Name 434,24,Auto,850.67,6,0,5,6,Will renew,client434@example.com,555-02434,1,21.81,0.0,0
+CUS-2435,Client Name 435,77,Auto,2989.14,8,5,4,5,Great service,client435@example.com,555-02435,0,30.44,0.62,0
+CUS-2436,Client Name 436,36,Auto,1829.41,9,1,4,1,Poor support,client436@example.com,555-02436,0,41.8,0.11,0
+CUS-2437,Client Name 437,81,Life,1628.22,10,4,5,2,Poor support,client437@example.com,555-02437,1,28.75,0.4,0
+CUS-2438,Client Name 438,77,Auto,2723.49,4,0,3,9,Too expensive,client438@example.com,555-02438,0,19.51,0.0,0
+CUS-2439,Client Name 439,41,Home,1147.13,10,5,1,9,Will renew,client439@example.com,555-02439,0,46.64,0.5,0
+CUS-2440,Client Name 440,41,Auto,972.12,4,4,1,3,Too expensive,client440@example.com,555-02440,1,29.3,1.0,0
+CUS-2441,Client Name 441,30,Life,1318.65,10,3,2,3,Too expensive,client441@example.com,555-02441,0,47.13,0.3,0
+CUS-2442,Client Name 442,49,Health,2430.86,7,0,0,2,Too expensive,client442@example.com,555-02442,0,22.12,0.0,0
+CUS-2443,Client Name 443,79,Auto,1596.37,6,1,1,3,Too expensive,client443@example.com,555-02443,0,39.05,0.17,0
+CUS-2444,Client Name 444,37,Home,2851.74,5,1,5,9,Great service,client444@example.com,555-02444,1,40.99,0.2,0
+CUS-2445,Client Name 445,68,Health,1694.95,7,3,4,1,Great service,client445@example.com,555-02445,0,20.96,0.43,0
+CUS-2446,Client Name 446,61,Health,2591.34,4,5,3,10,Poor support,client446@example.com,555-02446,0,5.71,1.25,0
+CUS-2447,Client Name 447,57,Home,2324.07,2,0,2,0,Will renew,client447@example.com,555-02447,1,12.01,0.0,0
+CUS-2448,Client Name 448,82,Health,2405.72,3,2,0,9,Too expensive,client448@example.com,555-02448,0,23.87,0.67,0
+CUS-2449,Client Name 449,44,Auto,2840.73,2,1,1,10,Poor support,client449@example.com,555-02449,0,14.18,0.5,0
+CUS-2450,Client Name 450,73,Health,2063.28,5,0,2,9,Great service,client450@example.com,555-02450,1,38.07,0.0,0
+CUS-2451,Client Name 451,40,Home,2783.94,6,1,0,8,Great service,client451@example.com,555-02451,0,5.67,0.17,0
+CUS-2452,Client Name 452,50,Health,730.31,7,4,0,1,Too expensive,client452@example.com,555-02452,0,43.56,0.57,0
+CUS-2453,Client Name 453,22,Auto,1278.58,2,4,3,4,Poor support,client453@example.com,555-02453,0,27.18,2.0,1
+CUS-2454,Client Name 454,47,Health,814.58,2,0,4,2,Average,client454@example.com,555-02454,1,44.91,0.0,0
+CUS-2455,Client Name 455,35,Life,1124.45,10,3,2,2,Too expensive,client455@example.com,555-02455,0,19.76,0.3,0
+CUS-2456,Client Name 456,69,Auto,2153.0,6,1,4,0,Too expensive,client456@example.com,555-02456,0,33.56,0.17,0
+CUS-2457,Client Name 457,52,Health,904.71,9,1,2,0,Poor support,client457@example.com,555-02457,0,49.67,0.11,0
+CUS-2458,Client Name 458,80,Life,2053.28,1,4,4,7,Too expensive,client458@example.com,555-02458,1,16.49,4.0,0
+CUS-2459,Client Name 459,84,Life,2430.02,1,4,3,10,Poor support,client459@example.com,555-02459,1,33.9,4.0,1
+CUS-2460,Client Name 460,38,Health,736.46,1,2,3,1,Will renew,client460@example.com,555-02460,1,49.29,2.0,1
+CUS-2461,Client Name 461,32,Home,2915.73,6,4,4,2,Too expensive,client461@example.com,555-02461,0,42.8,0.67,0
+CUS-2462,Client Name 462,50,Auto,2439.78,8,4,1,5,Will renew,client462@example.com,555-02462,0,21.32,0.5,0
+CUS-2463,Client Name 463,51,Home,2234.24,5,5,4,2,Too expensive,client463@example.com,555-02463,0,29.34,1.0,0
+CUS-2464,Client Name 464,76,Health,2645.74,6,3,2,0,Poor support,client464@example.com,555-02464,0,19.49,0.5,0
+CUS-2465,Client Name 465,60,Auto,500.88,10,4,2,8,Great service,client465@example.com,555-02465,0,38.98,0.4,0
+CUS-2466,Client Name 466,39,Home,859.48,6,3,1,3,Too expensive,client466@example.com,555-02466,0,42.54,0.5,0
+CUS-2467,Client Name 467,31,Home,1065.76,6,5,2,2,Too expensive,client467@example.com,555-02467,0,24.95,0.83,0
+CUS-2468,Client Name 468,57,Home,2401.46,1,5,0,10,Poor support,client468@example.com,555-02468,0,18.45,5.0,1
+CUS-2469,Client Name 469,37,Life,1853.15,2,5,4,7,Great service,client469@example.com,555-02469,0,22.17,2.5,1
+CUS-2470,Client Name 470,54,Life,782.09,9,3,3,6,Too expensive,client470@example.com,555-02470,0,28.53,0.33,0
+CUS-2471,Client Name 471,33,Health,2994.01,5,3,4,9,Poor support,client471@example.com,555-02471,0,7.55,0.6,0
+CUS-2472,Client Name 472,35,Life,2662.92,4,5,2,4,Average,client472@example.com,555-02472,0,8.74,1.25,0
+CUS-2473,Client Name 473,34,Life,2282.74,9,5,3,3,Great service,client473@example.com,555-02473,0,49.88,0.56,0
+CUS-2474,Client Name 474,84,Auto,1901.68,9,3,4,6,Will renew,client474@example.com,555-02474,0,9.85,0.33,0
+CUS-2475,Client Name 475,34,Health,1939.06,5,4,0,3,Poor support,client475@example.com,555-02475,0,37.32,0.8,0
+CUS-2476,Client Name 476,27,Health,1368.26,9,3,3,7,Great service,client476@example.com,555-02476,1,14.72,0.33,0
+CUS-2477,Client Name 477,45,Health,560.36,4,5,2,1,Average,client477@example.com,555-02477,0,21.14,1.25,0
+CUS-2478,Client Name 478,66,Life,1380.95,7,5,1,4,Too expensive,client478@example.com,555-02478,0,14.42,0.71,0
+CUS-2479,Client Name 479,63,Home,2351.76,7,4,2,2,Average,client479@example.com,555-02479,0,42.29,0.57,0
+CUS-2480,Client Name 480,34,Health,2785.43,6,1,0,10,Too expensive,client480@example.com,555-02480,0,16.91,0.17,0
+CUS-2481,Client Name 481,84,Home,1376.48,2,0,3,5,Will renew,client481@example.com,555-02481,1,18.97,0.0,0
+CUS-2482,Client Name 482,59,Auto,2391.93,6,0,4,2,Will renew,client482@example.com,555-02482,1,46.16,0.0,0
+CUS-2483,Client Name 483,73,Auto,2630.52,8,3,1,5,Average,client483@example.com,555-02483,0,32.6,0.38,0
+CUS-2484,Client Name 484,32,Home,1309.59,0,2,1,7,Too expensive,client484@example.com,555-02484,1,16.04,2.0,1
+CUS-2485,Client Name 485,50,Health,1600.89,0,4,1,2,Poor support,client485@example.com,555-02485,0,30.03,4.0,1
+CUS-2486,Client Name 486,46,Life,1530.81,6,3,4,9,Average,client486@example.com,555-02486,0,41.15,0.5,0
+CUS-2487,Client Name 487,55,Home,1578.29,5,5,2,3,Average,client487@example.com,555-02487,1,43.7,1.0,0
+CUS-2488,Client Name 488,53,Life,2488.89,1,4,4,2,Great service,client488@example.com,555-02488,0,41.33,4.0,0
+CUS-2489,Client Name 489,51,Auto,2300.27,8,2,5,10,Poor support,client489@example.com,555-02489,1,32.85,0.25,0
+CUS-2490,Client Name 490,85,Life,1977.66,0,0,0,2,Poor support,client490@example.com,555-02490,0,44.04,0.0,0
+CUS-2491,Client Name 491,40,Auto,659.44,4,5,2,1,Will renew,client491@example.com,555-02491,0,27.09,1.25,0
+CUS-2492,Client Name 492,39,Life,2965.52,7,2,1,10,Too expensive,client492@example.com,555-02492,0,30.64,0.29,0
+CUS-2493,Client Name 493,74,Auto,860.58,9,4,4,10,Average,client493@example.com,555-02493,1,31.44,0.44,0
+CUS-2494,Client Name 494,31,Home,2034.63,2,4,4,6,Too expensive,client494@example.com,555-02494,1,6.33,2.0,0
+CUS-2495,Client Name 495,85,Health,2321.67,1,5,2,1,Poor support,client495@example.com,555-02495,0,36.34,5.0,1
+CUS-2496,Client Name 496,39,Health,2618.16,4,2,1,1,Great service,client496@example.com,555-02496,0,13.31,0.5,0
+CUS-2497,Client Name 497,73,Life,1001.52,10,0,2,10,Great service,client497@example.com,555-02497,0,44.57,0.0,0
+CUS-2498,Client Name 498,29,Auto,2955.03,5,4,0,10,Great service,client498@example.com,555-02498,1,19.71,0.8,0
+CUS-2499,Client Name 499,61,Health,569.13,5,1,4,9,Too expensive,client499@example.com,555-02499,0,29.08,0.2,0
+CUS-2500,Client Name 500,66,Home,742.41,9,3,5,2,Will renew,client500@example.com,555-02500,1,11.7,0.33,0

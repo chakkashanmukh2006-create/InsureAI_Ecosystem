@@ -1,0 +1,501 @@
+lead_id,full_name,age,gender,occupation,annual_income,city,existing_policy,product_interested,website_visits,email_opens,calls_answered,form_submitted,last_interaction_days,lead_source,email,contact_number,conversion_target,income_to_premium_ratio,claim_frequency,is_fraud
+LD-1001,Test User 1,62,Other,Engineer,43359.73,Phoenix,False,Auto,8,0,1,True,8,Paid Search,user1@example.com,555-01001,1,30.94,1.48,0
+LD-1002,Test User 2,60,F,Engineer,33184.32,Los Angeles,False,Life,6,4,5,True,21,Paid Search,user2@example.com,555-01002,1,96.15,0.9,0
+LD-1003,Test User 3,43,Other,Engineer,42265.23,Houston,True,Life,12,10,0,False,12,Paid Search,user3@example.com,555-01003,0,73.41,1.61,1
+LD-1004,Test User 4,24,Other,Doctor,109351.6,Los Angeles,False,Life,9,3,0,False,28,Organic,user4@example.com,555-01004,1,64.82,0.56,0
+LD-1005,Test User 5,32,Other,Teacher,94096.79,Chicago,True,Home,7,0,1,False,15,Referral,user5@example.com,555-01005,0,34.1,1.28,0
+LD-1006,Test User 6,35,M,Doctor,139576.33,Los Angeles,True,Life,18,9,5,False,11,Referral,user6@example.com,555-01006,1,42.58,1.77,1
+LD-1007,Test User 7,30,M,Sales,91143.16,Houston,False,Life,2,8,0,True,28,Organic,user7@example.com,555-01007,0,71.35,1.58,1
+LD-1008,Test User 8,56,Other,Doctor,120105.34,Phoenix,True,Auto,20,10,2,False,4,Paid Search,user8@example.com,555-01008,1,23.76,0.01,0
+LD-1009,Test User 9,70,F,Teacher,49385.88,New York,True,Auto,16,1,0,False,20,Organic,user9@example.com,555-01009,1,98.02,1.86,0
+LD-1010,Test User 10,56,Other,Sales,121900.13,Los Angeles,True,Life,4,6,5,False,16,Referral,user10@example.com,555-01010,1,90.97,1.06,0
+LD-1011,Test User 11,50,M,Engineer,44520.5,New York,True,Auto,7,0,0,False,11,Organic,user11@example.com,555-01011,0,56.27,1.18,0
+LD-1012,Test User 12,39,M,Sales,110277.33,Houston,True,Auto,6,1,4,False,5,Social Media,user12@example.com,555-01012,0,48.12,1.15,0
+LD-1013,Test User 13,51,F,Engineer,133660.41,Los Angeles,True,Home,1,8,5,False,21,Paid Search,user13@example.com,555-01013,1,47.97,0.81,0
+LD-1014,Test User 14,39,Other,Engineer,85515.37,New York,True,Home,2,6,3,False,26,Referral,user14@example.com,555-01014,0,29.24,0.1,0
+LD-1015,Test User 15,47,F,Student,138293.14,Houston,True,Home,5,4,3,True,1,Organic,user15@example.com,555-01015,1,62.13,1.57,1
+LD-1016,Test User 16,56,Other,Engineer,37314.91,Los Angeles,True,Auto,10,10,0,True,2,Referral,user16@example.com,555-01016,0,20.79,1.71,1
+LD-1017,Test User 17,58,F,Doctor,59545.84,Los Angeles,False,Home,19,4,0,False,20,Paid Search,user17@example.com,555-01017,1,70.45,1.13,0
+LD-1018,Test User 18,41,Other,Teacher,84866.95,Phoenix,False,Home,2,5,0,True,15,Paid Search,user18@example.com,555-01018,0,43.26,0.2,0
+LD-1019,Test User 19,32,M,Student,82582.15,Chicago,True,Home,17,4,5,True,10,Organic,user19@example.com,555-01019,0,76.82,1.31,0
+LD-1020,Test User 20,31,F,Engineer,62681.79,New York,False,Life,19,0,1,True,23,Social Media,user20@example.com,555-01020,1,79.4,1.71,1
+LD-1021,Test User 21,62,M,Teacher,147575.75,Phoenix,True,Life,5,9,5,True,15,Referral,user21@example.com,555-01021,1,21.47,0.02,0
+LD-1022,Test User 22,41,Other,Sales,73758.18,Phoenix,True,Home,1,2,2,True,7,Referral,user22@example.com,555-01022,0,12.23,0.71,0
+LD-1023,Test User 23,69,Other,Engineer,140938.48,Houston,True,Health,13,3,5,True,28,Referral,user23@example.com,555-01023,1,41.47,0.32,0
+LD-1024,Test User 24,74,M,Doctor,125441.46,Chicago,False,Life,7,0,1,True,1,Social Media,user24@example.com,555-01024,1,26.07,0.56,0
+LD-1025,Test User 25,38,Other,Engineer,34590.86,Houston,True,Life,19,0,3,False,12,Organic,user25@example.com,555-01025,1,56.79,1.21,0
+LD-1026,Test User 26,73,F,Engineer,94614.24,Chicago,False,Health,6,5,2,False,14,Social Media,user26@example.com,555-01026,0,59.9,0.66,0
+LD-1027,Test User 27,34,Other,Engineer,80453.56,Chicago,False,Home,12,6,5,False,24,Referral,user27@example.com,555-01027,1,49.76,0.6,0
+LD-1028,Test User 28,65,Other,Doctor,55644.17,New York,True,Life,15,3,5,True,6,Paid Search,user28@example.com,555-01028,1,12.2,1.33,0
+LD-1029,Test User 29,37,Other,Sales,148072.32,Houston,False,Home,19,2,0,True,15,Organic,user29@example.com,555-01029,1,80.06,0.39,0
+LD-1030,Test User 30,36,M,Sales,51106.4,Phoenix,False,Health,16,9,3,False,2,Referral,user30@example.com,555-01030,1,90.75,0.24,0
+LD-1031,Test User 31,69,Other,Teacher,133379.39,Chicago,False,Auto,14,4,2,True,25,Social Media,user31@example.com,555-01031,0,40.23,1.53,1
+LD-1032,Test User 32,56,F,Doctor,39669.32,Phoenix,False,Health,4,0,1,True,13,Referral,user32@example.com,555-01032,0,45.05,0.13,0
+LD-1033,Test User 33,71,F,Sales,100089.53,Phoenix,True,Health,0,3,4,False,13,Referral,user33@example.com,555-01033,0,53.71,0.6,0
+LD-1034,Test User 34,46,F,Student,70335.55,Phoenix,True,Auto,12,10,5,False,6,Paid Search,user34@example.com,555-01034,1,88.02,1.96,1
+LD-1035,Test User 35,33,F,Doctor,36034.16,New York,False,Auto,12,8,2,True,7,Social Media,user35@example.com,555-01035,1,30.18,1.76,1
+LD-1036,Test User 36,26,M,Teacher,123747.97,Houston,True,Home,20,7,0,False,25,Social Media,user36@example.com,555-01036,1,25.1,1.68,1
+LD-1037,Test User 37,60,Other,Sales,145648.17,Houston,True,Auto,3,9,1,True,10,Organic,user37@example.com,555-01037,1,72.75,0.62,0
+LD-1038,Test User 38,41,F,Doctor,132035.19,New York,False,Auto,19,6,0,False,26,Organic,user38@example.com,555-01038,1,49.02,0.69,0
+LD-1039,Test User 39,45,Other,Sales,106270.21,Houston,False,Life,14,5,5,True,5,Organic,user39@example.com,555-01039,1,35.1,1.93,1
+LD-1040,Test User 40,50,F,Teacher,59263.61,Houston,True,Life,14,4,4,False,20,Social Media,user40@example.com,555-01040,1,89.23,0.99,0
+LD-1041,Test User 41,66,F,Student,135612.88,Los Angeles,False,Health,17,7,0,True,17,Organic,user41@example.com,555-01041,1,36.48,1.44,0
+LD-1042,Test User 42,47,Other,Student,113014.46,Chicago,False,Health,9,4,5,False,19,Social Media,user42@example.com,555-01042,1,30.75,0.69,0
+LD-1043,Test User 43,68,Other,Sales,53110.12,Chicago,False,Auto,3,3,5,False,18,Paid Search,user43@example.com,555-01043,0,42.48,0.38,0
+LD-1044,Test User 44,41,M,Sales,31697.8,New York,True,Life,17,7,1,False,9,Referral,user44@example.com,555-01044,1,40.66,0.58,0
+LD-1045,Test User 45,25,Other,Engineer,60297.41,Los Angeles,True,Life,15,1,0,True,27,Organic,user45@example.com,555-01045,0,60.23,1.15,0
+LD-1046,Test User 46,48,Other,Sales,102758.12,Chicago,True,Auto,19,3,1,True,25,Social Media,user46@example.com,555-01046,1,69.44,0.89,0
+LD-1047,Test User 47,32,F,Engineer,58783.82,Los Angeles,False,Life,17,7,0,True,6,Paid Search,user47@example.com,555-01047,1,93.15,1.19,0
+LD-1048,Test User 48,72,Other,Teacher,124949.73,Chicago,True,Auto,18,0,5,True,26,Social Media,user48@example.com,555-01048,1,63.55,1.09,0
+LD-1049,Test User 49,74,F,Student,98304.85,Phoenix,False,Health,9,1,3,True,4,Referral,user49@example.com,555-01049,1,76.11,0.81,0
+LD-1050,Test User 50,60,Other,Doctor,60044.15,Phoenix,True,Home,2,7,1,False,22,Social Media,user50@example.com,555-01050,0,26.33,1.9,0
+LD-1051,Test User 51,59,M,Doctor,82306.2,Houston,False,Life,15,10,0,False,16,Organic,user51@example.com,555-01051,1,50.93,1.34,0
+LD-1052,Test User 52,42,Other,Sales,60287.86,Houston,True,Home,3,8,3,False,28,Referral,user52@example.com,555-01052,0,66.29,1.32,0
+LD-1053,Test User 53,70,M,Engineer,36193.41,Phoenix,True,Home,8,4,4,True,5,Referral,user53@example.com,555-01053,1,18.39,1.4,0
+LD-1054,Test User 54,75,Other,Doctor,139551.59,Houston,False,Health,14,3,0,False,21,Paid Search,user54@example.com,555-01054,1,44.52,1.43,0
+LD-1055,Test User 55,60,Other,Doctor,90988.91,New York,False,Life,4,9,0,False,9,Paid Search,user55@example.com,555-01055,0,50.19,0.68,0
+LD-1056,Test User 56,52,Other,Teacher,71414.87,Phoenix,False,Home,17,6,4,True,13,Social Media,user56@example.com,555-01056,1,77.02,0.38,0
+LD-1057,Test User 57,67,M,Teacher,139611.62,Phoenix,False,Auto,12,7,3,True,22,Referral,user57@example.com,555-01057,1,11.38,0.3,0
+LD-1058,Test User 58,31,Other,Sales,79197.43,New York,False,Health,20,5,1,False,3,Organic,user58@example.com,555-01058,0,65.57,0.68,0
+LD-1059,Test User 59,37,M,Sales,105739.32,Los Angeles,False,Auto,9,0,1,False,24,Organic,user59@example.com,555-01059,0,36.4,1.52,1
+LD-1060,Test User 60,45,M,Student,81682.41,Houston,True,Health,7,9,4,True,14,Paid Search,user60@example.com,555-01060,0,51.5,0.34,0
+LD-1061,Test User 61,38,F,Student,85148.46,Chicago,False,Life,0,7,3,False,29,Paid Search,user61@example.com,555-01061,0,99.94,0.15,0
+LD-1062,Test User 62,52,Other,Sales,42798.39,Chicago,True,Auto,12,9,4,False,12,Social Media,user62@example.com,555-01062,0,79.82,0.59,0
+LD-1063,Test User 63,36,Other,Teacher,102847.8,New York,True,Life,11,7,1,True,21,Social Media,user63@example.com,555-01063,1,75.91,1.51,1
+LD-1064,Test User 64,27,F,Student,139155.34,Phoenix,False,Home,10,4,5,False,14,Social Media,user64@example.com,555-01064,1,77.19,1.08,0
+LD-1065,Test User 65,43,Other,Sales,126507.9,Phoenix,False,Auto,14,6,0,True,5,Social Media,user65@example.com,555-01065,1,58.29,1.35,0
+LD-1066,Test User 66,51,M,Sales,74230.28,New York,False,Home,8,10,4,True,13,Referral,user66@example.com,555-01066,0,91.84,0.22,0
+LD-1067,Test User 67,41,M,Teacher,107908.73,Phoenix,True,Health,3,7,1,False,2,Referral,user67@example.com,555-01067,1,62.86,0.99,0
+LD-1068,Test User 68,68,Other,Doctor,48542.75,Los Angeles,False,Health,13,3,5,False,4,Organic,user68@example.com,555-01068,1,98.28,1.88,1
+LD-1069,Test User 69,45,F,Engineer,95335.9,Los Angeles,True,Auto,20,5,2,True,2,Paid Search,user69@example.com,555-01069,1,80.83,0.24,0
+LD-1070,Test User 70,35,M,Student,38233.22,New York,False,Home,17,2,1,False,19,Paid Search,user70@example.com,555-01070,0,19.89,0.66,0
+LD-1071,Test User 71,23,Other,Sales,45816.39,Phoenix,True,Auto,11,7,1,False,19,Social Media,user71@example.com,555-01071,1,56.19,0.1,0
+LD-1072,Test User 72,28,F,Sales,84240.65,New York,True,Health,7,6,4,False,2,Organic,user72@example.com,555-01072,0,54.12,1.32,0
+LD-1073,Test User 73,50,Other,Student,38818.89,Chicago,False,Life,2,7,2,False,20,Organic,user73@example.com,555-01073,0,81.38,1.25,0
+LD-1074,Test User 74,29,F,Sales,132335.13,Houston,True,Life,20,6,4,False,24,Social Media,user74@example.com,555-01074,1,43.69,1.78,1
+LD-1075,Test User 75,31,Other,Doctor,112418.52,Los Angeles,True,Life,15,10,0,True,3,Referral,user75@example.com,555-01075,1,41.82,0.19,0
+LD-1076,Test User 76,64,Other,Student,142935.58,Los Angeles,True,Health,13,3,5,True,2,Social Media,user76@example.com,555-01076,1,86.08,0.7,0
+LD-1077,Test User 77,45,Other,Student,43786.24,New York,False,Auto,8,2,4,False,8,Social Media,user77@example.com,555-01077,0,92.94,1.95,0
+LD-1078,Test User 78,44,M,Engineer,30732.69,Phoenix,True,Health,4,6,4,False,22,Social Media,user78@example.com,555-01078,1,24.17,1.27,0
+LD-1079,Test User 79,41,M,Doctor,116591.52,Houston,False,Health,18,9,4,False,3,Referral,user79@example.com,555-01079,1,34.59,1.51,1
+LD-1080,Test User 80,70,Other,Doctor,91481.56,New York,True,Health,11,9,3,True,4,Organic,user80@example.com,555-01080,1,28.4,0.97,0
+LD-1081,Test User 81,35,M,Sales,122081.94,Phoenix,True,Life,8,1,2,False,11,Organic,user81@example.com,555-01081,0,49.26,0.86,0
+LD-1082,Test User 82,51,M,Sales,140539.49,New York,False,Home,10,9,4,False,14,Social Media,user82@example.com,555-01082,1,17.93,0.84,0
+LD-1083,Test User 83,28,M,Doctor,59197.98,Los Angeles,True,Auto,18,8,3,True,17,Social Media,user83@example.com,555-01083,1,41.6,1.49,0
+LD-1084,Test User 84,74,Other,Engineer,107453.16,Los Angeles,False,Health,4,9,1,False,4,Social Media,user84@example.com,555-01084,0,87.78,1.2,0
+LD-1085,Test User 85,62,M,Doctor,67936.67,Phoenix,True,Life,14,7,0,False,16,Organic,user85@example.com,555-01085,1,15.12,0.55,0
+LD-1086,Test User 86,75,Other,Engineer,64449.24,Houston,True,Life,20,9,0,False,20,Paid Search,user86@example.com,555-01086,1,96.2,1.16,0
+LD-1087,Test User 87,50,F,Sales,42420.23,Phoenix,True,Life,10,5,5,False,3,Referral,user87@example.com,555-01087,1,46.79,0.5,0
+LD-1088,Test User 88,43,F,Doctor,111467.73,Chicago,True,Life,1,1,5,True,21,Social Media,user88@example.com,555-01088,0,37.92,1.12,0
+LD-1089,Test User 89,63,Other,Doctor,113817.6,Los Angeles,True,Health,12,8,1,False,20,Organic,user89@example.com,555-01089,1,42.63,1.12,0
+LD-1090,Test User 90,33,M,Student,144140.32,Phoenix,True,Life,10,9,3,True,7,Referral,user90@example.com,555-01090,1,23.88,0.15,0
+LD-1091,Test User 91,33,M,Sales,129761.41,Phoenix,False,Health,19,3,1,True,24,Social Media,user91@example.com,555-01091,1,96.9,1.35,0
+LD-1092,Test User 92,72,F,Sales,86281.87,Phoenix,False,Home,6,3,2,True,22,Social Media,user92@example.com,555-01092,0,14.7,0.92,0
+LD-1093,Test User 93,52,M,Doctor,134894.03,Houston,True,Health,17,1,0,True,23,Referral,user93@example.com,555-01093,0,89.62,0.57,0
+LD-1094,Test User 94,23,M,Doctor,79787.63,New York,False,Home,12,2,4,True,12,Social Media,user94@example.com,555-01094,0,92.57,0.75,0
+LD-1095,Test User 95,52,F,Teacher,113528.64,Los Angeles,False,Auto,4,4,5,True,16,Social Media,user95@example.com,555-01095,1,20.97,0.16,0
+LD-1096,Test User 96,37,M,Student,80379.07,Phoenix,True,Home,19,4,3,False,3,Organic,user96@example.com,555-01096,1,65.33,1.19,0
+LD-1097,Test User 97,37,Other,Student,98479.65,Phoenix,True,Health,5,7,5,True,22,Referral,user97@example.com,555-01097,0,98.29,0.14,0
+LD-1098,Test User 98,38,Other,Doctor,119677.99,Los Angeles,True,Life,11,8,0,False,12,Paid Search,user98@example.com,555-01098,0,84.73,0.21,0
+LD-1099,Test User 99,65,F,Teacher,85754.75,New York,True,Auto,15,5,5,False,6,Referral,user99@example.com,555-01099,1,99.02,1.55,1
+LD-1100,Test User 100,56,Other,Doctor,86807.97,Chicago,True,Life,1,6,5,False,7,Referral,user100@example.com,555-01100,0,90.52,0.1,0
+LD-1101,Test User 101,46,M,Sales,70684.4,New York,False,Home,5,8,3,False,23,Social Media,user101@example.com,555-01101,0,19.23,1.04,0
+LD-1102,Test User 102,42,F,Engineer,109310.31,Chicago,False,Life,9,10,3,True,20,Organic,user102@example.com,555-01102,1,70.41,0.89,0
+LD-1103,Test User 103,47,M,Engineer,73597.34,Los Angeles,False,Life,5,6,0,True,5,Paid Search,user103@example.com,555-01103,0,71.12,0.88,0
+LD-1104,Test User 104,45,M,Engineer,74641.61,New York,True,Health,2,8,4,False,5,Organic,user104@example.com,555-01104,1,33.56,1.3,0
+LD-1105,Test User 105,38,M,Engineer,114484.54,Houston,True,Health,6,1,4,False,10,Social Media,user105@example.com,555-01105,0,73.86,0.4,0
+LD-1106,Test User 106,57,F,Student,95060.56,Los Angeles,True,Home,9,2,1,True,23,Referral,user106@example.com,555-01106,0,12.37,0.35,0
+LD-1107,Test User 107,57,Other,Sales,98673.29,Phoenix,False,Health,14,9,4,True,5,Paid Search,user107@example.com,555-01107,1,97.51,0.62,0
+LD-1108,Test User 108,63,M,Teacher,38899.8,Houston,True,Auto,14,8,5,True,17,Social Media,user108@example.com,555-01108,1,24.82,1.56,1
+LD-1109,Test User 109,42,Other,Student,142168.54,Chicago,True,Life,7,9,2,True,17,Paid Search,user109@example.com,555-01109,0,63.26,0.5,0
+LD-1110,Test User 110,59,M,Engineer,48503.31,New York,False,Home,19,9,5,False,29,Organic,user110@example.com,555-01110,1,54.82,1.13,0
+LD-1111,Test User 111,62,F,Engineer,95469.3,New York,True,Health,20,6,2,False,16,Referral,user111@example.com,555-01111,1,28.36,0.81,0
+LD-1112,Test User 112,60,M,Doctor,47240.24,Los Angeles,False,Auto,10,4,5,False,28,Paid Search,user112@example.com,555-01112,1,22.68,1.52,1
+LD-1113,Test User 113,25,F,Student,64825.44,Chicago,True,Home,12,7,4,False,14,Referral,user113@example.com,555-01113,0,89.12,0.32,0
+LD-1114,Test User 114,53,M,Doctor,32781.16,Houston,False,Life,12,8,4,True,15,Organic,user114@example.com,555-01114,1,48.78,0.71,0
+LD-1115,Test User 115,38,Other,Doctor,117300.97,New York,False,Health,12,8,2,False,2,Organic,user115@example.com,555-01115,1,21.58,0.39,0
+LD-1116,Test User 116,28,Other,Engineer,77268.45,New York,True,Home,10,5,4,False,12,Referral,user116@example.com,555-01116,1,23.4,1.02,0
+LD-1117,Test User 117,54,Other,Student,46773.72,Phoenix,False,Life,19,7,2,True,6,Social Media,user117@example.com,555-01117,1,39.81,1.69,1
+LD-1118,Test User 118,29,Other,Sales,147587.76,Chicago,True,Auto,18,9,2,False,26,Paid Search,user118@example.com,555-01118,1,57.18,1.26,0
+LD-1119,Test User 119,68,M,Sales,104368.3,Chicago,False,Home,12,6,1,True,27,Referral,user119@example.com,555-01119,1,55.16,1.9,1
+LD-1120,Test User 120,61,F,Doctor,140462.51,Los Angeles,False,Life,1,8,5,False,5,Social Media,user120@example.com,555-01120,0,64.91,2.0,1
+LD-1121,Test User 121,34,F,Teacher,144880.49,Houston,False,Health,8,5,4,False,10,Social Media,user121@example.com,555-01121,0,20.97,0.6,0
+LD-1122,Test User 122,65,Other,Engineer,95182.91,Chicago,False,Life,12,7,2,True,25,Paid Search,user122@example.com,555-01122,1,84.52,0.58,0
+LD-1123,Test User 123,39,Other,Student,141962.87,Los Angeles,True,Auto,8,1,1,False,4,Social Media,user123@example.com,555-01123,0,74.56,0.48,0
+LD-1124,Test User 124,28,F,Sales,111743.04,Los Angeles,False,Life,4,4,0,True,18,Organic,user124@example.com,555-01124,0,68.71,1.31,0
+LD-1125,Test User 125,36,F,Sales,94218.27,Los Angeles,False,Auto,1,0,1,False,14,Organic,user125@example.com,555-01125,0,93.56,1.84,0
+LD-1126,Test User 126,43,M,Engineer,64147.4,Chicago,True,Health,20,10,4,False,17,Paid Search,user126@example.com,555-01126,1,11.27,1.7,1
+LD-1127,Test User 127,43,F,Sales,124892.12,Phoenix,False,Auto,18,6,5,True,25,Paid Search,user127@example.com,555-01127,1,98.35,1.28,0
+LD-1128,Test User 128,52,F,Doctor,68832.2,Phoenix,True,Life,7,10,0,False,9,Paid Search,user128@example.com,555-01128,0,15.59,0.53,0
+LD-1129,Test User 129,29,F,Engineer,85847.4,Chicago,False,Home,5,3,3,True,22,Referral,user129@example.com,555-01129,0,23.79,1.41,0
+LD-1130,Test User 130,69,Other,Teacher,148660.56,Los Angeles,True,Health,11,8,3,False,23,Organic,user130@example.com,555-01130,1,92.55,1.08,0
+LD-1131,Test User 131,29,Other,Sales,37410.97,New York,True,Health,17,1,4,False,7,Organic,user131@example.com,555-01131,1,50.81,0.66,0
+LD-1132,Test User 132,54,F,Doctor,79850.95,New York,True,Auto,18,0,0,False,18,Social Media,user132@example.com,555-01132,0,73.03,1.45,0
+LD-1133,Test User 133,56,Other,Sales,149294.84,Chicago,False,Health,2,6,3,False,2,Organic,user133@example.com,555-01133,1,71.45,0.27,0
+LD-1134,Test User 134,64,Other,Teacher,134946.45,Los Angeles,True,Auto,4,4,5,False,28,Referral,user134@example.com,555-01134,1,57.87,1.07,0
+LD-1135,Test User 135,74,M,Engineer,57559.69,Houston,True,Home,14,3,2,True,5,Organic,user135@example.com,555-01135,0,63.45,1.45,0
+LD-1136,Test User 136,50,M,Teacher,101734.19,Phoenix,False,Home,1,9,1,False,24,Social Media,user136@example.com,555-01136,0,31.32,1.08,0
+LD-1137,Test User 137,31,M,Sales,148283.47,Phoenix,False,Auto,16,5,1,False,14,Social Media,user137@example.com,555-01137,1,72.67,1.9,0
+LD-1138,Test User 138,48,Other,Teacher,47906.11,Houston,True,Health,12,6,1,True,25,Referral,user138@example.com,555-01138,1,31.86,0.45,0
+LD-1139,Test User 139,35,F,Student,69631.56,Phoenix,True,Auto,2,3,3,True,28,Referral,user139@example.com,555-01139,0,28.8,1.66,1
+LD-1140,Test User 140,43,F,Teacher,66382.56,Phoenix,True,Health,0,3,1,False,30,Social Media,user140@example.com,555-01140,0,44.26,1.49,0
+LD-1141,Test User 141,56,Other,Sales,107846.56,Chicago,True,Life,9,5,2,False,12,Organic,user141@example.com,555-01141,1,60.63,0.2,0
+LD-1142,Test User 142,36,M,Teacher,118950.29,Chicago,True,Health,0,9,2,True,18,Referral,user142@example.com,555-01142,0,59.56,0.84,0
+LD-1143,Test User 143,65,F,Teacher,70507.71,Los Angeles,False,Home,15,8,5,True,21,Organic,user143@example.com,555-01143,1,85.52,1.47,0
+LD-1144,Test User 144,26,M,Engineer,143422.57,Los Angeles,False,Life,1,0,0,False,14,Referral,user144@example.com,555-01144,0,11.42,0.14,0
+LD-1145,Test User 145,56,Other,Sales,96197.23,Los Angeles,True,Auto,0,8,0,True,17,Paid Search,user145@example.com,555-01145,0,27.27,0.57,0
+LD-1146,Test User 146,55,Other,Teacher,60290.18,Los Angeles,False,Auto,11,10,2,True,26,Organic,user146@example.com,555-01146,1,46.48,0.81,0
+LD-1147,Test User 147,46,F,Student,96324.17,New York,True,Home,1,3,5,False,1,Social Media,user147@example.com,555-01147,1,14.19,1.69,1
+LD-1148,Test User 148,26,M,Student,112131.45,Los Angeles,False,Auto,8,4,4,True,19,Paid Search,user148@example.com,555-01148,1,61.0,1.7,1
+LD-1149,Test User 149,46,Other,Doctor,111244.2,New York,True,Health,17,3,2,True,13,Social Media,user149@example.com,555-01149,1,64.47,1.98,1
+LD-1150,Test User 150,61,M,Doctor,144583.01,Phoenix,False,Health,12,2,2,False,1,Organic,user150@example.com,555-01150,1,79.5,0.9,0
+LD-1151,Test User 151,40,Other,Sales,125766.62,Chicago,False,Auto,2,1,0,True,9,Social Media,user151@example.com,555-01151,0,50.03,1.27,0
+LD-1152,Test User 152,70,M,Engineer,62371.97,New York,False,Auto,4,9,0,False,6,Referral,user152@example.com,555-01152,0,11.11,1.02,0
+LD-1153,Test User 153,48,Other,Teacher,76535.95,Houston,True,Home,2,4,5,False,29,Social Media,user153@example.com,555-01153,0,54.38,0.49,0
+LD-1154,Test User 154,26,M,Sales,50064.89,Phoenix,True,Health,8,1,3,True,10,Social Media,user154@example.com,555-01154,1,10.61,0.5,0
+LD-1155,Test User 155,47,Other,Student,69866.07,Los Angeles,False,Life,19,9,3,True,26,Referral,user155@example.com,555-01155,1,38.28,0.86,0
+LD-1156,Test User 156,47,F,Sales,146247.03,Chicago,True,Home,9,9,5,True,23,Organic,user156@example.com,555-01156,0,95.77,1.56,1
+LD-1157,Test User 157,51,F,Sales,143156.99,Los Angeles,False,Home,6,4,3,True,26,Referral,user157@example.com,555-01157,0,81.02,1.64,1
+LD-1158,Test User 158,26,Other,Engineer,83888.01,Chicago,True,Auto,19,3,3,False,19,Paid Search,user158@example.com,555-01158,1,68.23,1.84,1
+LD-1159,Test User 159,24,M,Engineer,97586.44,Chicago,True,Home,20,7,5,False,21,Referral,user159@example.com,555-01159,1,51.68,1.93,1
+LD-1160,Test User 160,65,M,Engineer,100630.79,Los Angeles,False,Life,16,5,1,False,12,Paid Search,user160@example.com,555-01160,1,56.9,0.59,0
+LD-1161,Test User 161,44,Other,Engineer,87139.5,New York,False,Auto,14,10,5,True,23,Paid Search,user161@example.com,555-01161,1,56.44,0.09,0
+LD-1162,Test User 162,57,Other,Sales,49216.29,Houston,True,Home,17,7,3,False,15,Referral,user162@example.com,555-01162,1,10.4,0.37,0
+LD-1163,Test User 163,35,M,Sales,54694.14,New York,False,Health,2,8,4,False,4,Referral,user163@example.com,555-01163,0,65.02,0.73,0
+LD-1164,Test User 164,59,Other,Engineer,43707.85,Los Angeles,False,Auto,11,3,3,False,20,Organic,user164@example.com,555-01164,0,26.47,1.6,0
+LD-1165,Test User 165,66,Other,Student,46963.03,Los Angeles,True,Health,12,4,3,True,20,Paid Search,user165@example.com,555-01165,1,38.31,0.37,0
+LD-1166,Test User 166,50,F,Sales,104329.2,Houston,False,Health,11,7,0,True,16,Organic,user166@example.com,555-01166,0,60.89,1.93,1
+LD-1167,Test User 167,72,F,Student,121326.79,Phoenix,True,Auto,9,4,0,False,9,Organic,user167@example.com,555-01167,1,78.4,1.56,1
+LD-1168,Test User 168,50,M,Sales,95562.39,Chicago,False,Auto,13,7,0,True,24,Paid Search,user168@example.com,555-01168,0,28.89,0.6,0
+LD-1169,Test User 169,69,M,Teacher,100550.87,New York,False,Life,11,9,5,True,20,Social Media,user169@example.com,555-01169,1,98.11,0.28,0
+LD-1170,Test User 170,40,M,Doctor,64719.99,Los Angeles,True,Home,8,2,4,False,29,Paid Search,user170@example.com,555-01170,1,78.53,1.93,1
+LD-1171,Test User 171,65,Other,Engineer,77124.09,Houston,False,Life,4,7,4,False,21,Social Media,user171@example.com,555-01171,0,62.38,0.9,0
+LD-1172,Test User 172,71,F,Teacher,131660.08,Houston,True,Health,2,4,5,False,15,Social Media,user172@example.com,555-01172,0,40.4,1.7,1
+LD-1173,Test User 173,58,F,Engineer,45671.31,New York,True,Health,15,7,2,True,29,Referral,user173@example.com,555-01173,1,28.21,0.2,0
+LD-1174,Test User 174,66,F,Doctor,139128.87,New York,False,Home,20,0,2,False,6,Social Media,user174@example.com,555-01174,1,75.34,0.19,0
+LD-1175,Test User 175,70,Other,Teacher,58097.26,Phoenix,False,Auto,20,0,0,False,23,Organic,user175@example.com,555-01175,1,98.93,0.16,0
+LD-1176,Test User 176,49,F,Doctor,113283.72,Chicago,True,Health,15,2,0,True,8,Organic,user176@example.com,555-01176,0,57.75,0.2,0
+LD-1177,Test User 177,22,F,Student,103238.31,Houston,True,Auto,5,1,3,True,12,Organic,user177@example.com,555-01177,0,63.06,0.3,0
+LD-1178,Test User 178,46,Other,Student,72184.28,Phoenix,False,Auto,13,10,2,False,26,Paid Search,user178@example.com,555-01178,1,56.6,0.17,0
+LD-1179,Test User 179,54,M,Teacher,52637.58,Houston,True,Auto,12,5,2,False,21,Paid Search,user179@example.com,555-01179,0,44.82,1.91,1
+LD-1180,Test User 180,75,Other,Engineer,98205.65,New York,False,Home,11,0,4,True,22,Referral,user180@example.com,555-01180,1,55.59,1.97,1
+LD-1181,Test User 181,62,M,Doctor,115515.49,New York,False,Auto,13,8,3,True,23,Paid Search,user181@example.com,555-01181,1,58.28,1.08,0
+LD-1182,Test User 182,47,M,Engineer,100372.46,Los Angeles,True,Health,20,1,5,False,21,Organic,user182@example.com,555-01182,1,37.84,1.46,0
+LD-1183,Test User 183,69,F,Student,108966.28,Phoenix,False,Home,5,5,0,True,1,Social Media,user183@example.com,555-01183,0,75.96,0.33,0
+LD-1184,Test User 184,29,Other,Engineer,122571.63,Houston,False,Life,0,0,2,False,26,Paid Search,user184@example.com,555-01184,0,43.09,0.53,0
+LD-1185,Test User 185,38,M,Teacher,122799.47,New York,False,Life,18,6,5,True,24,Paid Search,user185@example.com,555-01185,1,93.8,0.01,0
+LD-1186,Test User 186,24,F,Engineer,96343.77,Phoenix,False,Auto,20,8,3,True,8,Paid Search,user186@example.com,555-01186,1,30.09,1.44,0
+LD-1187,Test User 187,55,Other,Sales,147769.66,New York,False,Home,12,4,0,False,29,Paid Search,user187@example.com,555-01187,1,51.75,1.69,1
+LD-1188,Test User 188,59,F,Engineer,146622.93,Los Angeles,False,Auto,6,5,5,True,29,Referral,user188@example.com,555-01188,0,86.41,0.3,0
+LD-1189,Test User 189,68,F,Engineer,66901.28,New York,True,Health,6,5,4,False,8,Organic,user189@example.com,555-01189,0,62.27,1.95,1
+LD-1190,Test User 190,54,F,Doctor,46021.66,Houston,False,Life,12,7,0,False,19,Paid Search,user190@example.com,555-01190,0,16.72,1.93,1
+LD-1191,Test User 191,34,M,Student,46333.42,Chicago,True,Health,18,4,0,False,5,Social Media,user191@example.com,555-01191,1,86.72,0.63,0
+LD-1192,Test User 192,27,Other,Teacher,48913.85,Chicago,False,Auto,9,10,5,False,23,Social Media,user192@example.com,555-01192,1,83.81,1.71,1
+LD-1193,Test User 193,33,M,Engineer,33729.85,New York,True,Home,12,2,3,True,18,Referral,user193@example.com,555-01193,1,43.5,0.92,0
+LD-1194,Test User 194,62,M,Teacher,142508.99,Houston,True,Auto,2,5,4,True,19,Organic,user194@example.com,555-01194,0,94.81,0.04,0
+LD-1195,Test User 195,25,F,Teacher,50158.71,Chicago,True,Home,18,4,3,False,27,Referral,user195@example.com,555-01195,1,89.51,0.77,0
+LD-1196,Test User 196,24,M,Engineer,103692.79,Chicago,False,Home,19,6,1,True,21,Paid Search,user196@example.com,555-01196,1,66.77,1.1,0
+LD-1197,Test User 197,73,Other,Student,95238.8,Chicago,False,Life,0,2,3,True,26,Social Media,user197@example.com,555-01197,0,63.74,1.56,1
+LD-1198,Test User 198,23,M,Engineer,137491.77,Los Angeles,True,Life,8,8,0,True,26,Paid Search,user198@example.com,555-01198,0,61.81,1.53,0
+LD-1199,Test User 199,73,Other,Engineer,76610.7,Chicago,True,Home,5,7,1,False,8,Paid Search,user199@example.com,555-01199,0,54.14,1.4,0
+LD-1200,Test User 200,27,M,Doctor,36740.16,Los Angeles,False,Auto,19,0,1,True,1,Paid Search,user200@example.com,555-01200,1,79.69,1.84,1
+LD-1201,Test User 201,55,F,Doctor,133280.34,Los Angeles,True,Health,2,10,2,False,23,Social Media,user201@example.com,555-01201,0,25.68,0.2,0
+LD-1202,Test User 202,57,Other,Doctor,113227.25,Los Angeles,True,Auto,19,9,2,False,8,Organic,user202@example.com,555-01202,1,26.39,0.76,0
+LD-1203,Test User 203,42,Other,Engineer,140524.59,Los Angeles,False,Life,19,2,1,True,21,Social Media,user203@example.com,555-01203,0,50.2,0.28,0
+LD-1204,Test User 204,38,F,Sales,55162.11,Los Angeles,False,Health,2,6,2,False,9,Referral,user204@example.com,555-01204,0,19.13,0.1,0
+LD-1205,Test User 205,52,M,Doctor,124647.6,New York,False,Life,18,1,5,True,25,Social Media,user205@example.com,555-01205,1,25.31,0.15,0
+LD-1206,Test User 206,46,Other,Engineer,49308.54,Houston,True,Health,2,2,4,True,29,Organic,user206@example.com,555-01206,0,39.8,1.97,0
+LD-1207,Test User 207,34,M,Engineer,79113.58,New York,False,Health,17,2,5,True,30,Social Media,user207@example.com,555-01207,1,10.34,0.56,0
+LD-1208,Test User 208,27,F,Engineer,65345.93,Houston,True,Life,20,6,4,False,16,Referral,user208@example.com,555-01208,1,90.54,0.34,0
+LD-1209,Test User 209,38,M,Doctor,40936.43,Houston,False,Life,17,3,3,False,6,Organic,user209@example.com,555-01209,1,23.6,0.37,0
+LD-1210,Test User 210,66,M,Sales,110096.22,Phoenix,False,Health,2,9,5,True,12,Referral,user210@example.com,555-01210,1,36.9,1.51,1
+LD-1211,Test User 211,47,Other,Teacher,138333.26,New York,False,Home,1,2,4,True,19,Paid Search,user211@example.com,555-01211,0,21.36,1.36,0
+LD-1212,Test User 212,49,Other,Engineer,39404.22,New York,False,Health,13,8,1,False,27,Social Media,user212@example.com,555-01212,0,56.77,0.52,0
+LD-1213,Test User 213,22,Other,Engineer,124386.08,New York,True,Life,19,8,4,False,17,Referral,user213@example.com,555-01213,1,33.77,0.3,1
+LD-1214,Test User 214,63,Other,Sales,88270.18,New York,False,Life,19,3,3,True,2,Referral,user214@example.com,555-01214,1,92.88,1.24,0
+LD-1215,Test User 215,45,M,Teacher,32427.95,Chicago,False,Life,9,4,2,False,9,Organic,user215@example.com,555-01215,0,26.91,1.37,0
+LD-1216,Test User 216,35,M,Engineer,139611.94,Chicago,False,Home,13,8,5,True,16,Paid Search,user216@example.com,555-01216,1,27.35,1.64,1
+LD-1217,Test User 217,75,F,Doctor,54087.21,Houston,False,Auto,1,10,1,True,2,Paid Search,user217@example.com,555-01217,0,43.52,1.41,0
+LD-1218,Test User 218,60,Other,Engineer,83532.41,Chicago,True,Health,15,0,4,True,18,Paid Search,user218@example.com,555-01218,1,87.14,1.79,1
+LD-1219,Test User 219,63,M,Sales,57013.44,Los Angeles,True,Auto,6,3,2,False,21,Social Media,user219@example.com,555-01219,1,74.15,1.56,1
+LD-1220,Test User 220,67,Other,Student,107128.84,Phoenix,False,Auto,13,0,3,False,28,Social Media,user220@example.com,555-01220,1,36.86,0.93,0
+LD-1221,Test User 221,28,Other,Doctor,87808.61,Los Angeles,True,Home,10,0,2,False,21,Social Media,user221@example.com,555-01221,1,71.27,1.31,0
+LD-1222,Test User 222,68,Other,Student,33054.63,Los Angeles,False,Home,15,10,2,False,9,Social Media,user222@example.com,555-01222,1,55.66,1.47,0
+LD-1223,Test User 223,32,Other,Teacher,130876.64,Chicago,True,Home,17,5,1,True,10,Social Media,user223@example.com,555-01223,1,47.84,0.52,0
+LD-1224,Test User 224,43,Other,Engineer,74601.89,Houston,True,Auto,18,10,2,False,15,Social Media,user224@example.com,555-01224,1,47.18,1.73,1
+LD-1225,Test User 225,31,Other,Teacher,46483.83,New York,False,Life,6,10,2,True,14,Social Media,user225@example.com,555-01225,0,67.1,1.97,1
+LD-1226,Test User 226,22,Other,Sales,84246.39,Houston,False,Health,6,7,1,False,19,Organic,user226@example.com,555-01226,0,13.4,1.53,1
+LD-1227,Test User 227,34,Other,Teacher,117679.09,Los Angeles,False,Life,0,2,2,True,25,Referral,user227@example.com,555-01227,0,55.3,1.35,0
+LD-1228,Test User 228,41,F,Teacher,50042.42,Chicago,False,Life,1,3,2,True,10,Referral,user228@example.com,555-01228,0,11.72,1.05,0
+LD-1229,Test User 229,36,Other,Engineer,117260.26,Houston,False,Auto,4,9,1,True,24,Organic,user229@example.com,555-01229,0,68.82,0.25,0
+LD-1230,Test User 230,23,M,Teacher,35788.21,New York,False,Health,3,10,3,True,15,Social Media,user230@example.com,555-01230,0,66.05,0.95,0
+LD-1231,Test User 231,66,Other,Teacher,46459.62,Chicago,True,Life,3,6,4,False,24,Paid Search,user231@example.com,555-01231,1,13.55,1.57,1
+LD-1232,Test User 232,53,Other,Sales,139242.8,Los Angeles,True,Auto,15,1,2,False,8,Paid Search,user232@example.com,555-01232,1,51.11,1.81,0
+LD-1233,Test User 233,40,Other,Doctor,61695.0,Houston,True,Auto,1,0,0,True,27,Paid Search,user233@example.com,555-01233,0,69.7,0.58,0
+LD-1234,Test User 234,32,F,Sales,69439.3,Houston,False,Health,14,7,4,False,9,Paid Search,user234@example.com,555-01234,1,20.18,1.63,1
+LD-1235,Test User 235,66,F,Teacher,117169.33,Phoenix,False,Life,5,9,0,True,14,Paid Search,user235@example.com,555-01235,0,53.48,1.14,0
+LD-1236,Test User 236,53,Other,Student,43552.5,Phoenix,True,Life,13,8,3,True,2,Referral,user236@example.com,555-01236,1,69.55,0.02,0
+LD-1237,Test User 237,37,Other,Teacher,87831.56,Phoenix,False,Health,20,2,3,True,5,Referral,user237@example.com,555-01237,1,38.86,1.98,1
+LD-1238,Test User 238,43,F,Student,146417.41,Houston,True,Health,1,7,4,False,8,Organic,user238@example.com,555-01238,1,98.26,1.63,1
+LD-1239,Test User 239,69,Other,Doctor,108404.76,Phoenix,True,Health,3,5,3,False,14,Organic,user239@example.com,555-01239,0,83.49,1.65,1
+LD-1240,Test User 240,51,M,Teacher,69836.72,New York,False,Life,19,10,4,False,16,Social Media,user240@example.com,555-01240,1,73.19,0.91,0
+LD-1241,Test User 241,24,M,Engineer,137625.25,Houston,True,Health,15,3,1,False,27,Organic,user241@example.com,555-01241,0,78.14,0.21,0
+LD-1242,Test User 242,24,F,Engineer,141195.18,Phoenix,True,Health,18,9,0,False,25,Paid Search,user242@example.com,555-01242,1,72.26,1.18,1
+LD-1243,Test User 243,33,F,Sales,117659.36,Phoenix,True,Life,4,6,0,False,13,Social Media,user243@example.com,555-01243,0,50.76,0.64,0
+LD-1244,Test User 244,30,F,Student,46581.6,Los Angeles,True,Home,19,9,5,False,29,Social Media,user244@example.com,555-01244,1,92.91,1.4,0
+LD-1245,Test User 245,30,F,Student,147760.26,Houston,False,Life,20,6,1,True,17,Organic,user245@example.com,555-01245,1,12.27,1.42,0
+LD-1246,Test User 246,31,F,Teacher,36367.8,New York,False,Home,1,8,1,True,9,Social Media,user246@example.com,555-01246,0,83.26,0.57,0
+LD-1247,Test User 247,28,Other,Doctor,103933.06,New York,False,Health,17,6,1,False,24,Organic,user247@example.com,555-01247,1,11.17,1.02,0
+LD-1248,Test User 248,38,Other,Student,54370.47,Phoenix,True,Home,14,4,1,False,30,Paid Search,user248@example.com,555-01248,0,98.51,0.74,0
+LD-1249,Test User 249,26,F,Teacher,52437.19,Los Angeles,False,Auto,5,5,5,False,17,Paid Search,user249@example.com,555-01249,1,13.59,0.56,0
+LD-1250,Test User 250,42,F,Engineer,101625.64,Chicago,True,Home,20,8,4,True,27,Paid Search,user250@example.com,555-01250,1,47.43,1.15,0
+LD-1251,Test User 251,56,M,Student,78410.05,Phoenix,False,Auto,11,1,1,False,29,Referral,user251@example.com,555-01251,0,31.63,0.72,0
+LD-1252,Test User 252,63,F,Doctor,103644.13,Phoenix,False,Auto,19,8,1,False,2,Referral,user252@example.com,555-01252,1,53.81,1.83,0
+LD-1253,Test User 253,40,Other,Engineer,137793.79,New York,True,Home,6,10,2,False,17,Organic,user253@example.com,555-01253,1,28.5,1.94,1
+LD-1254,Test User 254,75,F,Doctor,114329.14,New York,True,Auto,13,0,5,True,27,Social Media,user254@example.com,555-01254,1,60.23,0.31,0
+LD-1255,Test User 255,58,F,Engineer,128594.32,Phoenix,True,Auto,8,9,3,True,13,Organic,user255@example.com,555-01255,1,42.19,0.63,0
+LD-1256,Test User 256,54,Other,Engineer,42736.27,Houston,True,Home,9,2,4,False,3,Social Media,user256@example.com,555-01256,0,96.41,0.76,0
+LD-1257,Test User 257,31,M,Student,65766.78,Phoenix,False,Auto,20,4,2,True,1,Social Media,user257@example.com,555-01257,1,29.06,0.25,0
+LD-1258,Test User 258,63,M,Student,132175.06,New York,False,Auto,4,4,1,True,6,Social Media,user258@example.com,555-01258,0,18.84,0.39,0
+LD-1259,Test User 259,68,M,Teacher,99671.48,Chicago,False,Health,10,5,2,False,5,Paid Search,user259@example.com,555-01259,1,60.9,0.57,0
+LD-1260,Test User 260,45,Other,Sales,126923.97,Chicago,False,Home,13,10,1,False,1,Referral,user260@example.com,555-01260,0,51.66,1.42,0
+LD-1261,Test User 261,44,M,Student,122972.04,Los Angeles,False,Auto,15,1,4,True,4,Organic,user261@example.com,555-01261,1,83.14,1.68,0
+LD-1262,Test User 262,59,Other,Teacher,78616.14,Chicago,False,Home,18,9,1,False,30,Paid Search,user262@example.com,555-01262,1,51.82,1.79,1
+LD-1263,Test User 263,54,M,Student,40866.48,Los Angeles,False,Home,11,2,4,True,1,Referral,user263@example.com,555-01263,1,94.53,1.61,1
+LD-1264,Test User 264,24,Other,Doctor,56258.29,Houston,False,Health,15,0,1,True,3,Social Media,user264@example.com,555-01264,1,19.29,1.34,0
+LD-1265,Test User 265,55,F,Doctor,106028.04,Phoenix,True,Life,8,6,5,True,9,Referral,user265@example.com,555-01265,1,41.76,0.75,0
+LD-1266,Test User 266,44,M,Student,88423.39,Chicago,True,Home,15,2,4,True,1,Social Media,user266@example.com,555-01266,1,64.18,0.33,0
+LD-1267,Test User 267,74,F,Teacher,44199.63,Phoenix,True,Health,7,0,3,True,26,Organic,user267@example.com,555-01267,1,21.51,1.35,0
+LD-1268,Test User 268,59,M,Student,49335.5,Houston,True,Life,20,1,4,True,2,Referral,user268@example.com,555-01268,1,64.59,0.33,0
+LD-1269,Test User 269,52,M,Student,134076.29,Phoenix,False,Home,5,10,1,False,27,Referral,user269@example.com,555-01269,0,63.69,1.17,0
+LD-1270,Test User 270,26,M,Student,57577.65,New York,True,Health,12,9,1,True,4,Organic,user270@example.com,555-01270,1,18.39,1.82,1
+LD-1271,Test User 271,64,F,Student,45639.46,Houston,False,Auto,19,8,4,False,27,Paid Search,user271@example.com,555-01271,1,94.46,1.36,0
+LD-1272,Test User 272,52,F,Teacher,124746.67,Chicago,False,Home,12,1,2,False,19,Referral,user272@example.com,555-01272,0,33.2,1.67,1
+LD-1273,Test User 273,22,Other,Doctor,115097.86,Houston,False,Auto,0,2,4,False,17,Social Media,user273@example.com,555-01273,1,33.52,1.31,0
+LD-1274,Test User 274,56,Other,Student,80827.39,Houston,True,Life,11,8,4,False,9,Social Media,user274@example.com,555-01274,1,98.97,0.41,0
+LD-1275,Test User 275,58,F,Teacher,71322.76,New York,True,Health,12,5,5,True,5,Paid Search,user275@example.com,555-01275,1,45.02,1.5,0
+LD-1276,Test User 276,62,M,Doctor,30634.88,New York,True,Health,2,6,1,False,16,Organic,user276@example.com,555-01276,0,95.11,0.13,0
+LD-1277,Test User 277,74,M,Student,51032.54,Phoenix,True,Home,15,10,3,True,1,Social Media,user277@example.com,555-01277,1,31.53,1.61,1
+LD-1278,Test User 278,22,M,Engineer,147077.51,New York,False,Life,2,5,2,False,25,Paid Search,user278@example.com,555-01278,0,64.57,0.81,1
+LD-1279,Test User 279,34,M,Student,84571.08,Chicago,False,Auto,12,8,4,False,1,Social Media,user279@example.com,555-01279,1,72.48,0.21,0
+LD-1280,Test User 280,46,M,Sales,97580.23,New York,False,Auto,7,6,2,True,25,Paid Search,user280@example.com,555-01280,0,82.01,1.17,0
+LD-1281,Test User 281,48,F,Doctor,144653.48,New York,True,Health,16,5,4,False,1,Paid Search,user281@example.com,555-01281,1,90.49,0.57,0
+LD-1282,Test User 282,39,M,Teacher,51934.13,Phoenix,False,Home,6,1,3,True,24,Organic,user282@example.com,555-01282,0,70.82,1.75,1
+LD-1283,Test User 283,64,Other,Doctor,89119.78,Houston,True,Life,0,6,4,True,2,Paid Search,user283@example.com,555-01283,1,14.87,0.63,0
+LD-1284,Test User 284,73,M,Student,80781.1,Houston,False,Auto,17,0,0,True,17,Referral,user284@example.com,555-01284,0,62.29,1.55,1
+LD-1285,Test User 285,42,M,Sales,73392.28,Houston,True,Health,8,5,1,False,18,Referral,user285@example.com,555-01285,1,35.17,1.92,1
+LD-1286,Test User 286,33,F,Teacher,98569.17,Los Angeles,True,Health,18,0,5,True,8,Referral,user286@example.com,555-01286,1,54.96,1.61,1
+LD-1287,Test User 287,62,M,Teacher,92040.84,New York,True,Life,10,7,3,True,10,Referral,user287@example.com,555-01287,0,77.01,0.1,0
+LD-1288,Test User 288,38,F,Student,73315.44,Los Angeles,True,Life,17,5,4,False,30,Referral,user288@example.com,555-01288,1,79.73,0.82,0
+LD-1289,Test User 289,50,F,Sales,136755.89,Phoenix,False,Auto,12,1,4,True,10,Social Media,user289@example.com,555-01289,0,30.54,1.74,1
+LD-1290,Test User 290,42,Other,Student,108361.57,Phoenix,False,Health,8,2,4,True,21,Organic,user290@example.com,555-01290,0,21.25,1.56,0
+LD-1291,Test User 291,37,M,Engineer,109442.71,Houston,True,Auto,2,4,1,True,6,Organic,user291@example.com,555-01291,1,68.93,1.87,1
+LD-1292,Test User 292,46,M,Engineer,67124.48,New York,False,Life,7,7,5,False,10,Social Media,user292@example.com,555-01292,1,59.37,1.05,0
+LD-1293,Test User 293,30,Other,Sales,146345.07,Phoenix,False,Life,17,7,1,True,19,Organic,user293@example.com,555-01293,1,49.77,1.27,0
+LD-1294,Test User 294,45,F,Student,79464.46,New York,False,Health,4,4,2,True,1,Referral,user294@example.com,555-01294,0,81.82,1.7,1
+LD-1295,Test User 295,60,M,Teacher,57745.85,Houston,False,Home,0,4,4,True,12,Referral,user295@example.com,555-01295,0,66.28,0.87,0
+LD-1296,Test User 296,55,F,Sales,121744.6,Los Angeles,True,Home,19,2,5,False,22,Organic,user296@example.com,555-01296,1,67.32,1.06,0
+LD-1297,Test User 297,61,M,Doctor,84332.07,Chicago,True,Health,19,0,3,True,7,Organic,user297@example.com,555-01297,1,23.56,1.94,1
+LD-1298,Test User 298,53,M,Doctor,56062.57,New York,True,Auto,13,4,2,False,26,Organic,user298@example.com,555-01298,0,58.89,0.93,0
+LD-1299,Test User 299,33,F,Sales,53063.08,Los Angeles,True,Home,8,7,3,True,27,Paid Search,user299@example.com,555-01299,0,52.55,1.43,0
+LD-1300,Test User 300,65,M,Doctor,145345.67,Houston,False,Home,10,5,1,True,21,Paid Search,user300@example.com,555-01300,0,97.59,1.1,0
+LD-1301,Test User 301,37,M,Engineer,105949.08,New York,False,Home,10,5,0,True,6,Paid Search,user301@example.com,555-01301,0,24.19,0.79,0
+LD-1302,Test User 302,27,M,Teacher,112313.36,Houston,True,Life,10,8,5,False,2,Referral,user302@example.com,555-01302,1,75.99,1.4,0
+LD-1303,Test User 303,23,Other,Doctor,112710.0,Phoenix,False,Home,11,9,5,True,5,Social Media,user303@example.com,555-01303,1,39.13,1.41,0
+LD-1304,Test User 304,51,F,Student,63038.94,Chicago,False,Auto,19,10,4,False,6,Paid Search,user304@example.com,555-01304,1,89.46,0.59,0
+LD-1305,Test User 305,61,F,Teacher,132819.51,Phoenix,False,Home,19,9,1,False,11,Social Media,user305@example.com,555-01305,1,46.88,1.08,0
+LD-1306,Test User 306,42,M,Teacher,43255.7,New York,False,Home,16,1,5,True,3,Referral,user306@example.com,555-01306,1,69.21,0.36,0
+LD-1307,Test User 307,55,M,Sales,104876.46,New York,False,Auto,18,5,2,False,2,Social Media,user307@example.com,555-01307,1,81.48,0.14,0
+LD-1308,Test User 308,25,M,Student,128837.16,New York,True,Home,8,8,4,False,2,Paid Search,user308@example.com,555-01308,0,27.38,0.16,0
+LD-1309,Test User 309,64,Other,Student,59851.56,Chicago,False,Health,20,1,1,True,18,Paid Search,user309@example.com,555-01309,1,59.5,0.21,0
+LD-1310,Test User 310,54,F,Doctor,70501.54,Houston,False,Life,5,9,4,True,20,Paid Search,user310@example.com,555-01310,1,43.76,0.63,0
+LD-1311,Test User 311,57,F,Student,141137.63,New York,True,Life,8,0,2,False,15,Paid Search,user311@example.com,555-01311,1,29.33,1.45,0
+LD-1312,Test User 312,42,M,Sales,32604.16,Chicago,True,Home,8,4,4,False,17,Paid Search,user312@example.com,555-01312,0,30.97,0.31,0
+LD-1313,Test User 313,73,F,Teacher,66036.29,Houston,True,Life,18,0,3,False,19,Organic,user313@example.com,555-01313,1,80.21,1.45,0
+LD-1314,Test User 314,71,Other,Student,70126.76,New York,False,Auto,13,4,3,True,30,Social Media,user314@example.com,555-01314,0,58.59,0.45,0
+LD-1315,Test User 315,31,Other,Student,69219.8,New York,True,Health,7,4,1,False,2,Paid Search,user315@example.com,555-01315,0,21.9,1.94,1
+LD-1316,Test User 316,27,Other,Teacher,87102.56,Los Angeles,False,Home,1,7,4,False,13,Paid Search,user316@example.com,555-01316,0,60.51,0.87,0
+LD-1317,Test User 317,69,Other,Sales,92909.73,Houston,False,Life,7,3,0,False,9,Social Media,user317@example.com,555-01317,0,63.45,1.85,1
+LD-1318,Test User 318,23,M,Teacher,122361.76,Chicago,True,Auto,5,1,2,True,20,Paid Search,user318@example.com,555-01318,0,95.4,1.25,1
+LD-1319,Test User 319,31,M,Doctor,134250.28,Los Angeles,True,Home,9,8,0,False,11,Referral,user319@example.com,555-01319,1,66.07,0.9,0
+LD-1320,Test User 320,31,M,Doctor,113408.54,Los Angeles,False,Auto,0,7,3,True,19,Organic,user320@example.com,555-01320,0,44.98,0.51,0
+LD-1321,Test User 321,39,F,Student,109557.8,New York,False,Health,11,9,0,True,1,Paid Search,user321@example.com,555-01321,0,27.9,0.77,0
+LD-1322,Test User 322,51,Other,Teacher,97282.5,New York,False,Life,0,5,0,False,8,Paid Search,user322@example.com,555-01322,0,99.64,0.98,0
+LD-1323,Test User 323,54,Other,Doctor,63105.39,Los Angeles,True,Life,1,6,5,True,9,Organic,user323@example.com,555-01323,0,75.69,1.63,1
+LD-1324,Test User 324,55,F,Student,145272.68,Chicago,False,Home,19,3,5,True,22,Paid Search,user324@example.com,555-01324,1,87.63,0.31,0
+LD-1325,Test User 325,41,Other,Teacher,112623.85,Chicago,True,Auto,16,2,1,False,14,Paid Search,user325@example.com,555-01325,0,75.44,0.29,0
+LD-1326,Test User 326,70,F,Teacher,68242.49,Los Angeles,True,Home,13,2,3,True,10,Social Media,user326@example.com,555-01326,0,64.5,1.79,0
+LD-1327,Test User 327,61,Other,Sales,57709.36,Chicago,True,Health,7,7,1,False,22,Paid Search,user327@example.com,555-01327,1,24.74,1.56,1
+LD-1328,Test User 328,36,M,Engineer,33867.55,Los Angeles,False,Health,0,5,2,False,14,Paid Search,user328@example.com,555-01328,0,48.48,0.41,0
+LD-1329,Test User 329,71,Other,Student,35019.15,New York,True,Health,12,7,5,True,11,Paid Search,user329@example.com,555-01329,1,56.68,1.14,0
+LD-1330,Test User 330,47,F,Sales,148059.68,Houston,False,Life,1,7,4,True,13,Referral,user330@example.com,555-01330,0,36.5,0.1,0
+LD-1331,Test User 331,25,M,Student,112794.36,Phoenix,True,Health,4,6,3,False,27,Referral,user331@example.com,555-01331,1,12.24,1.0,0
+LD-1332,Test User 332,51,Other,Engineer,100837.86,New York,True,Health,6,10,3,False,3,Organic,user332@example.com,555-01332,0,57.14,1.81,1
+LD-1333,Test User 333,46,Other,Teacher,117224.86,Los Angeles,True,Home,16,0,4,False,6,Social Media,user333@example.com,555-01333,1,37.86,1.54,0
+LD-1334,Test User 334,71,Other,Doctor,145315.93,New York,False,Health,9,7,5,True,6,Referral,user334@example.com,555-01334,1,31.41,0.41,0
+LD-1335,Test User 335,59,Other,Doctor,109136.47,Phoenix,True,Auto,14,2,3,True,15,Organic,user335@example.com,555-01335,1,68.79,0.49,0
+LD-1336,Test User 336,24,F,Teacher,47444.93,Los Angeles,False,Home,1,7,5,False,19,Organic,user336@example.com,555-01336,1,18.38,1.84,1
+LD-1337,Test User 337,41,M,Engineer,68738.62,Chicago,False,Health,12,8,0,True,25,Paid Search,user337@example.com,555-01337,0,65.08,0.59,0
+LD-1338,Test User 338,28,F,Sales,98564.05,Phoenix,False,Life,20,8,4,False,3,Paid Search,user338@example.com,555-01338,1,65.29,1.87,0
+LD-1339,Test User 339,53,F,Teacher,92364.7,New York,True,Auto,20,7,3,True,16,Paid Search,user339@example.com,555-01339,1,81.96,0.47,0
+LD-1340,Test User 340,48,Other,Doctor,79684.94,Chicago,True,Life,10,4,2,False,18,Organic,user340@example.com,555-01340,1,20.25,1.28,0
+LD-1341,Test User 341,43,F,Sales,70963.39,New York,True,Health,18,2,4,False,1,Social Media,user341@example.com,555-01341,1,51.62,1.67,0
+LD-1342,Test User 342,74,M,Teacher,79674.37,Phoenix,False,Life,1,1,4,True,10,Social Media,user342@example.com,555-01342,0,85.67,1.11,0
+LD-1343,Test User 343,43,M,Doctor,148034.25,Chicago,True,Life,20,6,4,True,27,Referral,user343@example.com,555-01343,1,88.93,0.37,0
+LD-1344,Test User 344,45,M,Sales,84228.76,Phoenix,True,Health,9,8,1,True,17,Paid Search,user344@example.com,555-01344,1,40.61,1.57,1
+LD-1345,Test User 345,52,Other,Teacher,117892.93,Los Angeles,True,Health,16,6,2,True,25,Organic,user345@example.com,555-01345,0,37.99,0.2,0
+LD-1346,Test User 346,24,Other,Doctor,112446.28,New York,False,Home,19,5,0,True,11,Paid Search,user346@example.com,555-01346,1,35.79,1.04,0
+LD-1347,Test User 347,56,Other,Student,68297.97,Phoenix,True,Home,14,8,5,False,4,Social Media,user347@example.com,555-01347,1,34.39,0.23,0
+LD-1348,Test User 348,67,F,Engineer,126480.34,Los Angeles,True,Health,18,10,1,True,6,Organic,user348@example.com,555-01348,1,44.52,0.68,0
+LD-1349,Test User 349,27,F,Student,81175.89,Chicago,False,Life,5,3,5,True,20,Referral,user349@example.com,555-01349,0,61.1,1.38,0
+LD-1350,Test User 350,27,M,Teacher,127542.12,Phoenix,False,Life,14,6,0,True,15,Social Media,user350@example.com,555-01350,0,80.99,1.53,1
+LD-1351,Test User 351,42,F,Student,84393.97,Phoenix,True,Auto,0,6,0,True,16,Social Media,user351@example.com,555-01351,0,60.05,1.69,1
+LD-1352,Test User 352,26,M,Sales,125091.71,Houston,True,Life,17,3,3,False,13,Referral,user352@example.com,555-01352,1,61.05,0.49,0
+LD-1353,Test User 353,43,F,Engineer,95343.23,Phoenix,False,Life,7,8,1,True,22,Referral,user353@example.com,555-01353,0,25.86,1.42,0
+LD-1354,Test User 354,47,Other,Engineer,38352.92,New York,True,Home,3,9,5,True,27,Paid Search,user354@example.com,555-01354,0,69.48,0.65,0
+LD-1355,Test User 355,50,Other,Doctor,93750.7,Houston,False,Auto,12,9,4,True,19,Referral,user355@example.com,555-01355,1,86.29,1.75,1
+LD-1356,Test User 356,40,F,Engineer,37489.27,Los Angeles,False,Health,17,10,0,False,1,Referral,user356@example.com,555-01356,1,46.54,0.72,0
+LD-1357,Test User 357,49,M,Doctor,95414.25,Los Angeles,True,Auto,5,1,3,True,5,Paid Search,user357@example.com,555-01357,1,74.92,1.85,0
+LD-1358,Test User 358,53,Other,Student,108951.2,Houston,True,Health,4,8,0,False,5,Referral,user358@example.com,555-01358,0,44.62,0.91,0
+LD-1359,Test User 359,36,F,Sales,52294.92,Phoenix,False,Auto,19,0,0,False,19,Social Media,user359@example.com,555-01359,1,20.18,1.42,0
+LD-1360,Test User 360,52,F,Student,145408.53,New York,True,Home,2,7,1,True,24,Social Media,user360@example.com,555-01360,0,65.17,1.97,1
+LD-1361,Test User 361,43,F,Doctor,94203.99,Chicago,False,Home,0,0,3,False,15,Social Media,user361@example.com,555-01361,0,15.53,1.47,0
+LD-1362,Test User 362,52,F,Sales,99376.93,New York,True,Auto,18,4,0,False,22,Paid Search,user362@example.com,555-01362,0,65.42,1.25,0
+LD-1363,Test User 363,39,Other,Sales,132943.01,Chicago,True,Life,0,3,5,False,4,Paid Search,user363@example.com,555-01363,0,81.94,1.48,0
+LD-1364,Test User 364,24,F,Sales,71141.76,Los Angeles,False,Home,2,3,1,False,20,Organic,user364@example.com,555-01364,0,67.8,0.99,0
+LD-1365,Test User 365,70,Other,Teacher,128343.72,Houston,False,Health,1,4,1,True,15,Referral,user365@example.com,555-01365,0,11.07,1.49,0
+LD-1366,Test User 366,73,F,Sales,83858.47,Phoenix,False,Life,10,4,4,False,22,Organic,user366@example.com,555-01366,1,32.98,1.06,0
+LD-1367,Test User 367,59,Other,Teacher,76938.45,Chicago,True,Auto,7,1,5,True,22,Referral,user367@example.com,555-01367,1,18.79,0.67,0
+LD-1368,Test User 368,28,M,Engineer,112259.95,Phoenix,True,Auto,11,1,1,True,24,Paid Search,user368@example.com,555-01368,1,43.84,0.05,0
+LD-1369,Test User 369,70,Other,Engineer,137987.67,Houston,False,Health,18,10,1,False,29,Social Media,user369@example.com,555-01369,1,24.58,0.59,0
+LD-1370,Test User 370,26,F,Engineer,63274.5,Houston,True,Health,1,2,3,False,13,Organic,user370@example.com,555-01370,1,22.95,1.91,1
+LD-1371,Test User 371,71,M,Engineer,81750.43,Phoenix,False,Health,19,0,5,False,4,Paid Search,user371@example.com,555-01371,1,68.76,0.21,0
+LD-1372,Test User 372,22,F,Sales,141947.25,Houston,False,Auto,12,8,2,True,5,Organic,user372@example.com,555-01372,0,44.6,1.15,1
+LD-1373,Test User 373,66,F,Sales,128157.2,New York,True,Life,15,8,0,False,19,Organic,user373@example.com,555-01373,0,85.71,0.67,0
+LD-1374,Test User 374,70,F,Sales,121980.97,New York,False,Health,20,1,1,False,6,Paid Search,user374@example.com,555-01374,0,22.59,1.32,0
+LD-1375,Test User 375,34,F,Student,33043.75,Houston,True,Auto,18,5,1,True,16,Social Media,user375@example.com,555-01375,1,80.9,1.29,0
+LD-1376,Test User 376,24,Other,Student,78660.94,Los Angeles,True,Auto,6,2,5,False,22,Organic,user376@example.com,555-01376,0,52.41,1.74,1
+LD-1377,Test User 377,61,M,Sales,35496.2,Phoenix,True,Auto,20,1,1,True,1,Referral,user377@example.com,555-01377,1,63.55,0.61,0
+LD-1378,Test User 378,61,F,Engineer,56468.7,Phoenix,True,Life,6,3,3,True,11,Paid Search,user378@example.com,555-01378,0,40.2,1.36,0
+LD-1379,Test User 379,29,Other,Engineer,62867.2,Los Angeles,True,Health,13,2,1,True,23,Referral,user379@example.com,555-01379,1,17.27,0.49,0
+LD-1380,Test User 380,22,F,Teacher,51529.54,Los Angeles,True,Life,2,8,5,False,21,Referral,user380@example.com,555-01380,1,31.53,1.39,0
+LD-1381,Test User 381,33,F,Doctor,103264.56,Houston,True,Home,1,3,4,True,6,Organic,user381@example.com,555-01381,0,65.7,0.18,0
+LD-1382,Test User 382,70,M,Engineer,148413.85,Los Angeles,False,Health,16,2,1,True,15,Organic,user382@example.com,555-01382,1,14.86,0.55,0
+LD-1383,Test User 383,45,M,Engineer,64207.74,Phoenix,True,Home,13,0,2,False,11,Organic,user383@example.com,555-01383,0,16.38,0.91,0
+LD-1384,Test User 384,37,M,Doctor,116568.37,Los Angeles,True,Home,18,6,4,True,11,Referral,user384@example.com,555-01384,1,90.22,1.8,1
+LD-1385,Test User 385,26,M,Sales,86518.83,Chicago,True,Health,15,3,0,False,29,Social Media,user385@example.com,555-01385,1,28.2,1.22,0
+LD-1386,Test User 386,30,M,Doctor,33851.35,Los Angeles,False,Home,18,10,0,True,9,Paid Search,user386@example.com,555-01386,0,17.78,0.92,0
+LD-1387,Test User 387,55,Other,Teacher,88705.61,Los Angeles,False,Health,6,9,4,True,16,Paid Search,user387@example.com,555-01387,1,92.24,1.46,0
+LD-1388,Test User 388,22,F,Sales,80132.62,New York,False,Health,1,3,0,True,16,Organic,user388@example.com,555-01388,0,72.38,0.85,0
+LD-1389,Test User 389,48,Other,Doctor,143992.07,Los Angeles,False,Auto,4,7,2,False,10,Paid Search,user389@example.com,555-01389,0,88.68,0.03,0
+LD-1390,Test User 390,47,F,Doctor,52193.49,Phoenix,True,Life,11,6,5,False,15,Paid Search,user390@example.com,555-01390,1,80.89,1.25,0
+LD-1391,Test User 391,27,M,Engineer,104454.63,Houston,False,Health,10,9,5,True,30,Social Media,user391@example.com,555-01391,0,42.98,1.35,0
+LD-1392,Test User 392,63,Other,Engineer,97054.85,Houston,True,Home,2,5,4,False,23,Social Media,user392@example.com,555-01392,1,55.32,0.67,0
+LD-1393,Test User 393,49,Other,Student,63257.44,Chicago,False,Life,2,10,2,True,12,Paid Search,user393@example.com,555-01393,0,90.27,1.66,1
+LD-1394,Test User 394,51,M,Teacher,40477.05,Houston,True,Home,12,8,1,True,10,Social Media,user394@example.com,555-01394,1,47.49,0.33,0
+LD-1395,Test User 395,65,M,Engineer,94972.19,New York,True,Life,4,6,3,False,12,Social Media,user395@example.com,555-01395,0,53.75,0.04,0
+LD-1396,Test User 396,64,F,Teacher,113623.63,Houston,False,Life,17,0,3,True,15,Social Media,user396@example.com,555-01396,1,35.59,1.58,1
+LD-1397,Test User 397,32,Other,Teacher,104235.63,Los Angeles,True,Auto,5,0,5,False,18,Paid Search,user397@example.com,555-01397,0,49.68,1.68,1
+LD-1398,Test User 398,45,F,Student,52139.59,Los Angeles,False,Auto,17,0,5,False,2,Referral,user398@example.com,555-01398,0,79.17,0.3,0
+LD-1399,Test User 399,51,F,Sales,141337.35,Chicago,True,Health,4,5,0,True,24,Referral,user399@example.com,555-01399,0,91.02,1.29,0
+LD-1400,Test User 400,30,M,Doctor,111361.0,New York,True,Home,3,4,2,True,1,Organic,user400@example.com,555-01400,0,17.52,0.89,0
+LD-1401,Test User 401,50,M,Doctor,111247.61,Houston,True,Health,2,5,4,False,13,Social Media,user401@example.com,555-01401,0,11.1,1.21,0
+LD-1402,Test User 402,44,F,Sales,72162.6,Chicago,True,Health,14,6,4,True,3,Organic,user402@example.com,555-01402,1,22.93,1.48,0
+LD-1403,Test User 403,41,M,Sales,86953.58,Chicago,False,Home,16,8,2,False,3,Paid Search,user403@example.com,555-01403,1,27.93,0.75,0
+LD-1404,Test User 404,75,F,Student,75812.34,Houston,True,Auto,17,0,3,True,2,Social Media,user404@example.com,555-01404,1,37.02,1.17,0
+LD-1405,Test User 405,62,Other,Teacher,130109.17,New York,True,Life,15,7,0,True,21,Social Media,user405@example.com,555-01405,1,62.3,0.36,0
+LD-1406,Test User 406,58,Other,Student,82328.22,New York,False,Home,8,9,5,True,22,Paid Search,user406@example.com,555-01406,0,38.77,0.24,0
+LD-1407,Test User 407,66,F,Student,46259.69,New York,True,Home,5,1,0,True,9,Social Media,user407@example.com,555-01407,0,88.52,1.91,1
+LD-1408,Test User 408,74,F,Teacher,131399.39,New York,True,Life,9,5,2,False,22,Referral,user408@example.com,555-01408,1,40.63,1.07,0
+LD-1409,Test User 409,32,Other,Student,42290.14,Phoenix,True,Health,4,7,4,True,8,Organic,user409@example.com,555-01409,0,83.7,1.12,0
+LD-1410,Test User 410,23,F,Teacher,87542.19,Chicago,True,Auto,9,3,5,True,12,Paid Search,user410@example.com,555-01410,1,71.92,1.98,1
+LD-1411,Test User 411,41,F,Sales,45041.3,New York,True,Auto,4,0,0,True,14,Referral,user411@example.com,555-01411,0,20.7,0.16,0
+LD-1412,Test User 412,38,M,Teacher,35193.78,Chicago,True,Auto,9,2,5,False,1,Social Media,user412@example.com,555-01412,1,41.7,1.84,1
+LD-1413,Test User 413,54,M,Student,123696.26,Los Angeles,True,Life,19,2,1,True,17,Organic,user413@example.com,555-01413,1,93.18,1.16,0
+LD-1414,Test User 414,54,F,Sales,132155.62,Houston,True,Home,15,6,2,True,23,Social Media,user414@example.com,555-01414,1,21.13,1.92,1
+LD-1415,Test User 415,29,F,Engineer,92367.31,Houston,False,Health,15,9,2,False,23,Referral,user415@example.com,555-01415,0,30.33,0.16,0
+LD-1416,Test User 416,48,Other,Doctor,64870.72,Los Angeles,True,Health,13,10,1,True,28,Referral,user416@example.com,555-01416,0,49.43,0.95,0
+LD-1417,Test User 417,64,M,Engineer,111182.24,Chicago,True,Life,3,3,1,False,13,Organic,user417@example.com,555-01417,0,30.96,0.2,0
+LD-1418,Test User 418,49,F,Doctor,117024.06,Houston,False,Health,8,8,5,False,25,Paid Search,user418@example.com,555-01418,1,79.12,1.58,1
+LD-1419,Test User 419,28,M,Engineer,44662.81,Houston,True,Home,15,6,3,False,8,Paid Search,user419@example.com,555-01419,1,37.25,0.2,0
+LD-1420,Test User 420,61,F,Sales,41560.04,Houston,False,Life,2,8,5,True,25,Organic,user420@example.com,555-01420,0,99.16,0.93,0
+LD-1421,Test User 421,29,F,Teacher,76035.59,Houston,False,Home,10,4,3,False,15,Referral,user421@example.com,555-01421,1,78.76,1.11,0
+LD-1422,Test User 422,58,F,Doctor,111002.95,Houston,False,Life,17,4,5,False,18,Organic,user422@example.com,555-01422,1,12.53,1.71,1
+LD-1423,Test User 423,24,M,Sales,45383.77,Chicago,False,Health,11,5,2,True,26,Paid Search,user423@example.com,555-01423,1,32.29,1.78,1
+LD-1424,Test User 424,63,Other,Doctor,67451.94,New York,False,Health,2,9,5,False,3,Social Media,user424@example.com,555-01424,1,11.84,0.34,0
+LD-1425,Test User 425,52,Other,Teacher,100558.71,Chicago,False,Life,10,2,3,False,19,Social Media,user425@example.com,555-01425,1,97.25,1.62,1
+LD-1426,Test User 426,34,M,Student,89634.21,New York,True,Life,2,4,4,True,7,Referral,user426@example.com,555-01426,1,48.44,1.99,1
+LD-1427,Test User 427,44,M,Sales,125478.21,Houston,False,Health,20,10,2,True,17,Organic,user427@example.com,555-01427,1,66.51,1.08,0
+LD-1428,Test User 428,55,Other,Student,133525.18,Phoenix,False,Auto,18,8,3,True,7,Social Media,user428@example.com,555-01428,1,51.62,1.88,1
+LD-1429,Test User 429,37,M,Sales,48056.72,Chicago,False,Home,9,4,3,True,14,Referral,user429@example.com,555-01429,0,31.46,0.13,0
+LD-1430,Test User 430,31,M,Teacher,53029.92,Los Angeles,False,Home,7,0,2,False,15,Social Media,user430@example.com,555-01430,0,69.28,0.84,0
+LD-1431,Test User 431,33,F,Engineer,107315.26,Houston,False,Auto,1,6,5,True,16,Paid Search,user431@example.com,555-01431,1,20.07,1.79,1
+LD-1432,Test User 432,69,M,Teacher,90029.82,Phoenix,True,Life,3,5,4,False,22,Paid Search,user432@example.com,555-01432,0,94.2,1.86,1
+LD-1433,Test User 433,35,F,Student,47313.35,Chicago,True,Life,5,8,1,False,9,Referral,user433@example.com,555-01433,0,71.45,1.18,0
+LD-1434,Test User 434,39,Other,Engineer,135532.02,New York,True,Life,4,8,2,False,16,Social Media,user434@example.com,555-01434,0,67.51,0.04,0
+LD-1435,Test User 435,66,F,Doctor,73542.61,Chicago,True,Home,3,4,4,True,28,Paid Search,user435@example.com,555-01435,0,92.43,0.02,0
+LD-1436,Test User 436,62,F,Sales,68062.12,Chicago,False,Auto,20,2,3,False,26,Organic,user436@example.com,555-01436,1,41.67,1.65,0
+LD-1437,Test User 437,60,Other,Teacher,117507.79,Houston,True,Auto,17,6,5,True,11,Social Media,user437@example.com,555-01437,1,38.23,0.1,0
+LD-1438,Test User 438,27,Other,Sales,43299.38,Chicago,False,Health,7,2,4,False,23,Paid Search,user438@example.com,555-01438,0,71.87,1.53,0
+LD-1439,Test User 439,74,Other,Teacher,69309.65,New York,True,Home,9,1,1,False,3,Paid Search,user439@example.com,555-01439,1,33.56,1.75,0
+LD-1440,Test User 440,32,Other,Engineer,35973.96,New York,False,Health,19,10,3,False,20,Organic,user440@example.com,555-01440,1,30.2,0.74,0
+LD-1441,Test User 441,35,F,Teacher,52865.3,Houston,True,Health,8,2,2,True,24,Social Media,user441@example.com,555-01441,1,97.85,1.71,1
+LD-1442,Test User 442,37,M,Doctor,104121.63,Houston,True,Health,7,6,2,False,19,Organic,user442@example.com,555-01442,0,18.58,0.02,0
+LD-1443,Test User 443,25,Other,Engineer,36253.51,New York,False,Health,7,4,3,False,30,Social Media,user443@example.com,555-01443,0,21.9,1.34,0
+LD-1444,Test User 444,57,F,Student,34935.0,Houston,True,Life,5,1,2,False,6,Organic,user444@example.com,555-01444,0,98.07,1.76,1
+LD-1445,Test User 445,53,F,Student,134601.55,Chicago,False,Home,8,5,5,False,12,Paid Search,user445@example.com,555-01445,1,60.01,1.75,1
+LD-1446,Test User 446,64,F,Teacher,106398.26,Houston,False,Auto,14,7,0,True,7,Referral,user446@example.com,555-01446,1,42.09,0.07,0
+LD-1447,Test User 447,67,M,Teacher,97302.54,Chicago,True,Home,14,8,3,False,4,Paid Search,user447@example.com,555-01447,1,62.52,0.25,0
+LD-1448,Test User 448,22,M,Doctor,93121.85,New York,False,Auto,18,6,1,False,14,Organic,user448@example.com,555-01448,1,85.33,1.0,0
+LD-1449,Test User 449,31,Other,Engineer,33464.94,Chicago,True,Health,14,5,5,True,22,Paid Search,user449@example.com,555-01449,1,87.7,0.54,0
+LD-1450,Test User 450,73,F,Doctor,107237.28,Los Angeles,True,Health,10,1,0,True,24,Paid Search,user450@example.com,555-01450,0,24.66,0.76,0
+LD-1451,Test User 451,71,F,Student,78287.55,Los Angeles,False,Auto,20,5,5,True,5,Referral,user451@example.com,555-01451,1,50.09,0.86,0
+LD-1452,Test User 452,46,M,Sales,87172.76,Houston,True,Auto,18,8,4,False,14,Referral,user452@example.com,555-01452,1,70.88,0.74,0
+LD-1453,Test User 453,63,F,Engineer,112348.38,Houston,False,Home,4,2,3,False,17,Paid Search,user453@example.com,555-01453,0,57.08,0.58,0
+LD-1454,Test User 454,40,M,Sales,98224.28,Phoenix,False,Life,17,4,0,True,30,Organic,user454@example.com,555-01454,1,20.25,0.85,0
+LD-1455,Test User 455,64,Other,Sales,85545.47,Houston,False,Life,5,2,3,True,2,Paid Search,user455@example.com,555-01455,0,17.04,0.6,0
+LD-1456,Test User 456,60,Other,Sales,61118.12,Houston,False,Health,3,4,3,False,18,Referral,user456@example.com,555-01456,0,82.42,0.03,0
+LD-1457,Test User 457,27,M,Teacher,45010.74,Houston,True,Home,0,6,1,True,4,Organic,user457@example.com,555-01457,0,37.08,0.38,0
+LD-1458,Test User 458,51,F,Sales,47779.88,New York,False,Home,13,3,0,False,4,Referral,user458@example.com,555-01458,1,14.58,1.41,0
+LD-1459,Test User 459,22,F,Engineer,42319.62,Houston,False,Health,13,8,3,False,28,Paid Search,user459@example.com,555-01459,1,74.29,1.46,0
+LD-1460,Test User 460,55,F,Engineer,32282.36,Houston,False,Health,18,6,2,True,18,Paid Search,user460@example.com,555-01460,0,35.92,0.83,0
+LD-1461,Test User 461,34,Other,Sales,86308.85,Los Angeles,False,Health,14,6,1,False,17,Referral,user461@example.com,555-01461,0,81.98,0.68,0
+LD-1462,Test User 462,32,M,Student,104621.09,Houston,True,Health,9,7,5,False,24,Paid Search,user462@example.com,555-01462,1,28.85,0.35,0
+LD-1463,Test User 463,25,M,Doctor,149911.35,Houston,True,Home,11,1,2,True,12,Referral,user463@example.com,555-01463,1,33.2,1.72,1
+LD-1464,Test User 464,43,M,Engineer,124186.3,Houston,False,Auto,1,1,4,True,9,Organic,user464@example.com,555-01464,0,55.66,1.75,1
+LD-1465,Test User 465,32,M,Teacher,105591.13,Chicago,False,Home,6,1,2,True,6,Referral,user465@example.com,555-01465,0,97.27,1.52,1
+LD-1466,Test User 466,71,Other,Sales,122283.98,Chicago,True,Home,7,8,3,False,11,Paid Search,user466@example.com,555-01466,1,22.42,0.53,0
+LD-1467,Test User 467,49,M,Student,79609.13,New York,True,Life,13,5,3,False,28,Paid Search,user467@example.com,555-01467,0,49.07,1.89,1
+LD-1468,Test User 468,47,Other,Doctor,121103.09,Houston,False,Life,20,5,1,False,29,Organic,user468@example.com,555-01468,0,84.43,1.96,1
+LD-1469,Test User 469,55,Other,Sales,103248.13,Chicago,False,Home,4,4,5,True,13,Organic,user469@example.com,555-01469,1,58.37,1.09,0
+LD-1470,Test User 470,46,Other,Doctor,117011.84,Los Angeles,True,Auto,4,8,4,False,18,Paid Search,user470@example.com,555-01470,1,84.9,1.1,0
+LD-1471,Test User 471,41,F,Engineer,117181.11,New York,True,Health,16,4,0,True,24,Referral,user471@example.com,555-01471,1,40.51,1.25,0
+LD-1472,Test User 472,37,Other,Teacher,126646.51,Chicago,False,Life,18,10,4,True,23,Referral,user472@example.com,555-01472,1,56.77,1.07,0
+LD-1473,Test User 473,37,Other,Sales,42627.23,Houston,True,Auto,16,0,4,False,7,Paid Search,user473@example.com,555-01473,1,52.86,0.2,0
+LD-1474,Test User 474,50,Other,Sales,39368.72,Houston,False,Health,16,2,3,True,19,Paid Search,user474@example.com,555-01474,1,53.63,1.74,1
+LD-1475,Test User 475,51,M,Student,45526.22,Chicago,True,Health,16,1,4,True,4,Social Media,user475@example.com,555-01475,1,61.46,0.07,0
+LD-1476,Test User 476,24,M,Teacher,92733.3,Phoenix,False,Auto,3,4,2,False,10,Paid Search,user476@example.com,555-01476,1,26.48,0.97,0
+LD-1477,Test User 477,69,F,Student,88655.24,Houston,False,Health,3,7,4,True,12,Paid Search,user477@example.com,555-01477,1,55.43,0.96,0
+LD-1478,Test User 478,51,Other,Sales,121401.45,Houston,True,Health,14,5,1,True,28,Referral,user478@example.com,555-01478,1,76.23,1.25,0
+LD-1479,Test User 479,63,Other,Engineer,40623.59,Phoenix,True,Home,5,9,5,True,1,Paid Search,user479@example.com,555-01479,0,77.55,1.41,0
+LD-1480,Test User 480,54,M,Teacher,137623.71,Phoenix,False,Auto,3,8,5,False,30,Referral,user480@example.com,555-01480,0,63.0,0.55,0
+LD-1481,Test User 481,53,F,Doctor,133436.92,New York,True,Auto,0,8,2,True,14,Social Media,user481@example.com,555-01481,0,22.96,1.06,0
+LD-1482,Test User 482,38,Other,Engineer,122196.56,Chicago,False,Auto,4,5,2,True,14,Referral,user482@example.com,555-01482,1,90.37,1.92,1
+LD-1483,Test User 483,38,Other,Student,75061.58,Houston,True,Life,3,0,0,False,7,Referral,user483@example.com,555-01483,0,59.78,0.47,0
+LD-1484,Test User 484,26,Other,Engineer,88100.58,Los Angeles,True,Life,13,9,5,False,8,Referral,user484@example.com,555-01484,1,17.55,1.11,0
+LD-1485,Test User 485,62,F,Student,90051.88,Houston,True,Auto,4,7,2,False,18,Paid Search,user485@example.com,555-01485,0,10.05,1.08,0
+LD-1486,Test User 486,52,Other,Doctor,62796.35,New York,True,Auto,8,4,5,True,13,Referral,user486@example.com,555-01486,1,72.86,0.43,0
+LD-1487,Test User 487,75,Other,Doctor,46758.03,Chicago,False,Life,17,3,2,False,29,Social Media,user487@example.com,555-01487,1,28.96,1.91,1
+LD-1488,Test User 488,60,F,Student,69414.87,Houston,False,Auto,4,10,5,True,30,Organic,user488@example.com,555-01488,0,90.33,1.8,1
+LD-1489,Test User 489,74,Other,Engineer,110593.57,New York,False,Life,3,3,2,False,27,Organic,user489@example.com,555-01489,0,29.94,0.77,0
+LD-1490,Test User 490,23,F,Doctor,121010.52,New York,False,Health,11,9,1,True,3,Organic,user490@example.com,555-01490,1,27.65,1.62,1
+LD-1491,Test User 491,74,Other,Student,106612.33,Phoenix,True,Auto,3,9,2,True,19,Organic,user491@example.com,555-01491,0,21.47,0.39,0
+LD-1492,Test User 492,58,Other,Student,132657.48,Phoenix,False,Health,16,0,5,False,26,Organic,user492@example.com,555-01492,1,86.85,0.05,0
+LD-1493,Test User 493,42,M,Teacher,81905.78,New York,False,Health,13,8,2,False,4,Social Media,user493@example.com,555-01493,1,10.46,0.72,0
+LD-1494,Test User 494,34,M,Teacher,70164.7,Chicago,False,Auto,18,10,0,True,24,Organic,user494@example.com,555-01494,0,53.2,1.92,0
+LD-1495,Test User 495,73,F,Engineer,32882.82,Chicago,True,Auto,20,9,2,False,27,Organic,user495@example.com,555-01495,1,66.28,0.48,0
+LD-1496,Test User 496,59,M,Engineer,44979.16,Houston,True,Life,1,9,0,False,13,Organic,user496@example.com,555-01496,0,19.16,0.13,0
+LD-1497,Test User 497,25,Other,Student,97110.97,New York,False,Health,9,7,3,False,13,Organic,user497@example.com,555-01497,0,40.57,0.47,0
+LD-1498,Test User 498,65,Other,Engineer,123951.5,Phoenix,True,Home,14,10,4,False,11,Social Media,user498@example.com,555-01498,1,47.89,0.02,0
+LD-1499,Test User 499,68,F,Student,104502.11,Chicago,False,Home,5,2,1,False,5,Social Media,user499@example.com,555-01499,1,64.3,0.62,0
+LD-1500,Test User 500,40,Other,Engineer,74259.6,Houston,False,Home,0,3,4,True,19,Organic,user500@example.com,555-01500,1,40.74,0.47,0
