@@ -50,11 +50,12 @@ For each of the four subsystem folders (`1_Customer_Retention`, `2_Anomaly_Detec
     *   **Decision**: `uvicorn app.main:app --port 8003 --reload`
 
 ### 2. Launch the Frontend
-Start a local web server from the root directory:
+Navigate to the `Main_Hub` directory:
 ```bash
+cd Main_Hub
 python3 -m http.server 8080
 ```
-Open **[http://127.0.0.1:8080/Main_Hub/index.html](http://127.0.0.1:8080/Main_Hub/index.html)** in Google Chrome.
+Open **[http://127.0.0.1:8080/index.html](http://127.0.0.1:8080/index.html)** in Google Chrome.
 
 ---
 
