@@ -813,7 +813,8 @@ async function loadTrainingHistoryModal() {
     try {
         const res = await apiFetch('retention', '/dashboard/training');
         if (res.ok) {
-            const history = await res.json();
+            const data = await res.json();
+            const history = data.training_history || [];
             tbody.innerHTML = '';
             if (history.length === 0) {
                 tbody.innerHTML = '<tr><td colspan="5" style="text-align:center">No model logs compiled.</td></tr>';
