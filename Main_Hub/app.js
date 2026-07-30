@@ -458,7 +458,7 @@ async function loadRetentionDashboardData() {
                 const score = (row.propensity_ratio * 100).toFixed(1);
                 const badge = row.propensity_ratio > 0.7 ? 'badge-high' : 'badge-medium';
                 html += `
-                    <tr>
+                    <tr style="cursor: pointer;" onclick="alert('Leads do not have a Customer 360 profile yet as they have no transactional history. Please convert them to a customer first!')" onmouseover="this.style.background='rgba(255,255,255,0.05)'" onmouseout="this.style.background=''">
                         <td><code>${row.lead_id}</code></td>
                         <td><span class="badge ${badge}">${score}%</span></td>
                         <td><i class="ph ph-lightbulb" style="color:var(--accent-retention); margin-right:6px"></i>${row.top_reasons[0] || 'N/A'}</td>
@@ -484,7 +484,7 @@ async function loadRetentionDashboardData() {
                 const score = (row.churn_ratio * 100).toFixed(1);
                 const badge = row.churn_ratio > 0.7 ? 'badge-high' : 'badge-low';
                 html += `
-                    <tr>
+                    <tr style="cursor: pointer;" onclick="loadCustomer360Profile('${row.customer_id}')" onmouseover="this.style.background='rgba(255,255,255,0.05)'" onmouseout="this.style.background=''">
                         <td><strong>#${row.customer_id}</strong><br><small style="color:var(--text-muted)">${row.name}</small></td>
                         <td><span class="badge ${badge}">${score}% Risk</span></td>
                         <td><i class="ph ph-warning-circle" style="color:var(--accent-anomaly); margin-right:6px"></i>${row.top_reasons[0] || 'N/A'}</td>
@@ -516,7 +516,7 @@ function loadAnomalyLeads() {
             const score = row.anomaly_score.toFixed(3);
             const badge = row.is_fraud ? 'badge-high' : 'badge-low';
             return `
-                <tr>
+                <tr style="cursor: pointer;" onclick="alert('Leads do not have a Customer 360 profile yet as they have no transactional history. Please convert them to a customer first!')" onmouseover="this.style.background='rgba(255,255,255,0.05)'" onmouseout="this.style.background=''">
                     <td><strong>${row.name}</strong></td>
                     <td><span class="badge ${badge}">${row.is_fraud ? 'Fraud Flag' : 'Healthy'}</span></td>
                     <td>${score}</td>
@@ -542,7 +542,7 @@ function loadAnomalyCustomers() {
             const badge = row.is_fraud ? 'badge-high' : 'badge-low';
             const sentBadge = row.sentiment === 'Positive' ? 'badge-low' : (row.sentiment === 'Negative' ? 'badge-high' : 'badge-medium');
             return `
-                <tr>
+                <tr style="cursor: pointer;" onclick="document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('active')); loadCustomer360Profile('${row.customer_id}')" onmouseover="this.style.background='rgba(255,255,255,0.05)'" onmouseout="this.style.background=''">
                     <td><strong>#${row.customer_id}</strong><br><small style="color:var(--text-muted)">${row.name}</small></td>
                     <td><span class="badge ${badge}">${row.is_fraud ? 'Anomaly Detected' : 'Healthy'}</span></td>
                     <td>${score}</td>
@@ -612,7 +612,7 @@ async function loadPredictiveData() {
             const date = parseUTCDate(row.call_date);
             const formattedDate = date ? (date.toLocaleDateString() + ' ' + date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })) : 'N/A';
             html += `
-                <tr>
+                <tr style="cursor: pointer;" onclick="document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('active')); loadCustomer360Profile('${row.customer_id}')" onmouseover="this.style.background='rgba(255,255,255,0.05)'" onmouseout="this.style.background=''">
                     <td><strong>${row.agent_id}</strong></td>
                     <td>${formattedDate}</td>
                     <td>${row.call_duration.toFixed(1)}s</td>
@@ -647,10 +647,10 @@ function loadDecisionLeads() {
             const score = (row.propensity_ratio * 100).toFixed(1);
             const badge = row.propensity_ratio > 0.7 ? 'badge-high' : 'badge-medium';
             return `
-                <tr>
+                <tr style="cursor: pointer;" onclick="alert('Leads do not have a Customer 360 profile yet as they have no transactional history. Please convert them to a customer first!')" onmouseover="this.style.background='rgba(255,255,255,0.05)'" onmouseout="this.style.background=''">
                     <td><strong>${row.name}</strong></td>
                     <td><span class="badge ${badge}">${score}%</span></td>
-                    <td><i class="ph-fill ph-chat-centered-text" style="color:var(--accent-decision); margin-right:6px"></i>${row.dialogue_prompt || row.top_reasons[0]}</td>
+                    <td style="font-size: 0.85rem; line-height: 1.5; padding: 12px 15px;"><i class="ph-fill ph-chat-centered-text" style="color:var(--accent-decision); margin-right:6px; float: left; margin-top: 3px;"></i><div style="margin-left: 25px;">${row.dialogue_prompt || row.top_reasons[0]}</div></td>
                     <td>${row.contact_number || 'N/A'}</td>
                 </tr>
             `;
@@ -671,10 +671,10 @@ function loadDecisionCustomers() {
             const score = (row.churn_ratio * 100).toFixed(1);
             const badge = row.churn_ratio > 0.7 ? 'badge-high' : 'badge-medium';
             return `
-                <tr>
+                <tr style="cursor: pointer;" onclick="document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('active')); loadCustomer360Profile('${row.customer_id}')" onmouseover="this.style.background='rgba(255,255,255,0.05)'" onmouseout="this.style.background=''">
                     <td><strong>#${row.customer_id}</strong><br><small style="color:var(--text-muted)">${row.name}</small></td>
                     <td><span class="badge ${badge}">${score}%</span></td>
-                    <td><i class="ph-fill ph-navigation-arrow" style="color:var(--accent-anomaly); margin-right:6px"></i>${row.dialogue_prompt || row.top_reasons[0]}</td>
+                    <td style="font-size: 0.85rem; line-height: 1.5; padding: 12px 15px;"><i class="ph-fill ph-navigation-arrow" style="color:var(--accent-anomaly); margin-right:6px; float: left; margin-top: 3px;"></i><div style="margin-left: 25px;">${row.dialogue_prompt || row.top_reasons[0]}</div></td>
                     <td>${row.contact_number || 'N/A'}</td>
                 </tr>
             `;
@@ -765,7 +765,7 @@ function loadAllLeadsModal() {
             const score = (row.propensity_ratio * 100).toFixed(1);
             const badge = row.propensity_ratio > 0.7 ? 'badge-high' : 'badge-medium';
             return `
-                <tr>
+                <tr style="cursor: pointer;" onclick="alert('Leads do not have a Customer 360 profile yet as they have no transactional history. Please convert them to a customer first!')" onmouseover="this.style.background='rgba(255,255,255,0.05)'" onmouseout="this.style.background=''">
                     <td><code>${row.lead_id}</code></td>
                     <td><strong>${row.name}</strong></td>
                     <td><span class="badge ${badge}">${score}%</span></td>
@@ -792,7 +792,7 @@ function loadAllCustomersModal() {
             const badge = row.churn_ratio > 0.7 ? 'badge-high' : 'badge-low';
             const sentBadge = row.sentiment === 'Positive' ? 'badge-low' : (row.sentiment === 'Negative' ? 'badge-high' : 'badge-medium');
             return `
-                <tr>
+                <tr style="cursor: pointer;" onclick="document.getElementById('modal-all-customers').classList.remove('active'); loadCustomer360Profile('${row.customer_id}');" onmouseover="this.style.background='rgba(255,255,255,0.05)'" onmouseout="this.style.background=''">
                     <td><code>${row.customer_id}</code></td>
                     <td><strong>${row.name}</strong></td>
                     <td><span class="badge ${badge}">${score}% Risk</span></td>
@@ -1350,4 +1350,162 @@ function appendToToastContainer(message, type = 'success') {
         toast.style.transition = 'all 0.3s ease';
         setTimeout(() => toast.remove(), 300);
     }, 4500);
+}
+
+// ==========================================
+// Customer 360 Logic
+// ==========================================
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('customer-360-search');
+    const dropdown = document.getElementById('search-results-dropdown');
+    let searchTimeout;
+
+    if(searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            clearTimeout(searchTimeout);
+            const query = e.target.value.trim();
+            
+            if (query.length < 3) {
+                dropdown.style.display = 'none';
+                return;
+            }
+            
+            searchTimeout = setTimeout(async () => {
+                try {
+                    const response = await fetch(`http://127.0.0.1:${PORTS.retention}/customer360/search/${encodeURIComponent(query)}`);
+                    if (response.ok) {
+                        const results = await response.json();
+                        dropdown.innerHTML = '';
+                        if (results.length === 0) {
+                            dropdown.innerHTML = '<div style="padding: 10px; color: var(--text-secondary);">No results found.</div>';
+                        } else {
+                            results.forEach(r => {
+                                const div = document.createElement('div');
+                                div.style.padding = '10px';
+                                div.style.cursor = 'pointer';
+                                div.style.borderBottom = '1px solid rgba(255,255,255,0.05)';
+                                div.innerHTML = `<strong>${r.name}</strong> <span style="color:var(--text-secondary); font-size:0.85rem">(${r.customer_id}) - ${r.city}</span>`;
+                                div.addEventListener('mouseover', () => div.style.background = 'rgba(255,255,255,0.1)');
+                                div.addEventListener('mouseout', () => div.style.background = 'transparent');
+                                div.addEventListener('click', () => {
+                                    dropdown.style.display = 'none';
+                                    searchInput.value = '';
+                                    loadCustomer360Profile(r.customer_id);
+                                });
+                                dropdown.appendChild(div);
+                            });
+                        }
+                        dropdown.style.display = 'block';
+                    }
+                } catch (err) {
+                    console.error("Search error", err);
+                }
+            }, 300);
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!searchInput.contains(e.target) && !dropdown.contains(e.target)) {
+                dropdown.style.display = 'none';
+            }
+        });
+    }
+
+    const closeBtn = document.getElementById('close-modal-c360');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            document.getElementById('modal-customer-360').classList.remove('active');
+        });
+    }
+});
+
+async function loadCustomer360Profile(customerId) {
+    console.log(`Loading Customer 360 profile for ${customerId}...`);
+    
+    try {
+        // Fetch base profile from Port 8000
+        const profileRes = await fetch(`http://127.0.0.1:${PORTS.retention}/customer360/${customerId}`);
+        if (!profileRes.ok) throw new Error("Profile not found");
+        const profile = await profileRes.json();
+        
+        // Populate basic UI
+        document.getElementById('c360-title-name').textContent = `${profile.name} (${profile.customer_id})`;
+        document.getElementById('c360-feedback-notes').textContent = `"${profile.feedback_notes || 'No notes provided.'}"`;
+        
+        const kwContainer = document.getElementById('c360-keywords-container');
+        kwContainer.innerHTML = '';
+        profile.behavioral_keywords.forEach(kw => {
+            const span = document.createElement('span');
+            span.style.padding = '4px 8px';
+            span.style.background = 'rgba(255,255,255,0.1)';
+            span.style.borderRadius = '4px';
+            span.style.fontSize = '0.8rem';
+            span.textContent = kw;
+            kwContainer.appendChild(span);
+        });
+        
+        document.getElementById('c360-score-sentiment').textContent = profile.bow_sentiment_score;
+        document.getElementById('c360-score-behavior').textContent = profile.behavioral_keywords.length > 0 ? "Active" : "Passive";
+        document.getElementById('c360-score-churn').textContent = `${profile.churn_risk_percent}%`;
+        document.getElementById('c360-score-propensity').textContent = `${profile.propensity_percent}%`;
+        
+        const policiesTbody = document.getElementById('c360-policies-tbody');
+        policiesTbody.innerHTML = '';
+        let grandTotalSpent = 0;
+        profile.policies.forEach(p => {
+            const tr = document.createElement('tr');
+            const statusColor = p.status === 'Active' ? '#00ff66' : (p.status === 'Expired' ? '#ffcc00' : '#ff3366');
+            const totalSpent = p.premium_amount * 5;
+            grandTotalSpent += totalSpent;
+            tr.innerHTML = `
+                <td>${p.policy_type}</td>
+                <td style="color:${statusColor}">${p.status}</td>
+                <td>${p.start_date.split('-')[0]} - ${p.end_date.split('-')[0]}</td>
+                <td>$${p.premium_amount.toFixed(2)}/yr<br><small style="color:#00ff66">LTV: $${totalSpent.toFixed(2)}</small></td>
+                <td>${p.claim_history}</td>
+            `;
+            policiesTbody.appendChild(tr);
+        });
+        document.getElementById('c360-total-spent').textContent = `$${grandTotalSpent.toFixed(2)}`;
+        
+        // Fetch 5-step Strategy from Port 8003
+        document.getElementById('c360-strategy-objective').textContent = "Compiling strategy...";
+        document.getElementById('c360-strategy-steps').innerHTML = '<li><i class="ph ph-spinner ph-spin"></i> Analyzing...</li>';
+        
+        const strategyRes = await fetch(`http://127.0.0.1:${PORTS.decision}/strategy/prescriptive_workflow`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                customer_id: profile.customer_id,
+                sentiment_score: profile.bow_sentiment_score,
+                churn_risk_percent: profile.churn_risk_percent,
+                propensity_percent: profile.propensity_percent,
+                behavioral_keywords: profile.behavioral_keywords,
+                policies: profile.policies.map(p => ({ policy_type: p.policy_type, status: p.status }))
+            })
+        });
+        
+        if (strategyRes.ok) {
+            const strategy = await strategyRes.json();
+            document.getElementById('c360-strategy-objective').textContent = strategy.primary_objective;
+            const stepsUl = document.getElementById('c360-strategy-steps');
+            stepsUl.innerHTML = '';
+            strategy.workflow_steps.forEach((step, idx) => {
+                const li = document.createElement('li');
+                li.style.background = 'rgba(0,0,0,0.2)';
+                li.style.padding = '10px';
+                li.style.borderRadius = '6px';
+                li.style.borderLeft = '3px solid #64b5f6';
+                li.innerHTML = `<strong>Step ${idx+1}:</strong> ${step.replace(/^\\d+\\.\\s*/, '')}`;
+                stepsUl.appendChild(li);
+            });
+        }
+        
+        // Show modal
+        document.getElementById('modal-customer-360').classList.add('active');
+        
+    } catch (err) {
+        console.error(err);
+        console.error("Error loading Customer 360 profile", err);
+    }
 }

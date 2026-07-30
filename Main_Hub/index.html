@@ -30,6 +30,19 @@
                     <i class="ph-fill ph-shield-check hub-logo"></i>
                     <h1>INSURE AI</h1>
                     <p class="subtitle">Enterprise Ecosystem Master Hub</p>
+                    
+                    <div class="search-container glass-panel" style="margin-top: 1.5rem; width: 100%; max-width: 550px; position: relative; padding: 15px; display: flex; flex-direction: column; gap: 10px; border: 1px solid rgba(100, 181, 246, 0.3); background: rgba(10, 15, 30, 0.6); box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                        <div style="display: flex; align-items: center; gap: 8px; color: var(--accent-predictive); font-weight: bold; font-size: 1.1rem;">
+                            <i class="ph-fill ph-user-circle"></i> Customer 360 Engine
+                        </div>
+                        <div style="position: relative; width: 100%;">
+                            <i class="ph ph-magnifying-glass" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--text-secondary); font-size: 1.2rem;"></i>
+                            <input type="text" id="customer-360-search" placeholder="Enter Customer ID or Name to unlock 360 profile..." style="width: 100%; padding: 12px 12px 12px 45px; border-radius: 6px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: #fff; font-size: 1rem; transition: all 0.2s ease;">
+                            <div id="search-results-dropdown" style="display:none; position: absolute; top: 100%; left: 0; width: 100%; background: #1a1c29; border: 1px solid var(--accent-predictive); border-radius: 6px; margin-top: 5px; z-index: 100; max-height: 250px; overflow-y: auto; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                                <!-- Populated via JS -->
+                            </div>
+                        </div>
+                    </div>
                 </header>
                 
                 <!-- System Health & Status Strip -->
@@ -573,7 +586,7 @@
         <div class="modal-content glass-panel" style="max-width: 850px; width: 90%;">
             <div class="modal-header" style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color); padding-bottom:12px; margin-bottom:16px;">
                 <h2 style="color:#fff; font-size:1.4rem"><i class="ph ph-users" style="margin-right:8px; color:var(--accent-retention)"></i>All Leads Directory</h2>
-                <button class="back-home-btn" id="close-modal-leads" style="padding:6px 12px; font-size:0.85rem;"><i class="ph ph-x"></i> Close</button>
+                <button id="close-modal-leads" style="padding:6px 12px; font-size:0.85rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; border-radius: 6px; cursor: pointer;"><i class="ph ph-x"></i> Close</button>
             </div>
             <div class="table-wrapper">
                 <table>
@@ -604,7 +617,7 @@
         <div class="modal-content glass-panel" style="max-width: 950px; width: 90%;">
             <div class="modal-header" style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color); padding-bottom:12px; margin-bottom:16px;">
                 <h2 style="color:#fff; font-size:1.4rem"><i class="ph ph-check-circle" style="margin-right:8px; color:var(--accent-decision)"></i>All Customers Directory</h2>
-                <button class="back-home-btn" id="close-modal-customers" style="padding:6px 12px; font-size:0.85rem;"><i class="ph ph-x"></i> Close</button>
+                <button id="close-modal-customers" style="padding:6px 12px; font-size:0.85rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; border-radius: 6px; cursor: pointer;"><i class="ph ph-x"></i> Close</button>
             </div>
             <div class="table-wrapper">
                 <table>
@@ -636,7 +649,7 @@
         <div class="modal-content glass-panel" style="max-width: 850px; width: 90%;">
             <div class="modal-header" style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color); padding-bottom:12px; margin-bottom:16px;">
                 <h2 style="color:#fff; font-size:1.4rem"><i class="ph ph-clock-counter-clockwise" style="margin-right:8px; color:var(--accent-warning)"></i>AI Training & Model History</h2>
-                <button class="back-home-btn" id="close-modal-training" style="padding:6px 12px; font-size:0.85rem;"><i class="ph ph-x"></i> Close</button>
+                <button id="close-modal-training" style="padding:6px 12px; font-size:0.85rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; border-radius: 6px; cursor: pointer;"><i class="ph ph-x"></i> Close</button>
             </div>
             <div class="table-wrapper">
                 <table>
@@ -669,10 +682,104 @@
         </div>
     </div>
 
+    <!-- Customer 360 Modal -->
+    <div id="modal-customer-360" class="modal-overlay">
+        <div class="modal-content glass-panel" style="max-width: 1100px; width: 95%; max-height: 90vh; overflow-y: auto;">
+            <div class="modal-header" style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color); padding-bottom:12px; margin-bottom:20px;">
+                <h2 style="color:#fff; font-size:1.6rem; display: flex; align-items: center; gap: 10px;">
+                    <i class="ph-fill ph-user-circle" style="color:var(--accent-predictive)"></i> 
+                    Customer 360 Profile: <span id="c360-title-name" style="color:var(--accent-warning); margin-left: 5px;">--</span>
+                </h2>
+                <button id="close-modal-c360" style="padding:6px 12px; font-size:0.85rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; border-radius: 6px; cursor: pointer;"><i class="ph ph-x"></i> Close</button>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 20px;">
+                <!-- Left Column: Transactional Summary -->
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <div class="glass-panel" style="padding: 20px;">
+                        <h3 style="margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
+                            <i class="ph ph-clock-counter-clockwise"></i> Lifetime Transactional Summary
+                        </h3>
+                        <div class="table-wrapper" style="max-height: 300px; overflow-y: auto;">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Policy Type</th>
+                                        <th>Status</th>
+                                        <th>Term</th>
+                                        <th>Premium</th>
+                                        <th>Claims</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="c360-policies-tbody">
+                                </tbody>
+                                <tfoot>
+                                    <tr style="background: rgba(255,255,255,0.05); font-weight: bold;">
+                                        <td colspan="3" style="text-align: right; padding-right: 15px; color: var(--text-secondary);">Lifetime Grand Total Spent:</td>
+                                        <td colspan="2" id="c360-total-spent" style="color: #00ff66; font-size: 1.1rem;">$0.00</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-panel" style="padding: 20px;">
+                        <h3 style="margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
+                            <i class="ph ph-chat-text"></i> NLP Sentiment & Feedback
+                        </h3>
+                        <p style="font-style: italic; color: var(--text-secondary); margin-bottom: 15px;" id="c360-feedback-notes">No notes available.</p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;" id="c360-keywords-container">
+                            <!-- Keyword tags here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Predictive & Prescriptive -->
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <!-- Predictive -->
+                    <div class="glass-panel" style="padding: 20px;">
+                        <h3 style="margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
+                            <i class="ph ph-chart-polar"></i> Predictive Summary
+                        </h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; text-align: center;">
+                                <div style="font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase;">BoW Sentiment Score</div>
+                                <div style="font-size: 1.8rem; font-weight: 700; margin-top: 5px;" id="c360-score-sentiment">--</div>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; text-align: center;">
+                                <div style="font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase;">Behavioral Index</div>
+                                <div style="font-size: 1.8rem; font-weight: 700; margin-top: 5px;" id="c360-score-behavior">--</div>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; text-align: center;">
+                                <div style="font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase;">Churn Risk</div>
+                                <div style="font-size: 1.8rem; font-weight: 700; margin-top: 5px; color: var(--accent-decision);" id="c360-score-churn">--</div>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; text-align: center;">
+                                <div style="font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase;">Propensity Score</div>
+                                <div style="font-size: 1.8rem; font-weight: 700; margin-top: 5px; color: var(--accent-retention);" id="c360-score-propensity">--</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Prescriptive -->
+                    <div class="glass-panel" style="padding: 20px; background: rgba(33, 150, 243, 0.05); border: 1px solid rgba(33, 150, 243, 0.2);">
+                        <h3 style="margin-bottom: 15px; border-bottom: 1px solid rgba(33, 150, 243, 0.2); padding-bottom: 10px; color: #64b5f6;">
+                            <i class="ph-fill ph-brain"></i> Prescriptive Strategy Engine
+                        </h3>
+                        <div style="margin-bottom: 10px; font-weight: 600;">Objective: <span id="c360-strategy-objective" style="color: #fff;">--</span></div>
+                        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;" id="c360-strategy-steps">
+                            <!-- Populated via JS -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Toast Alerts Container -->
     <div id="toast-container" class="toast-container"></div>
 
     <!-- Controller Scripts -->
-    <script src="app.js"></script>
+    <script src="app.js?v=3"></script>
 </body>
 </html>

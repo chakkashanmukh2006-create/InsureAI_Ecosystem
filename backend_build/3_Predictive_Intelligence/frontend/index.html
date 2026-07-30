@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictive Intelligence System</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="/ui/styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Main Dashboard View -->
+        <div id="main-view" class="view active">
+            <!-- Sidebar -->
+            <nav class="sidebar glass-panel">
+                <div class="sidebar-header">
+                    <i class="ph-fill ph-chart-line-up"></i>
+                    <h2>Predictive AI</h2>
+                </div>
+                <ul class="nav-links">
+                    <li class="nav-item active" data-tab="dashboard-tab">
+                        <i class="ph ph-squares-four"></i>
+                        <span>Overview</span>
+                    </li>
+                    <li class="nav-item" data-tab="forecast-tab">
+                        <i class="ph ph-trend-up"></i>
+                        <span>Forecasted Trends</span>
+                    </li>
+                    <li class="nav-item" data-tab="leads-tab">
+                        <i class="ph ph-brain"></i>
+                        <span>Analysed Policies</span>
+                    </li>
+                    <li class="nav-item" data-tab="call-logs-tab">
+                        <i class="ph ph-phone"></i>
+                        <span>Call Logs</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Main Content Area -->
+            <main class="content-area">
+                <header class="topbar">
+                    <h1 id="page-title">Overview Dashboard</h1>
+                    <div class="user-profile">
+                        <div class="avatar"><i class="ph-fill ph-user"></i></div>
+                        <span id="current-username">Admin</span>
+                    </div>
+                </header>
+
+                <div class="tab-content-wrapper">
+                    <!-- Dashboard Tab -->
+                    <div id="dashboard-tab" class="tab-pane active">
+                        <div class="stats-grid">
+                            <div class="stat-card glass-panel">
+                                <div class="stat-icon blue"><i class="ph-fill ph-files"></i></div>
+                                <div class="stat-info">
+                                    <span class="stat-label">Analyzed Policies</span>
+                                    <h3 id="stat-total-leads">--</h3>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card glass-panel" id="card-total-calls">
+                                <div class="stat-icon purple"><i class="ph-fill ph-trend-up"></i></div>
+                                <div class="stat-info">
+                                    <span class="stat-label">Forecasts Generated</span>
+                                    <h3 id="stat-total-calls">--</h3>
+                                </div>
+                            </div>
+
+                            <div class="stat-card glass-panel clickable" id="card-last-trained">
+                                <div class="stat-icon orange"><i class="ph-fill ph-clock-counter-clockwise"></i></div>
+                                <div class="stat-info">
+                                    <span class="stat-label">Last Forecast Refresh</span>
+                                    <h3 id="stat-last-trained">--</h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="charts-grid">
+                            <div class="chart-card glass-panel">
+                                <h3>Propensity Model Info</h3>
+                                <p><strong>Accuracy:</strong> <span id="info-lead-acc">--</span></p>
+                                <p><strong>Precision:</strong> <span id="info-lead-prec">--</span></p>
+                                <p><strong>Recall:</strong> <span id="info-lead-rec">--</span></p>
+                                <p><strong>F1 Score:</strong> <span id="info-lead-f1">--</span></p>
+                                <div class="action-row">
+                                    <button id="train-btn" class="btn secondary-btn">
+                                        <i class="ph ph-arrows-clockwise"></i>
+                                        <span>Retrain Models</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="chart-card glass-panel">
+                                <h3>Data Management</h3>
+                                <p>Upload new CSV datasets or export existing data.</p>
+                                <div class="action-row" style="margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                                    <label for="upload-leads-input" class="btn secondary-btn" style="cursor: pointer; justify-content: center; width: 100%;">
+                                        <i class="ph ph-upload-simple"></i>
+                                        <span>Upload Historical Policies</span>
+                                    </label>
+                                    <input type="file" id="upload-leads-input" accept=".csv" style="display:none">
+                                    
+                                    <button id="export-leads-btn" class="btn secondary-btn" style="justify-content: center; width: 100%;">
+                                        <i class="ph ph-download-simple"></i>
+                                        <span>Export Policies</span>
+                                    </button>
+                                    
+                                    <label for="upload-customers-input" class="btn secondary-btn" style="cursor: pointer; justify-content: center; width: 100%;">
+                                        <i class="ph ph-upload-simple"></i>
+                                        <span>Upload Historical Call Logs</span>
+                                    </label>
+                                    <input type="file" id="upload-customers-input" accept=".csv" style="display:none">
+                                    
+                                    <button id="export-customers-btn" class="btn secondary-btn" style="justify-content: center; width: 100%;">
+                                        <i class="ph ph-download-simple"></i>
+                                        <span>Export Call Logs</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Forecast Tab -->
+                    <div id="forecast-tab" class="tab-pane">
+                        <div class="table-card glass-panel">
+                            <div class="table-header">
+                                <h3>Forecasted Conversion Trends</h3>
+                                <p>Projected overall conversion volumes over the next 30 days based on historical call logs.</p>
+                            </div>
+                            <div style="padding: 20px; height: 400px; width: 100%;">
+                                <canvas id="forecastChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Analysed Policies Tab -->
+                    <div id="leads-tab" class="tab-pane">
+                        <div class="table-card glass-panel">
+                            <div class="table-header">
+                                <h3>All Analysed Policies</h3>
+                                <p>Propensity scores for all uploaded policies.</p>
+                            </div>
+                            <div class="table-responsive">
+                                <table id="leads-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Policyholder</th>
+                                            <th>Propensity Score</th>
+                                            <th>Key Indicator</th>
+                                            <th>Contact</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="leads-tbody">
+                                        <!-- Populated via JS -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call Logs Tab -->
+                    <div id="call-logs-tab" class="tab-pane">
+                        <div class="table-card glass-panel">
+                            <div class="table-header">
+                                <h3>Recent Call Logs</h3>
+                                <p>History of agent calls and their outcomes.</p>
+                            </div>
+                            <div class="table-responsive">
+                                <table id="call-logs-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Agent ID</th>
+                                            <th>Date</th>
+                                            <th>Duration (s)</th>
+                                            <th>Outcome</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="call-logs-tbody">
+                                        <!-- Populated via JS -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Training Progress Modal -->
+    <div id="modal-training-progress" class="modal-overlay">
+        <div class="modal-content glass-panel" style="max-width: 600px;">
+            <div class="modal-header">
+                <h2><i class="ph ph-spinner ph-spin" style="margin-right:8px;"></i>AI Training in Progress</h2>
+            </div>
+            <div class="modal-body">
+                <div id="training-logs" style="background: #1e1e1e; color: #00ff00; font-family: monospace; padding: 15px; border-radius: 8px; height: 300px; overflow-y: auto; font-size: 14px; line-height: 1.5; box-shadow: inset 0 0 10px rgba(0,0,0,0.5);">
+                    Initializing training pipeline...
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="toast-container"></div>
+    <script src="/ui/app.js?v=2.7"></script>
+</body>
+</html>
