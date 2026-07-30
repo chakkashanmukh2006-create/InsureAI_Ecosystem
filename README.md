@@ -20,8 +20,10 @@ The ecosystem runs on a **FastAPI backend grid** serving four modules on local l
 
 ### 3. Predictive Intelligence (Port 8002)
 *   **Database**: SQLite (`predictive.db`)
-*   **Engine**: FB Prophet Time-Series Regression
-*   **Features**: Analyzes historical agent-customer interaction call logs to forecast future daily conversions over a 30-day horizon, visualizing trends on an interactive line chart.
+*   **Engine**: FB Prophet Time-Series Regression & XGBoost
+*   **Features**: 
+    * Analyzes historical agent-customer interaction call logs to forecast future daily conversions.
+    * **Retail Demand Forecasting (New!):** Powered by an authentic Kaggle Superstore Sales dataset. Features hierarchical forecasting (Total Store, Category, Product) with weekly resampling. Dynamically trains 5 models (Prophet, XGBoost, SARIMA, Holt-Winters, SMA) in real-time to compare predictions over a 12-week horizon.
 
 ### 4. Decision Engine (Port 8003)
 *   **Database**: SQLite (`decision.db`)
@@ -49,13 +51,17 @@ For each of the four subsystem folders (`1_Customer_Retention`, `2_Anomaly_Detec
     *   **Predictive**: `uvicorn app.main:app --port 8002 --reload`
     *   **Decision**: `uvicorn app.main:app --port 8003 --reload`
 
-### 2. Launch the Frontend
-Navigate to the `Main_Hub` directory:
+### 2. Launch the Frontend (Next.js)
+The ecosystem now runs on a modern React/Next.js frontend.
+Navigate to the `frontend` directory:
 ```bash
-cd Main_Hub
-python3 -m http.server 8080
+cd frontend
+npm install
+npm run dev
 ```
-Open **[http://127.0.0.1:8080/index.html](http://127.0.0.1:8080/index.html)** in Google Chrome.
+Open **[http://localhost:3000](http://localhost:3000)** in Google Chrome.
+
+*(Note: The legacy vanilla JS app is still preserved in the `Main_Hub` folder but is no longer the primary interface).*
 
 ---
 
