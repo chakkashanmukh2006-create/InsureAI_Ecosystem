@@ -32,6 +32,26 @@ The ecosystem runs on a **FastAPI backend grid** serving four modules on local l
 
 ---
 
+## 🌍 5. Cross-Domain Demand Forecasting
+
+Demand Forecasting is not just for predicting insurance policies—it is a universal AI capability that can be implemented across multiple industries to optimize supply chains and inventory. To demonstrate this flexibility, the ecosystem includes a dedicated **Demand Forecasting module** that operates across two distinct domains:
+
+### Domain 1: Insurance (Customer-Centric)
+*   **Use Case:** Predicting how many customers will convert/buy policies on a daily basis.
+*   **Implementation:** Analyzes historical agent call logs, marketing spend, and seasonal trends to allocate agents and resources effectively.
+
+### Domain 2: Retail & Supply Chain (Kaggle Integration)
+*   **Use Case:** Predicting physical inventory demand (how many items will be sold).
+*   **Implementation:** Powered by the **Real Kaggle Superstore Sales dataset**. The engine dynamically filters 4 years of real transactional data into weekly buckets and races 5 different algorithms (Prophet, XGBoost, SARIMA, Holt-Winters, SMA) to predict the next 12 weeks of sales.
+*   **Hierarchical Forecasting:** Users can dynamically slice the data and train the AI models at 3 different levels of granularity:
+    1.  **Total Store:** Aggregate volume for the entire company.
+    2.  **Product Category:** High-level department demand (e.g., Furniture vs. Technology).
+    3.  **Individual Product:** Granular, item-level predictions (e.g., predicting exactly how many "Global Push Pins" will sell next week).
+
+*By utilizing a flexible API, this same forecasting architecture could easily be expanded to Healthcare (predicting patient admissions) or Energy (predicting grid load).*
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
