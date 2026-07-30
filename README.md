@@ -22,8 +22,8 @@ The ecosystem runs on a **FastAPI backend grid** serving four modules on local l
 *   **Database**: SQLite (`predictive.db`)
 *   **Engine**: FB Prophet Time-Series Regression & XGBoost
 *   **Features**: 
-    * Analyzes historical agent-customer interaction call logs to forecast future daily conversions.
-    * **Retail Demand Forecasting (New!):** Powered by an authentic Kaggle Superstore Sales dataset. Features hierarchical forecasting (Total Store, Category, Product) with weekly resampling. Dynamically trains 5 models (Prophet, XGBoost, SARIMA, Holt-Winters, SMA) in real-time to compare predictions over a 12-week horizon.
+    * **Insurance Demand Forecasting:** Analyzes historical agent-customer interaction call logs to forecast future daily policy conversions.
+    * **Retail Demand Forecasting (Kaggle Integration):** Powered by the authentic Kaggle Superstore Sales dataset. Features hierarchical forecasting (Total Store, Category, Product) with weekly resampling. Dynamically trains 5 models (Prophet, XGBoost, SARIMA, Holt-Winters, SMA) in real-time to compare predictions over a 12-week horizon, demonstrating cross-domain AI capabilities.
 
 ### 4. Decision Engine (Port 8003)
 *   **Database**: SQLite (`decision.db`)
